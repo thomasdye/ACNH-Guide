@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C15244E4D1C00FD7886 /* AppDelegate.swift */; };
 		ED320C18244E4D1C00FD7886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */; };
-		ED320C1A244E4D1C00FD7886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C19244E4D1C00FD7886 /* ViewController.swift */; };
 		ED320C1D244E4D1C00FD7886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320C1B244E4D1C00FD7886 /* Main.storyboard */; };
 		ED320C1F244E4D2200FD7886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED320C1E244E4D2200FD7886 /* Assets.xcassets */; };
 		ED320C22244E4D2200FD7886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320C20244E4D2200FD7886 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		ED320C12244E4D1C00FD7886 /* Animal Crossing New Horizons Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal Crossing New Horizons Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED320C15244E4D1C00FD7886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED320C19244E4D1C00FD7886 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED320C1C244E4D1C00FD7886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED320C1E244E4D2200FD7886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED320C21244E4D2200FD7886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 			children = (
 				ED320C15244E4D1C00FD7886 /* AppDelegate.swift */,
 				ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */,
-				ED320C19244E4D1C00FD7886 /* ViewController.swift */,
 				ED320C1B244E4D1C00FD7886 /* Main.storyboard */,
 				ED320C1E244E4D2200FD7886 /* Assets.xcassets */,
 				ED320C20244E4D2200FD7886 /* LaunchScreen.storyboard */,
@@ -138,7 +135,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED320C1A244E4D1C00FD7886 /* ViewController.swift in Sources */,
 				ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */,
 				ED320C18244E4D1C00FD7886 /* SceneDelegate.swift in Sources */,
 			);
