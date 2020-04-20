@@ -12,6 +12,9 @@
 		ED320C1D244E4D1C00FD7886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320C1B244E4D1C00FD7886 /* Main.storyboard */; };
 		ED320C1F244E4D2200FD7886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED320C1E244E4D2200FD7886 /* Assets.xcassets */; };
 		ED320C22244E4D2200FD7886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320C20244E4D2200FD7886 /* LaunchScreen.storyboard */; };
+		ED320C2B244E4FC300FD7886 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C2A244E4FC300FD7886 /* GuideViewController.swift */; };
+		ED320C2E244E500800FD7886 /* FlowersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C2D244E500800FD7886 /* FlowersTableViewController.swift */; };
+		ED320C30244E503900FD7886 /* FlowerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C2F244E503900FD7886 /* FlowerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		ED320C1E244E4D2200FD7886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED320C21244E4D2200FD7886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED320C23244E4D2300FD7886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED320C2A244E4FC300FD7886 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		ED320C2D244E500800FD7886 /* FlowersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersTableViewController.swift; sourceTree = "<group>"; };
+		ED320C2F244E503900FD7886 /* FlowerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		ED320C14244E4D1C00FD7886 /* Animal Crossing New Horizons Guide */ = {
 			isa = PBXGroup;
 			children = (
+				ED320C2C244E4FCB00FD7886 /* Storyboards */,
+				ED320C29244E4F8200FD7886 /* View Controllers */,
 				ED320C15244E4D1C00FD7886 /* AppDelegate.swift */,
 				ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */,
-				ED320C1B244E4D1C00FD7886 /* Main.storyboard */,
 				ED320C1E244E4D2200FD7886 /* Assets.xcassets */,
-				ED320C20244E4D2200FD7886 /* LaunchScreen.storyboard */,
 				ED320C23244E4D2300FD7886 /* Info.plist */,
 			);
 			path = "Animal Crossing New Horizons Guide";
+			sourceTree = "<group>";
+		};
+		ED320C29244E4F8200FD7886 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED320C2A244E4FC300FD7886 /* GuideViewController.swift */,
+				ED320C2D244E500800FD7886 /* FlowersTableViewController.swift */,
+				ED320C2F244E503900FD7886 /* FlowerDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ED320C2C244E4FCB00FD7886 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ED320C1B244E4D1C00FD7886 /* Main.storyboard */,
+				ED320C20244E4D2200FD7886 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED320C2E244E500800FD7886 /* FlowersTableViewController.swift in Sources */,
 				ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */,
 				ED320C18244E4D1C00FD7886 /* SceneDelegate.swift in Sources */,
+				ED320C2B244E4FC300FD7886 /* GuideViewController.swift in Sources */,
+				ED320C30244E503900FD7886 /* FlowerDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

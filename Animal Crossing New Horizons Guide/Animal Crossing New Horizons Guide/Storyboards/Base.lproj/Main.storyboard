@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Flq-bF-9wb">
+            <objects>
+                <navigationController id="ixS-h4-Coh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="SAR-Bt-CnO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="H7E-pV-Ob7" kind="relationship" relationship="rootViewController" id="JhW-fw-W5s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWE-Vl-Oux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-345" y="188"/>
+        </scene>
+        <!--ACNH Guide-->
+        <scene sceneID="8bs-9j-PYO">
+            <objects>
+                <viewController id="H7E-pV-Ob7" customClass="GuideViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ca0-2w-aIm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrn-2a-wtf">
+                                <rect key="frame" x="181" y="212" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Flowers"/>
+                                <connections>
+                                    <segue destination="Cu8-kV-Lri" kind="show" id="683-LM-tAO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NHi-19-mO9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ACNH Guide" id="qZO-4x-2Fu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDD-HB-h0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="188"/>
+        </scene>
+        <!--Flowers-->
+        <scene sceneID="qbi-ym-81O">
+            <objects>
+                <tableViewController id="Cu8-kV-Lri" customClass="FlowersUITableViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dUI-Lp-hp3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rkO-eD-oDQ">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkO-eD-oDQ" id="wtG-yt-KNi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="gf6-Z4-FvL" kind="show" id="p8n-JO-e65"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cu8-kV-Lri" id="1Hi-8G-csB"/>
+                            <outlet property="delegate" destination="Cu8-kV-Lri" id="DDF-na-GtP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Flowers" id="jZz-qU-rjp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjv-D5-gki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="176"/>
+        </scene>
+        <!--Flower Detail View Controller-->
+        <scene sceneID="vCi-uc-fC5">
+            <objects>
+                <viewController id="gf6-Z4-FvL" customClass="FlowerDetailViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="trh-CH-iMk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ETU-6h-cTX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="26C-8K-X6f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pY7-GV-YBf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2493" y="175"/>
+        </scene>
+    </scenes>
+</document>
