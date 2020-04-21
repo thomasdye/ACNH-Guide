@@ -16,7 +16,7 @@ struct Fossil {
     var isDinosaur: Bool?
     var dinosaurSpecies: String?
     var relatedFossils: String?
-    var isCollected: Bool?
+    var hasBeenFound: Bool?
 }
 
 // MARK: -  Fossils (Not Dinosaur)
@@ -25,85 +25,85 @@ var acanthostega = Fossil(name: "Acanthostega",
                           price: 2000,
                           image: UIImage(named: "acanthostega"),
                           isDinosaur: false,
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var amber = Fossil(name: "Amber",
                    price: 1200,
                    image: UIImage(named: "amber"),
                    isDinosaur: false,
-                   isCollected: false)
+                   hasBeenFound: false)
 
 var ammonite = Fossil(name: "Ammonite",
                       price: 1100,
                       image: UIImage(named: "ammonite"),
                       isDinosaur: false,
-                      isCollected: false)
+                      hasBeenFound: false)
 
 var anomalocaris = Fossil(name: "Anomalocaris",
                           price: 2000,
                           image: UIImage(named: "nomalocaris"),
                           isDinosaur: false,
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var archaeopteryx = Fossil(name: "Archaeopteryx",
                            price: 1300,
                            image: UIImage(named: "archaeopteryx"),
                            isDinosaur: false,
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var australopith = Fossil(name: "Australopith",
                           price: 1100,
                           image: UIImage(named: "australopith"),
                           isDinosaur: false,
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var coprolite = Fossil(name: "Coprolite",
                        price: 1100,
                        image: UIImage(named: "coprolite"),
                        isDinosaur: false,
-                       isCollected: false)
+                       hasBeenFound: false)
 
 var dinosaurTrack = Fossil(name: "Dinosaur Track",
                            price: 1000,
                            image: UIImage(named: "dinosaurTrack"),
                            isDinosaur: false,
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var dunkleosteus = Fossil(name: "Dunkleosteus",
                           price: 3500,
                           image: UIImage(named: "dunkleosteus"),
                           isDinosaur: false,
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var eusthenopteron = Fossil(name: "Eusthenopteron",
                             price: 2000,
                             image: UIImage(named: "eusthenopteron"),
                             isDinosaur: false,
-                            isCollected: false)
+                            hasBeenFound: false)
 
 var juramaia = Fossil(name: "Juramaia",
                       price: 1000,
                       image: UIImage(named: "juramaia"),
                       isDinosaur: false,
-                      isCollected: false)
+                      hasBeenFound: false)
 
 var myllokunmingia = Fossil(name: "Myllokunmingia",
                             price: 1500,
                             image: UIImage(named: "myllokunmingia"),
                             isDinosaur: false,
-                            isCollected: false)
+                            hasBeenFound: false)
 
 var sharkToothPattern = Fossil(name: "Shark-Tooth Pattern",
                                price: 1000,
                                image: UIImage(named: "sharkToothPattern"),
                                isDinosaur: false,
-                               isCollected: false)
+                               hasBeenFound: false)
 
 var trilobite = Fossil(name: "Trilobite",
                        price: 1300,
                        image: UIImage(named: "trilobite"),
                        isDinosaur: false,
-                       isCollected: false)
+                       hasBeenFound: false)
 
 // MARK: - Fossils (Dinosaurs)
 
@@ -114,7 +114,7 @@ var ankyloSkull = Fossil(name: "Ankylo Skull",
                          isDinosaur: true,
                          dinosaurSpecies: "Ankylosaurus",
                          relatedFossils: "Ankylo Torso, Ankylo Tail",
-                         isCollected: false)
+                         hasBeenFound: false)
 
 var ankyloTorso = Fossil(name: "Ankylo Torso",
                          price: 3000,
@@ -122,7 +122,7 @@ var ankyloTorso = Fossil(name: "Ankylo Torso",
                          isDinosaur: true,
                          dinosaurSpecies: "Ankylosaurus",
                          relatedFossils: "Ankylo Skull, Ankylo Tail",
-                         isCollected: false)
+                         hasBeenFound: false)
 
 var ankyloTail = Fossil(name: "Ankylo Tail",
                         price: 2500,
@@ -130,7 +130,7 @@ var ankyloTail = Fossil(name: "Ankylo Tail",
                         isDinosaur: true,
                         dinosaurSpecies: "Ankylosaurus",
                         relatedFossils: "Ankylo Skull, Ankylo Torso",
-                        isCollected: false)
+                        hasBeenFound: false)
 
 var ankyloFossils = [ankyloSkull.name,
                      ankyloTorso.name,
@@ -143,7 +143,7 @@ var archelonSkull = Fossil(name: "Archelon Skull",
                            isDinosaur: true,
                            dinosaurSpecies: "Archelon",
                            relatedFossils: "Archelon Tail",
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var archelonTail = Fossil(name: "Archelon Tail",
                           price: 3500,
@@ -151,7 +151,7 @@ var archelonTail = Fossil(name: "Archelon Tail",
                           isDinosaur: true,
                           dinosaurSpecies: "Archelon",
                           relatedFossils: "Ankylo Torso",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var archelonFossils = [archelonSkull.name,
                        archelonTail.name]
@@ -163,7 +163,7 @@ var brachioSkull = Fossil(name: "Brachio Skull",
                           isDinosaur: true,
                           dinosaurSpecies: "Brachiosaurus",
                           relatedFossils: "Brachio Chest, Brachio Pelvis, Brachio Tail",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var brachioChest = Fossil(name: "Brachio Chest",
                           price: 5500,
@@ -171,7 +171,7 @@ var brachioChest = Fossil(name: "Brachio Chest",
                           isDinosaur: true,
                           dinosaurSpecies: "Brachiosaurus",
                           relatedFossils: "Brachio Skull, Brachio Pelvis, Brachio Tail",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var brachioPelvis = Fossil(name: "Brachio Pelvis",
                            price: 5000,
@@ -179,7 +179,7 @@ var brachioPelvis = Fossil(name: "Brachio Pelvis",
                            isDinosaur: true,
                            dinosaurSpecies: "Brachiosaurus",
                            relatedFossils: "Brachio Skull, Brachio Chest, Brachio Tail",
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var brachioTail = Fossil(name: "Brachio Tail",
                          price: 5500,
@@ -187,7 +187,7 @@ var brachioTail = Fossil(name: "Brachio Tail",
                          isDinosaur: true,
                          dinosaurSpecies: "Brachiosaurus",
                          relatedFossils: "Brachio Skull, Brachio Chest, Brachio Pelvis",
-                         isCollected: false)
+                         hasBeenFound: false)
 
 var brachioFossils = [brachioSkull.name,
                       brachioChest.name,
@@ -201,7 +201,7 @@ var deinonyTorso = Fossil(name: "Deinony Torso",
                           isDinosaur: true,
                           dinosaurSpecies: "Deinonychus",
                           relatedFossils: "Deinony Tail",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var deinonyTail = Fossil(name: "Deinony Tail",
                          price: 2500,
@@ -209,7 +209,7 @@ var deinonyTail = Fossil(name: "Deinony Tail",
                          isDinosaur: true,
                          dinosaurSpecies: "Deinonychus",
                          relatedFossils: "Deinony Torso",
-                         isCollected: false)
+                         hasBeenFound: false)
 
 var deinonyFossils = [deinonyTorso.name,
                       deinonyTail.name]
@@ -221,7 +221,7 @@ var dimetrodonSkull = Fossil(name: "Dimetrodon Skull",
                              isDinosaur: true,
                              dinosaurSpecies: "Dimetrodon",
                              relatedFossils: "Dimetrodon Torso",
-                             isCollected: false)
+                             hasBeenFound: false)
 
 var dimetrodonTorso = Fossil(name: "Dimetrodon Torso",
                              price: 5000,
@@ -229,7 +229,7 @@ var dimetrodonTorso = Fossil(name: "Dimetrodon Torso",
                              isDinosaur: true,
                              dinosaurSpecies: "Dimetrodon",
                              relatedFossils: "Dimetrodon Skull",
-                             isCollected: false)
+                             hasBeenFound: false)
 
 var dimetrodonFossils = [dimetrodonSkull.name,
                          dimetrodonTorso.name]
@@ -241,7 +241,7 @@ var diploSkull = Fossil(name: "Diplo Skull",
                         isDinosaur: true,
                         dinosaurSpecies: "Diplodocus",
                         relatedFossils: "Diplo Neck, Diplo Chest, Diplo Pelvis, Diplo Tail, Diplo Tail Tip",
-                        isCollected: false)
+                        hasBeenFound: false)
 
 var diploNeck = Fossil(name: "Diplo Neck",
                        price: 4500,
@@ -249,7 +249,7 @@ var diploNeck = Fossil(name: "Diplo Neck",
                        isDinosaur: true,
                        dinosaurSpecies: "Diplodocus",
                        relatedFossils: "Diplo Skull, Diplo Chest, Diplo Pelvis, Diplo Tail, Diplo Tail Tip",
-                       isCollected: false)
+                       hasBeenFound: false)
 
 var diploChest = Fossil(name: "Diplo Chest",
                         price: 4000,
@@ -257,7 +257,7 @@ var diploChest = Fossil(name: "Diplo Chest",
                         isDinosaur: true,
                         dinosaurSpecies: "Diplodocus",
                         relatedFossils: "Diplo Skull, Diplo Neck, Diplo Pelvis, Diplo Tail, Diplo Tail Tip",
-                        isCollected: false)
+                        hasBeenFound: false)
 
 var diploPelvis = Fossil(name: "Diplo Pelvis",
                          price: 4500,
@@ -265,7 +265,7 @@ var diploPelvis = Fossil(name: "Diplo Pelvis",
                          isDinosaur: true,
                          dinosaurSpecies: "Diplodocus",
                          relatedFossils: "Diplo Skull, Diplo Neck, Diplo Chest, Diplo Tail, Diplo Tail Tip",
-                         isCollected: false)
+                         hasBeenFound: false)
 
 var diploTail = Fossil(name: "Diplo Tail",
                        price: 5000,
@@ -273,7 +273,7 @@ var diploTail = Fossil(name: "Diplo Tail",
                        isDinosaur: true,
                        dinosaurSpecies: "Diplodocus",
                        relatedFossils: "Diplo Skull, Diplo Neck, Diplo Chest, Diplo Pelvis, Diplo Tail Tip",
-                       isCollected: false)
+                       hasBeenFound: false)
 
 var diploTailTip = Fossil(name: "Diplo Tail Tip",
                           price: 4000,
@@ -281,7 +281,7 @@ var diploTailTip = Fossil(name: "Diplo Tail Tip",
                           isDinosaur: true,
                           dinosaurSpecies: "Diplodocus",
                           relatedFossils: "Diplo Skull, Diplo Neck, Diplo Chest, Diplo Pelvis, Diplo Tail",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var diploFossils = [diploSkull.name,
                     diploNeck.name,
@@ -297,7 +297,7 @@ var iguanodonSkull = Fossil(name: "Iguanodon Skull",
                             isDinosaur: true,
                             dinosaurSpecies: "Iguanodon",
                             relatedFossils: "Iguanodon Torso, Iguanodon Tail",
-                            isCollected: false)
+                            hasBeenFound: false)
 
 var iguanodonTorso = Fossil(name: "Iguanodon Torso",
                             price: 3500,
@@ -305,7 +305,7 @@ var iguanodonTorso = Fossil(name: "Iguanodon Torso",
                             isDinosaur: true,
                             dinosaurSpecies: "Iguanodon",
                             relatedFossils: "Iguanodon Skull, Iguanodon Tail",
-                            isCollected: false)
+                            hasBeenFound: false)
 
 var iguanodonTail = Fossil(name: "Iguanodon Tail",
                            price: 3000,
@@ -313,7 +313,7 @@ var iguanodonTail = Fossil(name: "Iguanodon Tail",
                            isDinosaur: true,
                            dinosaurSpecies: "Iguanodon",
                            relatedFossils: "Iguanodon Skull, Iguanodon Torso",
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var iguanodonFossils = [iguanodonSkull.name,
                         iguanodonTorso.name,
@@ -326,7 +326,7 @@ var mammothSkull = Fossil(name: "Mammoth Skull",
                           isDinosaur: true,
                           dinosaurSpecies: "Mammoth",
                           relatedFossils: "Mammoth Torso",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var mammothTorso = Fossil(name: "Mammoth Torso",
                           price: 2500,
@@ -334,7 +334,7 @@ var mammothTorso = Fossil(name: "Mammoth Torso",
                           isDinosaur: true,
                           dinosaurSpecies: "Mammoth",
                           relatedFossils: "Mammoth Tail",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var mammothSkulls = [mammothSkull.name,
                      mammothTorso.name]
@@ -347,7 +347,7 @@ var megaceroSkull = Fossil(name: "Megacero Skull",
                            isDinosaur: true,
                            dinosaurSpecies: "Megacerops",
                            relatedFossils: "Megacerops Torso, Megacerops Tail",
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var megaceroTorso = Fossil(name: "Megacero Torso",
                            price: 3500,
@@ -355,7 +355,7 @@ var megaceroTorso = Fossil(name: "Megacero Torso",
                            isDinosaur: true,
                            dinosaurSpecies: "Megacerops",
                            relatedFossils: "Megacerops Skull, Megacerops Tail",
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var megaceroTail = Fossil(name: "Megacero Tail",
                           price: 3000,
@@ -363,7 +363,7 @@ var megaceroTail = Fossil(name: "Megacero Tail",
                           isDinosaur: true,
                           dinosaurSpecies: "Megacerops",
                           relatedFossils: "Megacerops Skull, Megacerops Torso",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var megaceroFossils = [megaceroSkull.name,
                        megaceroTorso.name,
@@ -376,7 +376,7 @@ var leftMegaloSide = Fossil(name: "Left Megalo Side",
                             isDinosaur: true,
                             dinosaurSpecies: "Megaloceros",
                             relatedFossils: "Right Megalo Side",
-                            isCollected: false)
+                            hasBeenFound: false)
         
 var rightMegaloSide = Fossil(name: "Right Megalo Side",
                              price: 5500,
@@ -384,7 +384,7 @@ var rightMegaloSide = Fossil(name: "Right Megalo Side",
                              isDinosaur: true,
                              dinosaurSpecies: "Megaloceros",
                              relatedFossils: "Left Megalo Side",
-                             isCollected: false)
+                             hasBeenFound: false)
 
 var megaloFossils = [leftMegaloSide.name,
                      rightMegaloSide.name]
@@ -396,7 +396,7 @@ var ophthalmoSkull = Fossil(name: "Ophthalmo Skull",
                             isDinosaur: true,
                             dinosaurSpecies: "Ophthalmosaurus",
                             relatedFossils: "Opthalmo Torso",
-                            isCollected: false)
+                            hasBeenFound: false)
 
 var ophthalmoTorso = Fossil(name: "Ophthalmo Torso",
                             price: 2000,
@@ -404,7 +404,7 @@ var ophthalmoTorso = Fossil(name: "Ophthalmo Torso",
                             isDinosaur: true,
                             dinosaurSpecies: "Ophthalmosaurus",
                             relatedFossils: "Opthalmo Tail",
-                            isCollected: false)
+                            hasBeenFound: false)
 
 var opthalmoFossils = [ophthalmoSkull.name,
                        ophthalmoTorso.name]
@@ -416,7 +416,7 @@ var pachysaurusSkull = Fossil(name: "Pachysaurus Skull",
                               isDinosaur: true,
                               dinosaurSpecies: "Pachysaurus",
                               relatedFossils: "Pachysaurus Tail",
-                              isCollected: false)
+                              hasBeenFound: false)
 
 var pachysaurusTail = Fossil(name: "Pachysaurus Tail",
                              price: 3500,
@@ -424,7 +424,7 @@ var pachysaurusTail = Fossil(name: "Pachysaurus Tail",
                              isDinosaur: true,
                              dinosaurSpecies: "Pachysaurus",
                              relatedFossils: "Pachysaurus Skull",
-                             isCollected: false)
+                             hasBeenFound: false)
 
 var pachysaurusFossils = [pachysaurusSkull.name,
                           pachysaurusTail.name]
@@ -436,7 +436,7 @@ var parasaurSkull = Fossil(name: "Parasaur Skull",
                            isDinosaur: true,
                            dinosaurSpecies: "Parasaurolophus",
                            relatedFossils: "Parasaur Torso, Parasaur Tail",
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var parasaurTorso = Fossil(name: "Parasaur Torso",
                            price: 3000,
@@ -444,7 +444,7 @@ var parasaurTorso = Fossil(name: "Parasaur Torso",
                            isDinosaur: true,
                            dinosaurSpecies: "Parasaurolophus",
                            relatedFossils: "Parasaur Skull, Parasaur Tail",
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var parasaurTail = Fossil(name: "Parasaur Tail",
                           price: 2500,
@@ -452,7 +452,7 @@ var parasaurTail = Fossil(name: "Parasaur Tail",
                           isDinosaur: true,
                           dinosaurSpecies: "Parasaurolophus",
                           relatedFossils: "Parasaur Skull, Parasaur Torso",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var parasaurFossils = [parasaurSkull.name,
                        parasaurTorso.name,
@@ -465,7 +465,7 @@ var plesioSkull = Fossil(name: "Plesio Skull",
                          isDinosaur: true,
                          dinosaurSpecies: "Plesiosaurus",
                          relatedFossils: "Plesio Body, Plesio Tail",
-                         isCollected: false)
+                         hasBeenFound: false)
 
 var plesioBody = Fossil(name: "Plesio Body",
                         price: 4500,
@@ -473,7 +473,7 @@ var plesioBody = Fossil(name: "Plesio Body",
                         isDinosaur: true,
                         dinosaurSpecies: "Plesiosaurus",
                         relatedFossils: "Plesio Skull, Plesio Tail",
-                        isCollected: false)
+                        hasBeenFound: false)
 
 var plesioTail = Fossil(name: "Plesio Tail",
                          price: 4500,
@@ -481,7 +481,7 @@ var plesioTail = Fossil(name: "Plesio Tail",
                          isDinosaur: true,
                          dinosaurSpecies: "Plesiosaurus",
                          relatedFossils: "Plesio Skull, Plesio Body",
-                         isCollected: false)
+                         hasBeenFound: false)
 
 var plesioFossils = [plesioSkull.name,
                      plesioBody.name,
@@ -494,7 +494,7 @@ var rightPteraWing = Fossil(name: "Right Ptera Wing",
                             isDinosaur: true,
                             dinosaurSpecies: "Pteranodon",
                             relatedFossils: "Ptera Body, Left Ptera Wing",
-                            isCollected: false)
+                            hasBeenFound: false)
 
 var pteraBody = Fossil(name: "Ptera Body",
                        price: 4000,
@@ -502,7 +502,7 @@ var pteraBody = Fossil(name: "Ptera Body",
                        isDinosaur: true,
                        dinosaurSpecies: "Pteranodon",
                        relatedFossils: "Right Ptera Wing, Left Ptera Wing",
-                       isCollected: false)
+                       hasBeenFound: false)
 
 var leftPteraWing = Fossil(name: "Left Ptera Wing",
                            price: 4500,
@@ -510,7 +510,7 @@ var leftPteraWing = Fossil(name: "Left Ptera Wing",
                            isDinosaur: true,
                            dinosaurSpecies: "Pteranodon",
                            relatedFossils: "Right Ptera Wing, Ptera Body",
-                           isCollected: false)
+                           hasBeenFound: false)
 
 var pteraFossils = [rightPteraWing.name,
                     pteraBody.name,
@@ -523,7 +523,7 @@ var rightQuetzalWing = Fossil(name: "Right Quetzal Wing",
                               isDinosaur: true,
                               dinosaurSpecies: "Pteranodon",
                               relatedFossils: "Quetzal Torso, Left Quetzal Wing",
-                              isCollected: false)
+                              hasBeenFound: false)
 
 var quetzalTorso = Fossil(name: "Quetzal Torso",
                           price: 4500,
@@ -531,7 +531,7 @@ var quetzalTorso = Fossil(name: "Quetzal Torso",
                           isDinosaur: true,
                           dinosaurSpecies: "Quetzalcoatlus",
                           relatedFossils: "Right Quetzal Wing, Left Quetzal Wing",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var leftQuetzalWing = Fossil(name: "Left Quetzal Wing",
                              price: 5000,
@@ -539,7 +539,7 @@ var leftQuetzalWing = Fossil(name: "Left Quetzal Wing",
                              isDinosaur: true,
                              dinosaurSpecies: "Quetzalcoatlus",
                              relatedFossils: "Right Quetzal Wing, Quetzal Torso",
-                             isCollected: false)
+                             hasBeenFound: false)
 
 var quetzalFossils = [rightQuetzalWing.name, quetzalTorso.name, leftQuetzalWing.name]
 
@@ -550,7 +550,7 @@ var sabertoothSkull = Fossil(name: "Sabertooth Skull",
                              isDinosaur: true,
                              dinosaurSpecies: "Sabertooth",
                              relatedFossils: "Sabertooth Tail Body",
-                             isCollected: false)
+                             hasBeenFound: false)
 
 var sabertoothTail = Fossil(name: "Sabertooth Tail",
                             price: 2000,
@@ -558,7 +558,7 @@ var sabertoothTail = Fossil(name: "Sabertooth Tail",
                             isDinosaur: true,
                             dinosaurSpecies: "Sabertooth",
                             relatedFossils: "Sabertooth Skull",
-                            isCollected: false)
+                            hasBeenFound: false)
 
 var sabertoothFossils = [sabertoothSkull.name,
                          sabertoothTail.name]
@@ -570,7 +570,7 @@ var spinoSkull = Fossil(name: "Spino Skull",
                         isDinosaur: true,
                         dinosaurSpecies: "Spinosaurus",
                         relatedFossils: "Spino Torso, Spino Tail",
-                        isCollected: false)
+                        hasBeenFound: false)
 
 var spinoTorso = Fossil(name: "Spino Torso",
                         price: 5000,
@@ -578,7 +578,7 @@ var spinoTorso = Fossil(name: "Spino Torso",
                         isDinosaur: true,
                         dinosaurSpecies: "Spinosaurus",
                         relatedFossils: "Spino Skull, Spino Tail",
-                        isCollected: false)
+                        hasBeenFound: false)
 
 var spinoTail = Fossil(name: "Spino Tail",
                        price: 4000,
@@ -586,7 +586,7 @@ var spinoTail = Fossil(name: "Spino Tail",
                        isDinosaur: true,
                        dinosaurSpecies: "Spinosaurus",
                        relatedFossils: "Spino Skull, Spino Torso",
-                       isCollected: false)
+                       hasBeenFound: false)
 
 var spinoFossils = [spinoSkull.name,
                     spinoTorso.name,
@@ -599,7 +599,7 @@ var stegoSkull = Fossil(name: "Stego Skull",
                         isDinosaur: true,
                         dinosaurSpecies: "Stegosaurus",
                         relatedFossils: "Stego Torso, Stego Tail",
-                        isCollected: false)
+                        hasBeenFound: false)
 
 var stegoTorso = Fossil(name: "Stego Torso",
                         price: 4500,
@@ -607,7 +607,7 @@ var stegoTorso = Fossil(name: "Stego Torso",
                         isDinosaur: true,
                         dinosaurSpecies: "Stegosaurus",
                         relatedFossils: "Stego Skull, Spino Tail",
-                        isCollected: false)
+                        hasBeenFound: false)
 
 var stegoTail = Fossil(name: "Stego Tail",
                        price: 4000,
@@ -615,7 +615,7 @@ var stegoTail = Fossil(name: "Stego Tail",
                        isDinosaur: true,
                        dinosaurSpecies: "Stegosaurus",
                        relatedFossils: "Spino Skull, Spino Torso",
-                       isCollected: false)
+                       hasBeenFound: false)
 
 var stegoFossils = [stegoSkull.name,
                     stegoTorso.name,
@@ -628,7 +628,7 @@ var triceraSkull = Fossil(name: "Tricera Skull",
                           isDinosaur: true,
                           dinosaurSpecies: "Triceratops",
                           relatedFossils: "Tricera Torso, Tricera Tail",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var triceraTorso = Fossil(name: "Tricera Torso",
                           price: 4500,
@@ -636,7 +636,7 @@ var triceraTorso = Fossil(name: "Tricera Torso",
                           isDinosaur: true,
                           dinosaurSpecies: "Triceratops",
                           relatedFossils: "Tricera Skull, Tricera Tail",
-                          isCollected: false)
+                          hasBeenFound: false)
 
 var triceraTail = Fossil(name: "Tricera Tail",
                          price: 4000,
@@ -644,7 +644,7 @@ var triceraTail = Fossil(name: "Tricera Tail",
                          isDinosaur: true,
                          dinosaurSpecies: "Triceratops",
                          relatedFossils: "Tricera Skull, Tricera Torso",
-                         isCollected: false)
+                         hasBeenFound: false)
 
 var triceraFossils = [triceraSkull.name,
                       triceraTorso.name,
@@ -657,7 +657,7 @@ var tRexSkull = Fossil(name: "T. Rex Skull",
                        isDinosaur: true,
                        dinosaurSpecies: "Tyrannosaurus Rex",
                        relatedFossils: "T. Rex Torso, T. Rex Tail",
-                       isCollected: false)
+                       hasBeenFound: false)
 
 var tRexTorso = Fossil(name: "T. Rex Torso",
                        price: 5500,
@@ -665,7 +665,7 @@ var tRexTorso = Fossil(name: "T. Rex Torso",
                        isDinosaur: true,
                        dinosaurSpecies: "Tyrannosaurus Rex",
                        relatedFossils: "T. Rex Skull, T. Rex Tail",
-                       isCollected: false)
+                       hasBeenFound: false)
 
 var tRexTail = Fossil(name: "T. Rex Tail",
                       price: 5000,
@@ -673,7 +673,7 @@ var tRexTail = Fossil(name: "T. Rex Tail",
                       isDinosaur: true,
                       dinosaurSpecies: "Tyrannosaurus Rex",
                       relatedFossils: "T. Rex Skull, T. Rex Torso",
-                      isCollected: false)
+                      hasBeenFound: false)
 
 var tRexFossils = [tRexSkull.name,
                    tRexTorso.name,

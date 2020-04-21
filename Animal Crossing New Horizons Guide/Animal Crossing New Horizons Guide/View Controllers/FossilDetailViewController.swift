@@ -15,7 +15,7 @@ class FossilDetailViewController: UIViewController {
     @IBOutlet weak var isDinosaurLabel: UILabel!
     @IBOutlet weak var relatedFossils: UILabel!
     @IBOutlet weak var fossilImage: UIImageView!
-    @IBOutlet weak var caughtSwitch: UISwitch!
+    @IBOutlet weak var foundSwitch: UISwitch!
     
     var selectedFossil: Fossil = Fossil()
     var dinosaurSpecies: String = ""
@@ -28,17 +28,17 @@ class FossilDetailViewController: UIViewController {
         updateFossil()
         checkIfDinosaur()
         loadDefaults()
-        checkIfCaught()
+        checkIfFound()
     }
 
     func saveDefaults() {
         let defaultsKey = selectedFossil.name
-        defaults.set(selectedFossil.isCollected, forKey: defaultsKey!)
+        defaults.set(selectedFossil.hasBeenFound, forKey: defaultsKey!)
     }
 
     func loadDefaults() {
         let defaultsKey = selectedFossil.name
-        selectedFossil.isCollected = defaults.bool(forKey: defaultsKey!)
+        selectedFossil.hasBeenFound = defaults.bool(forKey: defaultsKey!)
     }
     
     func updateFossil() {
@@ -59,11 +59,11 @@ class FossilDetailViewController: UIViewController {
         relatedFossils.text = allDinosaurFossils
     }
     
-    func checkIfCaught() {
-        if selectedFossil.isCollected == true {
-            caughtSwitch.isOn = true
+    func checkIfFound() {
+        if selectedFossil.hasBeenFound == true {
+            foundSwitch.isOn = true
         } else {
-            caughtSwitch.isOn = false
+            foundSwitch.isOn = false
         }
     }
     
@@ -72,13 +72,13 @@ class FossilDetailViewController: UIViewController {
         relatedFossils.adjustsFontSizeToFitWidth = true
     }
     
-    @IBAction func caughtSwitchChanged(_ sender: UISwitch) {
+    @IBAction func foundSwitchChanged(_ sender: UISwitch) {
         
-        if caughtSwitch.isOn == true {
-            selectedFossil.isCollected = true
+        if foundSwitch.isOn == true {
+            selectedFossil.hasBeenFound = true
             saveDefaults()
         } else {
-            selectedFossil.isCollected = false
+            selectedFossil.hasBeenFound = false
             saveDefaults()
         }
     }

@@ -46,13 +46,13 @@ class FossilsUITableViewController: UITableViewController {
         // Load defaults function
         func loadDefaults() {
             let defaultsKey = fossil.name
-            fossil.isCollected = defaults.bool(forKey: defaultsKey!)
+            fossil.hasBeenFound = defaults.bool(forKey: defaultsKey!)
         }
         
         // Load in user defaults
         loadDefaults()
         
-        if fossil.isCollected == true {
+        if fossil.hasBeenFound == true {
             cell.backgroundColor = greenBackgroundColor
         } else {
             cell.backgroundColor = redBackgroundColor
@@ -71,6 +71,4 @@ class FossilsUITableViewController: UITableViewController {
             fossilDetailVC.selectedFossil = selectedFossil
         }
     }
-    
-
 }
