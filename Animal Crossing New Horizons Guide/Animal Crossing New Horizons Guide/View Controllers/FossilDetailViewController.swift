@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FlowerDetailViewController: UIViewController {
+class FossilDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

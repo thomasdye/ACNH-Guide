@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ixS-h4-Coh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -32,27 +32,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrn-2a-wtf">
-                                <rect key="frame" x="181" y="212" width="53" height="30"/>
+                                <rect key="frame" x="184" y="212" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Flowers"/>
+                                <state key="normal" title="Fossils"/>
                                 <connections>
                                     <segue destination="Cu8-kV-Lri" kind="show" id="683-LM-tAO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-5a-Dg2">
+                                <rect key="frame" x="186" y="344" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="NHi-19-mO9"/>
                     </view>
                     <navigationItem key="navigationItem" title="ACNH Guide" id="qZO-4x-2Fu"/>
+                    <connections>
+                        <outlet property="testLabel" destination="s9W-5a-Dg2" id="O8j-qO-gbh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDD-HB-h0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="790" y="188"/>
         </scene>
-        <!--Flowers-->
+        <!--Fossils-->
         <scene sceneID="qbi-ym-81O">
             <objects>
-                <tableViewController id="Cu8-kV-Lri" customClass="FlowersUITableViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Cu8-kV-Lri" customClass="FossilsUITableViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dUI-Lp-hp3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +76,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gf6-Z4-FvL" kind="show" id="p8n-JO-e65"/>
+                                    <segue destination="gf6-Z4-FvL" kind="show" identifier="fossilSegue" id="p8n-JO-e65"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -75,16 +85,16 @@
                             <outlet property="delegate" destination="Cu8-kV-Lri" id="DDF-na-GtP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Flowers" id="jZz-qU-rjp"/>
+                    <navigationItem key="navigationItem" title="Fossils" id="jZz-qU-rjp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjv-D5-gki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1586" y="176"/>
         </scene>
-        <!--Flower Detail View Controller-->
+        <!--Fossil Detail View Controller-->
         <scene sceneID="vCi-uc-fC5">
             <objects>
-                <viewController id="gf6-Z4-FvL" customClass="FlowerDetailViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gf6-Z4-FvL" customClass="FossilDetailViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="trh-CH-iMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
