@@ -9,13 +9,10 @@
 import UIKit
 
 class GuideViewController: UIViewController{
-
-    @IBOutlet weak var testLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testLabel.text = ankyloSkull.name
     }
 
 }

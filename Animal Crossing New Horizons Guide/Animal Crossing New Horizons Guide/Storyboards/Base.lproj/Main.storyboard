@@ -21,7 +21,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWE-Vl-Oux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-345" y="188"/>
+            <point key="canvasLocation" x="-371" y="175"/>
         </scene>
         <!--ACNH Guide-->
         <scene sceneID="8bs-9j-PYO">
@@ -31,33 +31,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrn-2a-wtf">
-                                <rect key="frame" x="184" y="212" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrn-2a-wtf">
+                                <rect key="frame" x="20" y="160" width="374" height="682"/>
                                 <state key="normal" title="Fossils"/>
                                 <connections>
                                     <segue destination="Cu8-kV-Lri" kind="show" id="683-LM-tAO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-5a-Dg2">
-                                <rect key="frame" x="186" y="344" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NHi-19-mO9" firstAttribute="trailing" secondItem="zrn-2a-wtf" secondAttribute="trailing" constant="20" id="Z8v-Wb-bwL"/>
+                            <constraint firstItem="zrn-2a-wtf" firstAttribute="leading" secondItem="NHi-19-mO9" secondAttribute="leading" constant="20" id="lLg-Ql-ffk"/>
+                            <constraint firstItem="zrn-2a-wtf" firstAttribute="top" secondItem="NHi-19-mO9" secondAttribute="top" constant="20" id="w1Z-TW-a2y"/>
+                            <constraint firstItem="NHi-19-mO9" firstAttribute="bottom" secondItem="zrn-2a-wtf" secondAttribute="bottom" constant="20" id="zXV-4f-rOr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NHi-19-mO9"/>
                     </view>
                     <navigationItem key="navigationItem" title="ACNH Guide" id="qZO-4x-2Fu"/>
-                    <connections>
-                        <outlet property="testLabel" destination="s9W-5a-Dg2" id="O8j-qO-gbh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDD-HB-h0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="188"/>
+            <point key="canvasLocation" x="704" y="175"/>
         </scene>
         <!--Fossils-->
         <scene sceneID="qbi-ym-81O">
@@ -68,15 +63,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rkO-eD-oDQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FossilCell" textLabel="TNq-rX-JqN" detailTextLabel="nFk-k7-6od" style="IBUITableViewCellStyleValue1" id="rkO-eD-oDQ">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkO-eD-oDQ" id="wtG-yt-KNi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TNq-rX-JqN">
+                                            <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nFk-k7-6od">
+                                            <rect key="frame" x="340" y="16" width="35" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gf6-Z4-FvL" kind="show" identifier="fossilSegue" id="p8n-JO-e65"/>
+                                    <segue destination="gf6-Z4-FvL" kind="show" identifier="ShowFossilSegue" id="p8n-JO-e65"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -89,7 +100,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjv-D5-gki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="176"/>
+            <point key="canvasLocation" x="1687" y="175"/>
         </scene>
         <!--Fossil Detail View Controller-->
         <scene sceneID="vCi-uc-fC5">
@@ -98,14 +109,83 @@
                     <view key="view" contentMode="scaleToFill" id="trh-CH-iMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinosaur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dc1-4t-uLU">
+                                <rect key="frame" x="20" y="150" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bells" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-Lk-FLY">
+                                <rect key="frame" x="20" y="184" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related Fossils:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1E3-Mf-eK0">
+                                <rect key="frame" x="20" y="218" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLH-Bc-iAW">
+                                <rect key="frame" x="20" y="252" width="150" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caught?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAx-uH-5zS">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tls-hH-lpT">
+                                        <rect key="frame" x="101" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="caughtSwitchChanged:" destination="gf6-Z4-FvL" eventType="valueChanged" id="6cV-Al-yDB"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="5co-C4-iXA"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Brd-tz-o7i">
+                                <rect key="frame" x="143" y="303" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Gxn-dg-Ozv"/>
+                                    <constraint firstAttribute="width" constant="128" id="Pvx-Xg-qL0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Dc1-4t-uLU" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="8Ra-KG-l2x"/>
+                            <constraint firstItem="ETU-6h-cTX" firstAttribute="trailing" secondItem="1E3-Mf-eK0" secondAttribute="trailing" constant="20" id="91i-io-zhn"/>
+                            <constraint firstItem="vLH-Bc-iAW" firstAttribute="top" secondItem="1E3-Mf-eK0" secondAttribute="bottom" constant="10" id="Ff0-sz-pFq"/>
+                            <constraint firstItem="ETU-6h-cTX" firstAttribute="trailing" secondItem="oHQ-Lk-FLY" secondAttribute="trailing" constant="20" id="M4a-bW-lIU"/>
+                            <constraint firstItem="1E3-Mf-eK0" firstAttribute="top" secondItem="oHQ-Lk-FLY" secondAttribute="bottom" constant="10" id="UAq-Ud-44e"/>
+                            <constraint firstItem="Dc1-4t-uLU" firstAttribute="top" secondItem="ETU-6h-cTX" secondAttribute="top" constant="10" id="Xg0-Fo-RhP"/>
+                            <constraint firstItem="Brd-tz-o7i" firstAttribute="centerX" secondItem="trh-CH-iMk" secondAttribute="centerX" id="ZdY-5B-MXq"/>
+                            <constraint firstItem="vLH-Bc-iAW" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="bNN-ru-lSd"/>
+                            <constraint firstItem="oHQ-Lk-FLY" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="jBU-rJ-vgH"/>
+                            <constraint firstItem="Brd-tz-o7i" firstAttribute="top" secondItem="vLH-Bc-iAW" secondAttribute="bottom" constant="20" id="jJU-tu-fBG"/>
+                            <constraint firstItem="1E3-Mf-eK0" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="rAt-MK-btL"/>
+                            <constraint firstItem="ETU-6h-cTX" firstAttribute="trailing" secondItem="Dc1-4t-uLU" secondAttribute="trailing" constant="20" id="uSm-be-2Tz"/>
+                            <constraint firstItem="oHQ-Lk-FLY" firstAttribute="top" secondItem="Dc1-4t-uLU" secondAttribute="bottom" constant="10" id="ysh-jh-Hmg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ETU-6h-cTX"/>
                     </view>
                     <navigationItem key="navigationItem" id="26C-8K-X6f"/>
+                    <connections>
+                        <outlet property="caughtSwitch" destination="tls-hH-lpT" id="EX5-TP-IOW"/>
+                        <outlet property="fossilImage" destination="Brd-tz-o7i" id="kEV-Ee-Ykk"/>
+                        <outlet property="fossilPrice" destination="oHQ-Lk-FLY" id="ecD-f9-Vlo"/>
+                        <outlet property="isDinosaurLabel" destination="Dc1-4t-uLU" id="oCR-Zo-SSs"/>
+                        <outlet property="relatedFossils" destination="1E3-Mf-eK0" id="2BK-PA-afh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pY7-GV-YBf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2493" y="175"/>
+            <point key="canvasLocation" x="2630" y="175"/>
         </scene>
     </scenes>
 </document>

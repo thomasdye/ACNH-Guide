@@ -6,245 +6,284 @@
 //  Copyright © 2020 Thomas Dye. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 // Create Fossil Struct
 struct Fossil {
-    var name: String
-    var price: Int
+    var name: String?
+    var price: Int?
     var image: UIImage?
-    var isDinosaur: Bool
+    var isDinosaur: Bool?
     var dinosaurSpecies: String?
+    var relatedFossils: String?
+    var isCollected: Bool?
 }
 
 // MARK: -  Fossils (Not Dinosaur)
 
-let acanthostega = Fossil(name: "Acanthostega",
+var acanthostega = Fossil(name: "Acanthostega",
                           price: 2000,
                           image: UIImage(named: "acanthostega"),
                           isDinosaur: false,
-                          dinosaurSpecies: nil)
+                          isCollected: false)
 
-let amber = Fossil(name: "Fossil",
+var amber = Fossil(name: "Amber",
                    price: 1200,
-                   image: UIImage(named: "Amber"),
+                   image: UIImage(named: "amber"),
                    isDinosaur: false,
-                   dinosaurSpecies: nil)
+                   isCollected: false)
 
-let ammonite = Fossil(name: "Ammonite",
+var ammonite = Fossil(name: "Ammonite",
                       price: 1100,
                       image: UIImage(named: "ammonite"),
                       isDinosaur: false,
-                      dinosaurSpecies: nil)
+                      isCollected: false)
 
-let anomalocaris = Fossil(name: "Anomalocaris",
+var anomalocaris = Fossil(name: "Anomalocaris",
                           price: 2000,
                           image: UIImage(named: "nomalocaris"),
                           isDinosaur: false,
-                          dinosaurSpecies: nil)
+                          isCollected: false)
 
-let archaeopteryx = Fossil(name: "Archaeopteryx",
+var archaeopteryx = Fossil(name: "Archaeopteryx",
                            price: 1300,
                            image: UIImage(named: "archaeopteryx"),
                            isDinosaur: false,
-                           dinosaurSpecies: nil)
+                           isCollected: false)
 
-let australopith = Fossil(name: "Australopith",
+var australopith = Fossil(name: "Australopith",
                           price: 1100,
                           image: UIImage(named: "australopith"),
                           isDinosaur: false,
-                          dinosaurSpecies: nil)
+                          isCollected: false)
 
-let coprolite = Fossil(name: "Coprolite",
+var coprolite = Fossil(name: "Coprolite",
                        price: 1100,
                        image: UIImage(named: "coprolite"),
                        isDinosaur: false,
-                       dinosaurSpecies: nil)
+                       isCollected: false)
 
-let dinosaurTrack = Fossil(name: "Dinosaur Track",
+var dinosaurTrack = Fossil(name: "Dinosaur Track",
                            price: 1000,
                            image: UIImage(named: "dinosaurTrack"),
                            isDinosaur: false,
-                           dinosaurSpecies: nil)
+                           isCollected: false)
 
-let dunkleosteus = Fossil(name: "Dunkleosteus",
+var dunkleosteus = Fossil(name: "Dunkleosteus",
                           price: 3500,
                           image: UIImage(named: "dunkleosteus"),
                           isDinosaur: false,
-                          dinosaurSpecies: nil)
+                          isCollected: false)
 
-let eusthenopteron = Fossil(name: "Eusthenopteron",
+var eusthenopteron = Fossil(name: "Eusthenopteron",
                             price: 2000,
                             image: UIImage(named: "eusthenopteron"),
                             isDinosaur: false,
-                            dinosaurSpecies: nil)
+                            isCollected: false)
 
-let juramaia = Fossil(name: "Juramaia",
+var juramaia = Fossil(name: "Juramaia",
                       price: 1000,
                       image: UIImage(named: "juramaia"),
                       isDinosaur: false,
-                      dinosaurSpecies: nil)
+                      isCollected: false)
 
-let Myllokunmingia = Fossil(name: "Myllokunmingia",
+var myllokunmingia = Fossil(name: "Myllokunmingia",
                             price: 1500,
                             image: UIImage(named: "myllokunmingia"),
                             isDinosaur: false,
-                            dinosaurSpecies: nil)
+                            isCollected: false)
 
-let sharkToothPattern = Fossil(name: "Shark-Tooth Pattern",
+var sharkToothPattern = Fossil(name: "Shark-Tooth Pattern",
                                price: 1000,
                                image: UIImage(named: "sharkToothPattern"),
                                isDinosaur: false,
-                               dinosaurSpecies: nil)
+                               isCollected: false)
 
-let trilobite = Fossil(name: "Trilobite",
+var trilobite = Fossil(name: "Trilobite",
                        price: 1300,
                        image: UIImage(named: "trilobite"),
                        isDinosaur: false,
-                       dinosaurSpecies: nil)
+                       isCollected: false)
 
 // MARK: - Fossils (Dinosaurs)
 
 // Ankylosaurus
-let ankyloSkull = Fossil(name: "Ankylo Skull",
+var ankyloSkull = Fossil(name: "Ankylo Skull",
                          price: 5000,
                          image: UIImage(named: "ankyloSkull"),
                          isDinosaur: true,
-                         dinosaurSpecies: "Ankylosaurus")
+                         dinosaurSpecies: "Ankylosaurus",
+                         relatedFossils: "Ankylo Torso, Ankylo Tail",
+                         isCollected: false)
 
-let ankyloTorso = Fossil(name: "Ankylo Torso",
+var ankyloTorso = Fossil(name: "Ankylo Torso",
                          price: 3000,
                          image: UIImage(named: "ankyloTorso"),
                          isDinosaur: true,
-                         dinosaurSpecies: "Ankylosaurus")
+                         dinosaurSpecies: "Ankylosaurus",
+                         relatedFossils: "Ankylo Skull, Ankylo Tail",
+                         isCollected: false)
 
-let ankyloTail = Fossil(name: "Ankylo Tail",
+var ankyloTail = Fossil(name: "Ankylo Tail",
                         price: 2500,
                         image: UIImage(named: "ankyloTail"),
                         isDinosaur: true,
-                        dinosaurSpecies: "Ankylosaurus")
+                        dinosaurSpecies: "Ankylosaurus",
+                        relatedFossils: "Ankylo Skull, Ankylo Torso",
+                        isCollected: false)
 
-let ankyloFossils = [ankyloSkull.name,
+var ankyloFossils = [ankyloSkull.name,
                      ankyloTorso.name,
                      ankyloTail.name]
 
 // Archelon
-let archelonSkull = Fossil(name: "Archelon Skull",
+var archelonSkull = Fossil(name: "Archelon Skull",
                            price: 4000,
                            image: UIImage(named: "archelonSkull"),
                            isDinosaur: true,
-                           dinosaurSpecies: "Archelon")
+                           dinosaurSpecies: "Archelon",
+                           relatedFossils: "Archelon Tail",
+                           isCollected: false)
 
-let archelonTail = Fossil(name: "Archelon Tail",
+var archelonTail = Fossil(name: "Archelon Tail",
                           price: 3500,
                           image: UIImage(named: "archelonTail"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Archelon")
+                          dinosaurSpecies: "Archelon",
+                          relatedFossils: "Ankylo Torso",
+                          isCollected: false)
 
-let archelonFossils = [archelonSkull.name,
+var archelonFossils = [archelonSkull.name,
                        archelonTail.name]
 
 // Brachiosaurus
-let brachioSkull = Fossil(name: "Brachio Skull",
+var brachioSkull = Fossil(name: "Brachio Skull",
                           price: 6000,
                           image: UIImage(named: "brachioSkull"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Brachiosaurus")
+                          dinosaurSpecies: "Brachiosaurus",
+                          relatedFossils: "Brachio Chest, Brachio Pelvis, Brachio Tail",
+                          isCollected: false)
 
-let brachioChest = Fossil(name: "Brachio Chest",
+var brachioChest = Fossil(name: "Brachio Chest",
                           price: 5500,
                           image: UIImage(named: "brachioChest"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Brachiosaurus")
+                          dinosaurSpecies: "Brachiosaurus",
+                          relatedFossils: "Brachio Skull, Brachio Pelvis, Brachio Tail",
+                          isCollected: false)
 
-let brachioPelvis = Fossil(name: "Brachio Pelvis",
+var brachioPelvis = Fossil(name: "Brachio Pelvis",
                            price: 5000,
                            image: UIImage(named: "brachioPelvis"),
                            isDinosaur: true,
-                           dinosaurSpecies: "Brachiosaurus")
+                           dinosaurSpecies: "Brachiosaurus",
+                           relatedFossils: "Brachio Skull, Brachio Chest, Brachio Tail",
+                           isCollected: false)
 
-let brachioTail = Fossil(name: "Brachio Tail",
+var brachioTail = Fossil(name: "Brachio Tail",
                          price: 5500,
                          image: UIImage(named: "brachioTail"),
                          isDinosaur: true,
-                         dinosaurSpecies: "Brachiosaurus")
+                         dinosaurSpecies: "Brachiosaurus",
+                         relatedFossils: "Brachio Skull, Brachio Chest, Brachio Pelvis",
+                         isCollected: false)
 
-let brachioFossils = [brachioSkull.name,
+var brachioFossils = [brachioSkull.name,
                       brachioChest.name,
                       brachioPelvis.name,
                       brachioTail.name]
 
 // Deinonychus
-let deinonyTorso = Fossil(name: "Deinony Torso",
+var deinonyTorso = Fossil(name: "Deinony Torso",
                           price: 3000,
                           image: UIImage(named: "deinonyTorso"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Deinonychus")
+                          dinosaurSpecies: "Deinonychus",
+                          relatedFossils: "Deinony Tail",
+                          isCollected: false)
 
-let deinonyTail = Fossil(name: "Deinony Tail",
+var deinonyTail = Fossil(name: "Deinony Tail",
                          price: 2500,
                          image: UIImage(named: "deinonyTail"),
                          isDinosaur: true,
-                         dinosaurSpecies: "Deinonychus")
+                         dinosaurSpecies: "Deinonychus",
+                         relatedFossils: "Deinony Torso",
+                         isCollected: false)
 
-let deinonyFossils = [deinonyTorso.name,
+var deinonyFossils = [deinonyTorso.name,
                       deinonyTail.name]
 
 // Dimetrodon
-let dimetrodonSkull = Fossil(name: "Dimetrodon Skull",
+var dimetrodonSkull = Fossil(name: "Dimetrodon Skull",
                              price: 5500,
                              image: UIImage(named: "dimetrodonSull"),
                              isDinosaur: true,
-                             dinosaurSpecies: "Dimetrodon")
+                             dinosaurSpecies: "Dimetrodon",
+                             relatedFossils: "Dimetrodon Torso",
+                             isCollected: false)
 
-let dimetrodonTorso = Fossil(name: "Dimetrodon Torso",
+var dimetrodonTorso = Fossil(name: "Dimetrodon Torso",
                              price: 5000,
                              image: UIImage(named: "dimetrodonToso"),
                              isDinosaur: true,
-                             dinosaurSpecies: "Dimetrodon")
+                             dinosaurSpecies: "Dimetrodon",
+                             relatedFossils: "Dimetrodon Skull",
+                             isCollected: false)
 
-let dimetrodonFossils = [dimetrodonSkull.name,
+var dimetrodonFossils = [dimetrodonSkull.name,
                          dimetrodonTorso.name]
 
 // Diplodocus
-let diploSkull = Fossil(name: "Diplodocus Skull",
+var diploSkull = Fossil(name: "Diplo Skull",
                         price: 5000,
                         image: UIImage(named: "diploSkull"),
                         isDinosaur: true,
-                        dinosaurSpecies: "Diplodocus")
+                        dinosaurSpecies: "Diplodocus",
+                        relatedFossils: "Diplo Neck, Diplo Chest, Diplo Pelvis, Diplo Tail, Diplo Tail Tip",
+                        isCollected: false)
 
-let diploNeck = Fossil(name: "Diplodocus Neck",
+var diploNeck = Fossil(name: "Diplo Neck",
                        price: 4500,
                        image: UIImage(named: "diploNeck"),
                        isDinosaur: true,
-                       dinosaurSpecies: "Diplodocus")
+                       dinosaurSpecies: "Diplodocus",
+                       relatedFossils: "Diplo Skull, Diplo Chest, Diplo Pelvis, Diplo Tail, Diplo Tail Tip",
+                       isCollected: false)
 
-let diploChest = Fossil(name: "Diplodocus Chest",
+var diploChest = Fossil(name: "Diplo Chest",
                         price: 4000,
                         image: UIImage(named: "diploChest"),
                         isDinosaur: true,
-                        dinosaurSpecies: "Diplodocus")
+                        dinosaurSpecies: "Diplodocus",
+                        relatedFossils: "Diplo Skull, Diplo Neck, Diplo Pelvis, Diplo Tail, Diplo Tail Tip",
+                        isCollected: false)
 
-let diploPelvis = Fossil(name: "Diplodocus Pelvis",
+var diploPelvis = Fossil(name: "Diplo Pelvis",
                          price: 4500,
                          image: UIImage(named: "diploPelvis"),
                          isDinosaur: true,
-                         dinosaurSpecies: "Diplodocus")
+                         dinosaurSpecies: "Diplodocus",
+                         relatedFossils: "Diplo Skull, Diplo Neck, Diplo Chest, Diplo Tail, Diplo Tail Tip",
+                         isCollected: false)
 
-let diploTail = Fossil(name: "Diplodocus Tail",
+var diploTail = Fossil(name: "Diplo Tail",
                        price: 5000,
                        image: UIImage(named: "diplodocusTail"),
                        isDinosaur: true,
-                       dinosaurSpecies: "Diplodocus")
+                       dinosaurSpecies: "Diplodocus",
+                       relatedFossils: "Diplo Skull, Diplo Neck, Diplo Chest, Diplo Pelvis, Diplo Tail Tip",
+                       isCollected: false)
 
-let diploTailTip = Fossil(name: "Diplodocus Tail Tip",
+var diploTailTip = Fossil(name: "Diplo Tail Tip",
                           price: 4000,
                           image: UIImage(named: "diplodocusTailTip"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Diplodocus")
+                          dinosaurSpecies: "Diplodocus",
+                          relatedFossils: "Diplo Skull, Diplo Neck, Diplo Chest, Diplo Pelvis, Diplo Tail",
+                          isCollected: false)
 
-let diploFossils = [diploSkull.name,
+var diploFossils = [diploSkull.name,
                     diploNeck.name,
                     diploChest.name,
                     diploPelvis.name,
@@ -252,315 +291,395 @@ let diploFossils = [diploSkull.name,
                     diploTailTip.name]
 
 // Iguanodon
-let iguanodonSkull = Fossil(name: "Iguanodon Skull",
+var iguanodonSkull = Fossil(name: "Iguanodon Skull",
                             price: 4000,
                             image: UIImage(named: "iguanodonSull"),
                             isDinosaur: true,
-                            dinosaurSpecies: "Iguanodon")
+                            dinosaurSpecies: "Iguanodon",
+                            relatedFossils: "Iguanodon Torso, Iguanodon Tail",
+                            isCollected: false)
 
-let iguanodonTorso = Fossil(name: "Iguanodon Torso",
+var iguanodonTorso = Fossil(name: "Iguanodon Torso",
                             price: 3500,
                             image: UIImage(named: "iguanodonTorso"),
                             isDinosaur: true,
-                            dinosaurSpecies: "Iguanodon")
+                            dinosaurSpecies: "Iguanodon",
+                            relatedFossils: "Iguanodon Skull, Iguanodon Tail",
+                            isCollected: false)
 
-let iguanodonTail = Fossil(name: "Iguanodon Tail",
+var iguanodonTail = Fossil(name: "Iguanodon Tail",
                            price: 3000,
                            image: UIImage(named: "iguanodonTail"),
                            isDinosaur: true,
-                           dinosaurSpecies: "Iguanodon")
+                           dinosaurSpecies: "Iguanodon",
+                           relatedFossils: "Iguanodon Skull, Iguanodon Torso",
+                           isCollected: false)
 
-let iguanodonFossils = [iguanodonSkull.name,
+var iguanodonFossils = [iguanodonSkull.name,
                         iguanodonTorso.name,
                         iguanodonTail.name]
 
 // Mammoth
-let mammothSkull = Fossil(name: "Mammoth Skull",
+var mammothSkull = Fossil(name: "Mammoth Skull",
                           price: 3000,
                           image: UIImage(named: "mammothSull"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Mammoth")
+                          dinosaurSpecies: "Mammoth",
+                          relatedFossils: "Mammoth Torso",
+                          isCollected: false)
 
-let mammothTorso = Fossil(name: "Mammoth Torso",
+var mammothTorso = Fossil(name: "Mammoth Torso",
                           price: 2500,
                           image: UIImage(named: "mammothTorso"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Mammoth")
+                          dinosaurSpecies: "Mammoth",
+                          relatedFossils: "Mammoth Tail",
+                          isCollected: false)
 
-let mammothSkulls = [mammothSkull.name,
+var mammothSkulls = [mammothSkull.name,
                      mammothTorso.name]
 
 
 // Megacerops
-let megaceroSkull = Fossil(name: "Megacerops Skull",
+var megaceroSkull = Fossil(name: "Megacero Skull",
                            price: 4500,
                            image: UIImage(named: "megaceroSull"),
                            isDinosaur: true,
-                           dinosaurSpecies: "Megacerops")
+                           dinosaurSpecies: "Megacerops",
+                           relatedFossils: "Megacerops Torso, Megacerops Tail",
+                           isCollected: false)
 
-let megaceroTorso = Fossil(name: "Megacerops Torso",
+var megaceroTorso = Fossil(name: "Megacero Torso",
                            price: 3500,
                            image: UIImage(named: "megaceroTorso"),
                            isDinosaur: true,
-                           dinosaurSpecies: "Megacerops")
+                           dinosaurSpecies: "Megacerops",
+                           relatedFossils: "Megacerops Skull, Megacerops Tail",
+                           isCollected: false)
 
-let megaceroTail = Fossil(name: "Megacerops Tail",
+var megaceroTail = Fossil(name: "Megacero Tail",
                           price: 3000,
                           image: UIImage(named: "megaceroTail"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Megacerops")
+                          dinosaurSpecies: "Megacerops",
+                          relatedFossils: "Megacerops Skull, Megacerops Torso",
+                          isCollected: false)
 
-let megaceroFossils = [megaceroSkull.name,
+var megaceroFossils = [megaceroSkull.name,
                        megaceroTorso.name,
                        megaceroTail.name]
 
 // Megaloceros
-let leftMegaloSide = Fossil(name: "Left Megaloceros Side",
+var leftMegaloSide = Fossil(name: "Left Megalo Side",
                             price: 4000,
                             image: UIImage(named: "leftMegaloSide"),
                             isDinosaur: true,
-                            dinosaurSpecies: "Megaloceros")
+                            dinosaurSpecies: "Megaloceros",
+                            relatedFossils: "Right Megalo Side",
+                            isCollected: false)
         
-let rightMegaloSide = Fossil(name: "Right Megaloceros Side",
+var rightMegaloSide = Fossil(name: "Right Megalo Side",
                              price: 5500,
                              image: UIImage(named: "rightMegaloSide"),
                              isDinosaur: true,
-                             dinosaurSpecies: "Megaloceros")
+                             dinosaurSpecies: "Megaloceros",
+                             relatedFossils: "Left Megalo Side",
+                             isCollected: false)
 
-let megaloFossils = [leftMegaloSide.name,
+var megaloFossils = [leftMegaloSide.name,
                      rightMegaloSide.name]
 
 // Ophthalmosaurus
-let ophthalmoSkull = Fossil(name: "Ophthalmosaurus Skull",
+var ophthalmoSkull = Fossil(name: "Ophthalmo Skull",
                             price: 2500,
                             image: UIImage(named: "ophthalmoSull"),
                             isDinosaur: true,
-                            dinosaurSpecies: "Ophthalmosaurus")
+                            dinosaurSpecies: "Ophthalmosaurus",
+                            relatedFossils: "Opthalmo Torso",
+                            isCollected: false)
 
-let ophthalmoTorso = Fossil(name: "Ophthalmosaurus Torso",
+var ophthalmoTorso = Fossil(name: "Ophthalmo Torso",
                             price: 2000,
                             image: UIImage(named: "ophthalmoTorso"),
                             isDinosaur: true,
-                            dinosaurSpecies: "Ophthalmosaurus")
+                            dinosaurSpecies: "Ophthalmosaurus",
+                            relatedFossils: "Opthalmo Tail",
+                            isCollected: false)
 
-let opthalmoFossils = [ophthalmoSkull.name,
+var opthalmoFossils = [ophthalmoSkull.name,
                        ophthalmoTorso.name]
 
 // Pachycephalosaurus
-let pachysaurusSkull = Fossil(name: "Pachysaurus Skull",
+var pachysaurusSkull = Fossil(name: "Pachysaurus Skull",
                               price: 4000,
                               image: UIImage(named: "pachysaurusSkull"),
                               isDinosaur: true,
-                              dinosaurSpecies: "Pachysaurus")
+                              dinosaurSpecies: "Pachysaurus",
+                              relatedFossils: "Pachysaurus Tail",
+                              isCollected: false)
 
-let pachysaurusTail = Fossil(name: "Pachysaurus Tail",
+var pachysaurusTail = Fossil(name: "Pachysaurus Tail",
                              price: 3500,
                              image: UIImage(named: "pachysaurusTail"),
                              isDinosaur: true,
-                             dinosaurSpecies: "Pachysaurus")
+                             dinosaurSpecies: "Pachysaurus",
+                             relatedFossils: "Pachysaurus Skull",
+                             isCollected: false)
 
-let pachysaurusFossils = [pachysaurusSkull.name,
+var pachysaurusFossils = [pachysaurusSkull.name,
                           pachysaurusTail.name]
 
 // Parasaurolophus
-let parasaurSkull = Fossil(name: "Parasaurolophus Skull",
+var parasaurSkull = Fossil(name: "Parasaur Skull",
                            price: 3500,
                            image: UIImage(named: "parasaurSull"),
                            isDinosaur: true,
-                           dinosaurSpecies: "Parasaurolophus")
+                           dinosaurSpecies: "Parasaurolophus",
+                           relatedFossils: "Parasaur Torso, Parasaur Tail",
+                           isCollected: false)
 
-let parasaurTorso = Fossil(name: "Parasaurolophus Torso",
+var parasaurTorso = Fossil(name: "Parasaur Torso",
                            price: 3000,
                            image: UIImage(named: "parasaurTorso"),
                            isDinosaur: true,
-                           dinosaurSpecies: "Parasaurolophus")
+                           dinosaurSpecies: "Parasaurolophus",
+                           relatedFossils: "Parasaur Skull, Parasaur Tail",
+                           isCollected: false)
 
-let parasaurTail = Fossil(name: "Parasaurolophus Tail",
+var parasaurTail = Fossil(name: "Parasaur Tail",
                           price: 2500,
                           image: UIImage(named: "parasaurTail"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Parasaurolophus")
+                          dinosaurSpecies: "Parasaurolophus",
+                          relatedFossils: "Parasaur Skull, Parasaur Torso",
+                          isCollected: false)
 
-let parasaurFossils = [parasaurSkull.name,
+var parasaurFossils = [parasaurSkull.name,
                        parasaurTorso.name,
                        parasaurTail.name]
 
 // Plesiosaurus
-let plesioSkull = Fossil(name: "Plesio Skull",
+var plesioSkull = Fossil(name: "Plesio Skull",
                          price: 4000,
                          image: UIImage(named: "plesioSkull"),
                          isDinosaur: true,
-                         dinosaurSpecies: "Plesiosaurus")
+                         dinosaurSpecies: "Plesiosaurus",
+                         relatedFossils: "Plesio Body, Plesio Tail",
+                         isCollected: false)
 
-let plesioBody = Fossil(name: "Plesio Body",
+var plesioBody = Fossil(name: "Plesio Body",
                         price: 4500,
                         image: UIImage(named: "plesioBody"),
                         isDinosaur: true,
-                        dinosaurSpecies: "Plesiosaurus")
+                        dinosaurSpecies: "Plesiosaurus",
+                        relatedFossils: "Plesio Skull, Plesio Tail",
+                        isCollected: false)
 
-let plesioTail = Fossil(name: "Plesio Tail",
+var plesioTail = Fossil(name: "Plesio Tail",
                          price: 4500,
                          image: UIImage(named: "plesioTail"),
                          isDinosaur: true,
-                         dinosaurSpecies: "Plesiosaurus")
+                         dinosaurSpecies: "Plesiosaurus",
+                         relatedFossils: "Plesio Skull, Plesio Body",
+                         isCollected: false)
 
-let plesioFossils = [plesioSkull.name,
+var plesioFossils = [plesioSkull.name,
                      plesioBody.name,
                      plesioTail.name]
 
 // Pteranodon
-let rightPteraWing = Fossil(name: "Right Ptera Wing",
+var rightPteraWing = Fossil(name: "Right Ptera Wing",
                             price: 4500,
                             image: UIImage(named: "rightPteraWing"),
                             isDinosaur: true,
-                            dinosaurSpecies: "Pteranodon")
+                            dinosaurSpecies: "Pteranodon",
+                            relatedFossils: "Ptera Body, Left Ptera Wing",
+                            isCollected: false)
 
-let pteraBody = Fossil(name: "Ptera Body",
+var pteraBody = Fossil(name: "Ptera Body",
                        price: 4000,
                        image: UIImage(named: "pteraBody"),
                        isDinosaur: true,
-                       dinosaurSpecies: "Pteranodon")
+                       dinosaurSpecies: "Pteranodon",
+                       relatedFossils: "Right Ptera Wing, Left Ptera Wing",
+                       isCollected: false)
 
-let leftPteraWing = Fossil(name: "Left Ptera Wing",
+var leftPteraWing = Fossil(name: "Left Ptera Wing",
                            price: 4500,
                            image: UIImage(named: "leftPteraWing"),
                            isDinosaur: true,
-                           dinosaurSpecies: "Pteranodon")
+                           dinosaurSpecies: "Pteranodon",
+                           relatedFossils: "Right Ptera Wing, Ptera Body",
+                           isCollected: false)
 
-let pteraFossils = [rightPteraWing.name,
+var pteraFossils = [rightPteraWing.name,
                     pteraBody.name,
                     leftPteraWing.name]
 
 // Quetzalcoatlus
-let rightQuetzalWing = Fossil(name: "Right Quetzal Wing",
+var rightQuetzalWing = Fossil(name: "Right Quetzal Wing",
                               price: 5000,
                               image: UIImage(named: "rightQuetzalWing"),
                               isDinosaur: true,
-                              dinosaurSpecies: "Pteranodon")
+                              dinosaurSpecies: "Pteranodon",
+                              relatedFossils: "Quetzal Torso, Left Quetzal Wing",
+                              isCollected: false)
 
-let quetzalTorso = Fossil(name: "Quetzal Torso",
+var quetzalTorso = Fossil(name: "Quetzal Torso",
                           price: 4500,
                           image: UIImage(named: "quetzalTorso"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Quetzalcoatlus")
+                          dinosaurSpecies: "Quetzalcoatlus",
+                          relatedFossils: "Right Quetzal Wing, Left Quetzal Wing",
+                          isCollected: false)
 
-let leftQuetzalWing = Fossil(name: "Left Quetzal Wing",
+var leftQuetzalWing = Fossil(name: "Left Quetzal Wing",
                              price: 5000,
                              image: UIImage(named: "leftQuetzalWing"),
                              isDinosaur: true,
-                             dinosaurSpecies: "Quetzalcoatlus")
+                             dinosaurSpecies: "Quetzalcoatlus",
+                             relatedFossils: "Right Quetzal Wing, Quetzal Torso",
+                             isCollected: false)
 
-let quetzalFossils = [rightQuetzalWing.name, quetzalTorso.name, leftQuetzalWing.name]
+var quetzalFossils = [rightQuetzalWing.name, quetzalTorso.name, leftQuetzalWing.name]
 
 // Sabertooth tiger
-let sabertoothSkull = Fossil(name: "Sabertooth Skull",
+var sabertoothSkull = Fossil(name: "Sabertooth Skull",
                              price: 2500,
                              image: UIImage(named: "sabertoothSkull"),
                              isDinosaur: true,
-                             dinosaurSpecies: "Sabertooth")
+                             dinosaurSpecies: "Sabertooth",
+                             relatedFossils: "Sabertooth Tail Body",
+                             isCollected: false)
 
-let sabertoothTail = Fossil(name: "Sabertooth Tail",
+var sabertoothTail = Fossil(name: "Sabertooth Tail",
                             price: 2000,
                             image: UIImage(named: "sabertoothTail"),
                             isDinosaur: true,
-                            dinosaurSpecies: "Sabertooth")
+                            dinosaurSpecies: "Sabertooth",
+                            relatedFossils: "Sabertooth Skull",
+                            isCollected: false)
 
-let sabertoothFossils = [sabertoothSkull.name,
+var sabertoothFossils = [sabertoothSkull.name,
                          sabertoothTail.name]
 
 // Spinosaurus
-let spinoSkull = Fossil(name: "Spino Skull",
+var spinoSkull = Fossil(name: "Spino Skull",
                         price: 4000,
                         image: UIImage(named: "spinoSkull"),
                         isDinosaur: true,
-                        dinosaurSpecies: "Spinosaurus")
+                        dinosaurSpecies: "Spinosaurus",
+                        relatedFossils: "Spino Torso, Spino Tail",
+                        isCollected: false)
 
-let spinoTorso = Fossil(name: "Spino Torso",
+var spinoTorso = Fossil(name: "Spino Torso",
                         price: 5000,
                         image: UIImage(named: "spinoTorso"),
                         isDinosaur: true,
-                        dinosaurSpecies: "Spinosaurus")
+                        dinosaurSpecies: "Spinosaurus",
+                        relatedFossils: "Spino Skull, Spino Tail",
+                        isCollected: false)
 
-let spinoTail = Fossil(name: "Spino Tail",
+var spinoTail = Fossil(name: "Spino Tail",
                        price: 4000,
                        image: UIImage(named: "spinoTail"),
                        isDinosaur: true,
-                       dinosaurSpecies: "Spinosaurus")
+                       dinosaurSpecies: "Spinosaurus",
+                       relatedFossils: "Spino Skull, Spino Torso",
+                       isCollected: false)
 
-let spinoFossils = [spinoSkull.name,
+var spinoFossils = [spinoSkull.name,
                     spinoTorso.name,
                     spinoTail.name]
 
 // Stegosaurus
-let stegoSkull = Fossil(name: "Stego Skull",
+var stegoSkull = Fossil(name: "Stego Skull",
                         price: 5000,
                         image: UIImage(named: "stegoSkull"),
                         isDinosaur: true,
-                        dinosaurSpecies: "Stegosaurus")
+                        dinosaurSpecies: "Stegosaurus",
+                        relatedFossils: "Stego Torso, Stego Tail",
+                        isCollected: false)
 
-let stegoTorso = Fossil(name: "Stego Torso",
+var stegoTorso = Fossil(name: "Stego Torso",
                         price: 4500,
                         image: UIImage(named: "stegoTorso"),
                         isDinosaur: true,
-                        dinosaurSpecies: "Stegosaurus")
+                        dinosaurSpecies: "Stegosaurus",
+                        relatedFossils: "Stego Skull, Spino Tail",
+                        isCollected: false)
 
-let stegoTail = Fossil(name: "Stego Tail",
+var stegoTail = Fossil(name: "Stego Tail",
                        price: 4000,
                        image: UIImage(named: "stegoTail"),
                        isDinosaur: true,
-                       dinosaurSpecies: "Stegosaurus")
+                       dinosaurSpecies: "Stegosaurus",
+                       relatedFossils: "Spino Skull, Spino Torso",
+                       isCollected: false)
 
-let stegoFossils = [stegoSkull.name,
+var stegoFossils = [stegoSkull.name,
                     stegoTorso.name,
                     stegoTail.name]
 
 // Triceratops
-let triceraSkull = Fossil(name: "Tricera Skull",
+var triceraSkull = Fossil(name: "Tricera Skull",
                           price: 5000,
                           image: UIImage(named: "triceraSkull"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Triceratops")
+                          dinosaurSpecies: "Triceratops",
+                          relatedFossils: "Tricera Torso, Tricera Tail",
+                          isCollected: false)
 
-let triceraTorso = Fossil(name: "Tricera Torso",
+var triceraTorso = Fossil(name: "Tricera Torso",
                           price: 4500,
                           image: UIImage(named: "triceraTorso"),
                           isDinosaur: true,
-                          dinosaurSpecies: "Triceratops")
+                          dinosaurSpecies: "Triceratops",
+                          relatedFossils: "Tricera Skull, Tricera Tail",
+                          isCollected: false)
 
-let triceraTail = Fossil(name: "Tricera Tail",
+var triceraTail = Fossil(name: "Tricera Tail",
                          price: 4000,
                          image: UIImage(named: "triceraTail"),
                          isDinosaur: true,
-                         dinosaurSpecies: "Triceratops")
+                         dinosaurSpecies: "Triceratops",
+                         relatedFossils: "Tricera Skull, Tricera Torso",
+                         isCollected: false)
 
-let triceraFossils = [triceraSkull.name,
+var triceraFossils = [triceraSkull.name,
                       triceraTorso.name,
                       triceraTail.name]
 
 // Tyrannosaurus Rex
-let tRexSkull = Fossil(name: "T. Rex Skull",
+var tRexSkull = Fossil(name: "T. Rex Skull",
                        price: 6000,
                        image: UIImage(named: "tRexSkull"),
                        isDinosaur: true,
-                       dinosaurSpecies: "Tyrannosaurus Rex")
+                       dinosaurSpecies: "Tyrannosaurus Rex",
+                       relatedFossils: "T. Rex Torso, T. Rex Tail",
+                       isCollected: false)
 
-let tRexTorso = Fossil(name: "T. Rex Torso",
+var tRexTorso = Fossil(name: "T. Rex Torso",
                        price: 5500,
                        image: UIImage(named: "tRexTorso"),
                        isDinosaur: true,
-                       dinosaurSpecies: "Tyrannosaurus Rex")
+                       dinosaurSpecies: "Tyrannosaurus Rex",
+                       relatedFossils: "T. Rex Skull, T. Rex Tail",
+                       isCollected: false)
 
-let tRexTail = Fossil(name: "T. Rex Tail",
+var tRexTail = Fossil(name: "T. Rex Tail",
                       price: 5000,
                       image: UIImage(named: "tRexTail"),
                       isDinosaur: true,
-                      dinosaurSpecies: "Tyrannosaurus Rex")
+                      dinosaurSpecies: "Tyrannosaurus Rex",
+                      relatedFossils: "T. Rex Skull, T. Rex Torso",
+                      isCollected: false)
 
-let tRexFossils = [tRexSkull.name,
+var tRexFossils = [tRexSkull.name,
                    tRexTorso.name,
                    tRexTail.name]
 
-let allFossils = [acanthostega,
+var allFossils = [acanthostega,
                   amber,
                   ammonite,
                   anomalocaris,
@@ -571,7 +690,7 @@ let allFossils = [acanthostega,
                   dunkleosteus,
                   eusthenopteron,
                   juramaia,
-                  Myllokunmingia,
+                  myllokunmingia,
                   sharkToothPattern,
                   trilobite,
                   ankyloSkull,
