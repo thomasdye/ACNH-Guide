@@ -10,7 +10,6 @@ import UIKit
 
 class FossilsUITableViewController: UITableViewController {
     
-    
     let greenBackgroundColor = UIColor(hue: 0.2833, saturation: 0.49, brightness: 1, alpha: 1.0)
     let redBackgroundColor = UIColor(hue: 0, saturation: 0.49, brightness: 0.9, alpha: 1.0)
     let defaults = UserDefaults.standard
