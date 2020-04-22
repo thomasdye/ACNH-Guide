@@ -50,6 +50,7 @@ class FishDetailViewController: UIViewController {
         timeLabel.text = "Time: \(selectedFish.time ?? "")"
         monthsLabel.text = "Months: \(selectedFish.months ?? "")"
         fishImage.image = selectedFish.image
+        locationLabel.text = "Location: \(selectedFish.location ?? "")"
     }
     
     
