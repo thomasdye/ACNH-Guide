@@ -19,6 +19,7 @@
 		ED667ABA244F362F00D73B58 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667AB9244F362F00D73B58 /* Fish.swift */; };
 		ED667ABC244F377900D73B58 /* FishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667ABB244F377900D73B58 /* FishDetailViewController.swift */; };
 		ED667ABE244F378B00D73B58 /* FishTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667ABD244F378B00D73B58 /* FishTableTableViewController.swift */; };
+		ED667AC82450714A00D73B58 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667AC72450714A00D73B58 /* Bug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		ED667AB9244F362F00D73B58 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
 		ED667ABB244F377900D73B58 /* FishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailViewController.swift; sourceTree = "<group>"; };
 		ED667ABD244F378B00D73B58 /* FishTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableTableViewController.swift; sourceTree = "<group>"; };
+		ED667AC72450714A00D73B58 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				ED320C23244E4D2300FD7886 /* Info.plist */,
 				ED320C32244E558400FD7886 /* Fossil.swift */,
 				ED667AB9244F362F00D73B58 /* Fish.swift */,
+				ED667AC72450714A00D73B58 /* Bug.swift */,
 			);
 			path = "Animal Crossing New Horizons Guide";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				ED320C2E244E500800FD7886 /* FossilsTableViewController.swift in Sources */,
 				ED667ABE244F378B00D73B58 /* FishTableTableViewController.swift in Sources */,
 				ED320C33244E558400FD7886 /* Fossil.swift in Sources */,
+				ED667AC82450714A00D73B58 /* Bug.swift in Sources */,
 				ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */,
 				ED320C18244E4D1C00FD7886 /* SceneDelegate.swift in Sources */,
 				ED667ABC244F377900D73B58 /* FishDetailViewController.swift in Sources */,
