@@ -45,12 +45,12 @@ class FishDetailViewController: UIViewController {
     
     func updateFish() {
         title = selectedFish.name
-        priceLabel.text = "Bells: \(selectedFish.price ?? 0)"
-        shadowSizeLabel.text = "Shadow Size: \(selectedFish.shadowSize ?? 0)"
-        timeLabel.text = "Time: \(selectedFish.time ?? "")"
-        monthsLabel.text = "Months: \(selectedFish.months ?? "")"
+        priceLabel.text = "💰 Bells: \(selectedFish.price ?? 0)"
+        shadowSizeLabel.text = "🐟 Shadow Size: \(selectedFish.shadowSize ?? 0)"
+        timeLabel.text = "🕙 Time: \(selectedFish.time ?? "")"
+        monthsLabel.text = "📆 Months: \(selectedFish.months ?? "")"
         fishImage.image = selectedFish.image
-        locationLabel.text = "Location: \(selectedFish.location ?? "")"
+        locationLabel.text = "🗺 Location: \(selectedFish.location ?? "")"
     }
     
     
