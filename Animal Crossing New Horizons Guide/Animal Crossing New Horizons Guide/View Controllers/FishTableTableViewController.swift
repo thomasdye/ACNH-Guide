@@ -10,7 +10,9 @@ import UIKit
 
 class FishTableTableViewController: UITableViewController {
     
-    var arrayOfFishes: [Fish] = []
+    let allFishReset = allFish
+    
+    @IBOutlet weak var sortButton: UIBarButtonItem!
     
     let greenBackgroundColor = UIColor(hue: 0.2833, saturation: 0.49, brightness: 1, alpha: 1.0)
     let redBackgroundColor = UIColor(hue: 0, saturation: 0.49, brightness: 0.9, alpha: 1.0)
@@ -20,6 +22,7 @@ class FishTableTableViewController: UITableViewController {
         super.viewDidLoad()
         catchableFishThisMonth()
         determineCatchableFishLocations()
+        setUpSortButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,8 +45,12 @@ class FishTableTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FishCell", for: indexPath)
         
         var fish = allFish[indexPath.row]
-        cell.textLabel?.text = fish.name
-        cell.detailTextLabel?.text = "Bells: \(fish.price ?? 0)"
+        
+        guard let fishName = fish.name,
+            let fishLocation = fish.location,
+            let fishPrice = fish.price else { return UITableViewCell() }
+        cell.textLabel?.text = "\(fishName)"
+        cell.detailTextLabel?.text = "Bells: \(fishPrice)"
         
         // Load defaults function
         func loadDefaults() {
@@ -73,5 +80,35 @@ class FishTableTableViewController: UITableViewController {
             fishDetailVC.selectedFish = selectedFish
         }
     }
+    
+    func setUpSortButton() {
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM"
+        let currentMonth = dateFormatter.string(from: now)
+        
+        sortButton.title = currentMonth
+    }
+    
+    @IBAction func sortButtonTapped(_ sender: UIBarButtonItem) {
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM"
+        let currentMonth = dateFormatter.string(from: now)
+        
+        if sortButton.title == currentMonth {
+            sortButton.title = "All"
+            title = "Fish in \(currentMonth)"
+            allFish = catchableFish
+            tableView.reloadData()
+        } else {
+            sortButton.title = currentMonth
+            title = "Fish"
+            allFish = allFishReset
+            tableView.reloadData()
+        }
+        
+    }
+    
 }
 
