@@ -24,7 +24,7 @@ var anchovy = Fish(name: "Anchovy",
                    price: 200, location: "Sea",
                    shadowSize: 2,
                    time: "4AM - 9PM",
-                   months: "All Year",
+                   months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                    hasBeenCaught: false)
 
 var angelfish = Fish(name: "Angelfish",
@@ -32,14 +32,14 @@ var angelfish = Fish(name: "Angelfish",
                      price: 3000, location: "River",
                      shadowSize: 2,
                      time: "4PM - 9AM",
-                     months: "May through Oct",
+                     months: "May, June, July, August, September, and October",
                      hasBeenCaught: false)
 
 var arapaima = Fish(name: "Arapaima",
                     image: UIImage(named: "arapaima"),
                     price: 10000, location: "River",
                     shadowSize: 6, time: "4PM - 9AM",
-                    months: "June through Sept",
+                    months: "June, July, August, and September",
                     hasBeenCaught: false)
 
 var arowana = Fish(name: "Arowana",
@@ -47,7 +47,7 @@ var arowana = Fish(name: "Arowana",
                    price: 10000, location: "River",
                    shadowSize: 4,
                    time: "4PM - 9AM",
-                   months: "June through Sept",
+                   months: "June, July, August, and September",
                    hasBeenCaught: false)
 
 var barredKnifejaw = Fish(name: "Barred Knifejaw",
@@ -56,7 +56,7 @@ var barredKnifejaw = Fish(name: "Barred Knifejaw",
                           location: "Sea",
                           shadowSize: 3,
                           time: "All Day",
-                          months: "Mar through Nov",
+                          months: "March, April, May, June, July, August, September, October, and November",
                           hasBeenCaught: false)
 
 var barreleye = Fish(name: "Barreleye",
@@ -65,7 +65,7 @@ var barreleye = Fish(name: "Barreleye",
                      location: "Sea",
                      shadowSize: 2,
                      time: "9PM - 4AM",
-                     months: "All Year",
+                     months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                      hasBeenCaught: false)
 
 var betta = Fish(name: "Betta",
@@ -74,7 +74,7 @@ var betta = Fish(name: "Betta",
                  location: "River",
                  shadowSize: 2,
                  time: "9AM - 4PM",
-                 months: "May through Oct",
+                 months: "May, June, July, August, September, and October",
                  hasBeenCaught: false)
 
 var bitterling = Fish(name: "Bitterling",
@@ -83,7 +83,7 @@ var bitterling = Fish(name: "Bitterling",
                       location: "River",
                       shadowSize: 1,
                       time: "All Day",
-                      months: "Nov through Mar",
+                      months: "November, December, January, February, and March",
                       hasBeenCaught: false)
 
 var blackBass = Fish(name: "Black Bass",
@@ -92,7 +92,7 @@ var blackBass = Fish(name: "Black Bass",
                      location: "River",
                      shadowSize: 4,
                      time: "All Day",
-                     months: "All Year",
+                     months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                      hasBeenCaught: false)
 
 var blowfish = Fish(name: "Blowfish",
@@ -101,16 +101,16 @@ var blowfish = Fish(name: "Blowfish",
                     location: "Sea",
                     shadowSize: 3,
                     time: "9PM - 4AM",
-                    months: "Nov through Feb",
+                    months: "November, December, January, and February",
                     hasBeenCaught: false)
 
-var blueMarlin = Fish(name: "Blue Marlin",
-                      image: UIImage(named: "blueMarlin"),
+var blueMarchlin = Fish(name: "Blue Marchlin",
+                      image: UIImage(named: "blueMarchlin"),
                       price: 10000,
                       location: "Pier",
                       shadowSize: 6,
                       time: "All Day",
-                      months: "Nov through April / Aug through Sept",
+                      months: "July, August, September, November, December, January, February, March, and Aprilil",
                       hasBeenCaught: false)
 
 var blueGill = Fish(name: "Blue Gill",
@@ -119,7 +119,7 @@ var blueGill = Fish(name: "Blue Gill",
                     location: "River",
                     shadowSize: 2,
                     time: "9AM - 4PM",
-                    months: "All Year",
+                    months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                     hasBeenCaught: false)
 
 var butterflyFish = Fish(name: "Butterfly Fish",
@@ -128,7 +128,7 @@ var butterflyFish = Fish(name: "Butterfly Fish",
                          location: "Sea",
                          shadowSize: 2,
                          time: "All Day",
-                         months: "Apr through Sept",
+                         months: "April, May, June, July, August, and September",
                          hasBeenCaught: false)
 
 var carp = Fish(name: "Carp",
@@ -136,7 +136,7 @@ var carp = Fish(name: "Carp",
                 price: 300, location: "Pond",
                 shadowSize: 4,
                 time: "All Day",
-                months: "All Year",
+                months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                 hasBeenCaught: false)
 
 var catfish = Fish(name: "Catfish",
@@ -145,7 +145,7 @@ var catfish = Fish(name: "Catfish",
                    location: "Pond",
                    shadowSize: 4,
                    time: "4PM - 9AM",
-                   months: "May through Oct",
+                   months: "May, June, July, August, September, and October",
                    hasBeenCaught: false)
 
 var char = Fish(name: "Char",
@@ -154,7 +154,7 @@ var char = Fish(name: "Char",
                 location: "River (Clifftop) / Pond",
                 shadowSize: 3,
                 time: "4PM - 9AM",
-                months: "Mar through June / Sept through Nov",
+                months: "March, April, May, June, September, October, and November",
                 hasBeenCaught: false)
 
 var cherrySalmon = Fish(name: "Cherry Salmon",
@@ -163,7 +163,7 @@ var cherrySalmon = Fish(name: "Cherry Salmon",
                         location: "River (Clifftop)",
                         shadowSize: 3,
                         time: "4PM - 9AM",
-                        months: "Mar through June / Sept through Nov",
+                        months: "March, April, May, June, September, October, and November",
                         hasBeenCaught: false)
 
 var clownFish = Fish(name: "Clown Fish",
@@ -171,7 +171,7 @@ var clownFish = Fish(name: "Clown Fish",
                      price: 650, location: "Sea",
                      shadowSize: 1,
                      time: "All Day",
-                     months: "Apr through Sept",
+                     months: "April, May, June, July, August, and September",
                      hasBeenCaught: false)
 
 var coelacanth = Fish(name: "Coelacanth",
@@ -180,7 +180,7 @@ var coelacanth = Fish(name: "Coelacanth",
                       location: "Sea (while raining)",
                       shadowSize: 6,
                       time: "All Day",
-                      months: "All Year",
+                      months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                       hasBeenCaught: false)
 
 var crawfish = Fish(name: "Crawfish",
@@ -189,7 +189,7 @@ var crawfish = Fish(name: "Crawfish",
                     location: "Pond",
                     shadowSize: 2,
                     time: "All Day",
-                    months: "Apr through Sept",
+                    months: "April, May, June, July, August, and September",
                     hasBeenCaught: false)
 
 var crucianCarp = Fish(name: "Crucian Carp",
@@ -198,7 +198,7 @@ var crucianCarp = Fish(name: "Crucian Carp",
                        location: "River",
                        shadowSize: 2,
                        time: "All Day",
-                       months: "All Year",
+                       months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                        hasBeenCaught: false)
 
 var dab = Fish(name: "Dab",
@@ -207,7 +207,7 @@ var dab = Fish(name: "Dab",
                location: "Sea",
                shadowSize: 3,
                time: "All Day",
-               months: "Oct through  Apr",
+               months: "October, November, December, January, February, March, and April",
                hasBeenCaught: false)
 
 var dace = Fish(name: "Dace",
@@ -216,7 +216,7 @@ var dace = Fish(name: "Dace",
                 location: "River",
                 shadowSize: 3,
                 time: "4PM - 9AM",
-                months: "All Year",
+                months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                 hasBeenCaught: false)
 
 var dorado = Fish(name: "Dorado",
@@ -225,7 +225,7 @@ var dorado = Fish(name: "Dorado",
                   location: "River",
                   shadowSize: 5,
                   time: "4AM - 9PM",
-                  months: "June through Sept",
+                  months: "June, July, August, and September",
                   hasBeenCaught: false)
 
 var footballFish = Fish(name: "Football Fish",
@@ -234,7 +234,7 @@ var footballFish = Fish(name: "Football Fish",
                         location: "Sea",
                         shadowSize: 4,
                         time: "4PM - 9AM",
-                        months: "Nov through Mar",
+                        months: "November, December, January, February, and March",
                         hasBeenCaught: false)
 
 var freshwaterGoby = Fish(name: "Freshwater Goby",
@@ -243,7 +243,7 @@ var freshwaterGoby = Fish(name: "Freshwater Goby",
                           location: "River",
                           shadowSize: 2,
                           time: "4PM - 9AM",
-                          months: "All Year",
+                          months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                           hasBeenCaught: false)
 
 var frog = Fish(name: "Frog",
@@ -252,7 +252,7 @@ var frog = Fish(name: "Frog",
                 location: "Pond",
                 shadowSize: 2,
                 time: "All Day",
-                months: "May through Aug",
+                months: "May, June, July, and August",
                 hasBeenCaught: false)
 
 var gar = Fish(name: "Gar",
@@ -261,7 +261,7 @@ var gar = Fish(name: "Gar",
                location: "Pond",
                shadowSize: 2,
                time: "All Day",
-               months: "July through Sept",
+               months: "July, August, and September",
                hasBeenCaught: false)
 
 var giantSnakehead = Fish(name: "Giant Snakehead",
@@ -270,7 +270,7 @@ var giantSnakehead = Fish(name: "Giant Snakehead",
                           location: "Pond",
                           shadowSize: 4,
                           time: "9AM - 4PM",
-                          months: "June through Aug",
+                          months: "June, July, and August",
                           hasBeenCaught: false)
 
 var giantTrevally = Fish(name: "Giant Trevally",
@@ -279,7 +279,7 @@ var giantTrevally = Fish(name: "Giant Trevally",
                          location: "Pier",
                          shadowSize: 5,
                          time: "All Day",
-                         months: "May through Oct",
+                         months: "May, June, July, August, September, and October",
                          hasBeenCaught: false)
 
 var goldenTrout = Fish(name: "Golden Trout",
@@ -288,7 +288,7 @@ var goldenTrout = Fish(name: "Golden Trout",
                        location: "River (Clifftop)",
                        shadowSize: 3,
                        time: "4Pm - 9AM",
-                       months: "Mar through May / Sept through Nov",
+                       months: "March, April, May, September, October, and November",
                        hasBeenCaught: false)
 
 var goldfish = Fish(name: "Goldfish",
@@ -297,7 +297,7 @@ var goldfish = Fish(name: "Goldfish",
                     location: "Pond",
                     shadowSize: 1,
                     time: "All Day",
-                    months: "All Year",
+                    months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                     hasBeenCaught: false)
 
 var greatWhiteShark = Fish(name: "Great White Shark",
@@ -306,7 +306,7 @@ var greatWhiteShark = Fish(name: "Great White Shark",
                            location: "Sea",
                            shadowSize: 6,
                            time: "4PM - 9AM",
-                           months: "June through Sept",
+                           months: "June, July, August, and September",
                            hasBeenCaught: false)
 // The GWS has a fin above it's shadow, not sure if that's something you want to put in here
 
@@ -316,7 +316,7 @@ var guppy = Fish(name: "Guppy",
                  location: "River",
                  shadowSize: 1,
                  time: "9AM - 4PM",
-                 months: "Apr through Nov",
+                 months: "April, May, June, July, August, September, October, and November",
                  hasBeenCaught: false)
 
 var hammerheadShark = Fish(name: "Hammerhead Shark",
@@ -325,7 +325,7 @@ var hammerheadShark = Fish(name: "Hammerhead Shark",
                            location: "Sea",
                            shadowSize: 6,
                            time: "4PM - 9AM",
-                           months: "June through Sept",
+                           months: "June, July, August, and September",
                            hasBeenCaught: false)
 // Also has a fin on the shadow
 
@@ -335,16 +335,16 @@ var horseMackerel = Fish(name: "Horse Mackerel",
                          location: "Sea",
                          shadowSize: 2,
                          time: "All Day",
-                         months: "All Year",
+                         months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                          hasBeenCaught: false)
 
 var killifish = Fish(name: "Killifish",
                      image: UIImage(named: "killifish"),
                      price: 300,
-                     location: "P{ond",
+                     location: "Pond",
                      shadowSize: 1,
                      time: "All Day",
-                     months: "Apr through Aug",
+                     months: "April, May, June, July, and August",
                      hasBeenCaught: false)
 
 var kingSalmon = Fish(name: "King Salmon",
@@ -362,7 +362,7 @@ var koi = Fish(name: "Koi",
                location: "Pond",
                shadowSize: 4,
                time: "4PM - 9AM",
-               months: "All Year",
+               months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                hasBeenCaught: false)
 
 var loach = Fish(name: "Loach",
@@ -371,7 +371,7 @@ var loach = Fish(name: "Loach",
                  location: "River",
                  shadowSize: 2,
                  time: "All Day",
-                 months: "Mar through May",
+                 months: "March, April, and May",
                  hasBeenCaught: false)
 
 var mahiMahi = Fish(name: "Mahi-Mahi",
@@ -380,7 +380,7 @@ var mahiMahi = Fish(name: "Mahi-Mahi",
                     location: "Pier",
                     shadowSize: 5,
                     time: "All Day",
-                    months: "May through Oct",
+                    months: "May, June, July, August, September, and October",
                     hasBeenCaught: false)
 
 var mittenCrab = Fish(name: "Mitten Crab",
@@ -389,7 +389,7 @@ var mittenCrab = Fish(name: "Mitten Crab",
                       location: "River",
                       shadowSize: 2,
                       time: "4PM - 9AM",
-                      months: "Sept through Nov",
+                      months: "September, October, and November",
                       hasBeenCaught: false)
 
 var morayEel = Fish(name: "Moray Eel",
@@ -398,7 +398,7 @@ var morayEel = Fish(name: "Moray Eel",
                     location: "Sea",
                     shadowSize: 0,
                     time: "All Day",
-                    months: "Aug through Oct",
+                    months: "August, September, and October",
                     hasBeenCaught: false)
 
 // The moray eel's shadow is listed as "narrow", not an int
@@ -409,7 +409,7 @@ var napoleonfish = Fish(name: "Napoleonfish",
                         location: "Sea",
                         shadowSize: 6,
                         time: "4AM - 9PM",
-                        months: "July and August",
+                        months: "Julyy and August",
                         hasBeenCaught: false)
 
 var neonTetra = Fish(name: "Neon Tetra",
@@ -418,7 +418,7 @@ var neonTetra = Fish(name: "Neon Tetra",
                      location: "River",
                      shadowSize: 1,
                      time: "9AM - 4PM",
-                     months: "Apr through Nov",
+                     months: "April, May, June, July, August, September, October, and November",
                      hasBeenCaught: false)
 
 var nibbleFish = Fish(name: "Nibble Fish",
@@ -427,7 +427,7 @@ var nibbleFish = Fish(name: "Nibble Fish",
                       location: "River",
                       shadowSize: 1,
                       time: "9AM - 4PM",
-                      months: "May through Sept",
+                      months: "May, June, July, August, and September",
                       hasBeenCaught: false)
 
 var oarfish = Fish(name: "Oarfish",
@@ -436,7 +436,7 @@ var oarfish = Fish(name: "Oarfish",
                    location: "Sea",
                    shadowSize: 6,
                    time: "All Day",
-                   months: "Dec through Apr",
+                   months: "December, Januaryuary, February, March, and April",
                    hasBeenCaught: false)
 
 var oceanSunfish = Fish(name: "Ocean Sunfish",
@@ -445,7 +445,7 @@ var oceanSunfish = Fish(name: "Ocean Sunfish",
                         location: "Sea",
                         shadowSize: 6,
                         time: "4AM - 9PM",
-                        months: "July through Sept",
+                        months: "July, August, and September",
                         hasBeenCaught: false)
 // Also has a fin
 
@@ -455,7 +455,7 @@ var oliveFlounder = Fish(name: "Olive Flounder",
                          location: "Sea",
                          shadowSize: 5,
                          time: "All Day",
-                         months: "All Year",
+                         months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                          hasBeenCaught: false)
 
 var paleChub = Fish(name: "Pale Chub",
@@ -464,7 +464,7 @@ var paleChub = Fish(name: "Pale Chub",
                     location: "River",
                     shadowSize: 1,
                     time: "9AM - 4PM",
-                    months: "All Year",
+                    months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                     hasBeenCaught: false)
 
 var pike = Fish(name: "Pike",
@@ -473,7 +473,7 @@ var pike = Fish(name: "Pike",
                 location: "River",
                 shadowSize: 5,
                 time: "All Day",
-                months: "Sept through Dec",
+                months: "September, October, November, and December",
                 hasBeenCaught: false)
 
 var piranha = Fish(name: "Piranha",
@@ -482,7 +482,7 @@ var piranha = Fish(name: "Piranha",
                    location: "River",
                    shadowSize: 2,
                    time: "9AM - 4PM / 9PM - 4AM",
-                   months: "June through Sept",
+                   months: "June, July, August, and September",
                    hasBeenCaught: false)
 
 var pondSmelt = Fish(name: "Pond Smelt",
@@ -491,7 +491,7 @@ var pondSmelt = Fish(name: "Pond Smelt",
                      location: "River",
                      shadowSize: 2,
                      time: "All Day",
-                     months: "Dec through Feb",
+                     months: "December, January, and February",
                      hasBeenCaught: false)
 
 var popeyedGoldfish = Fish(name: "Pop-Eyed Goldfish",
@@ -500,7 +500,7 @@ var popeyedGoldfish = Fish(name: "Pop-Eyed Goldfish",
                            location: "Pond",
                            shadowSize: 1,
                            time: "9AM - 4PM",
-                           months: "All Year",
+                           months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                            hasBeenCaught: false)
 
 var pufferFish = Fish(name: "Puffer Fish",
@@ -509,7 +509,7 @@ var pufferFish = Fish(name: "Puffer Fish",
                       location: "Sea",
                       shadowSize: 3,
                       time: "All Day",
-                      months: "July through Sept",
+                      months: "July, August, and September",
                       hasBeenCaught: false)
 
 var rainbowfish = Fish(name: "Rainbowfish",
@@ -518,7 +518,7 @@ var rainbowfish = Fish(name: "Rainbowfish",
                        location: "River",
                        shadowSize: 1,
                        time: "9AM - 4PM",
-                       months: "May through Oct",
+                       months: "May, June, July, August, September, and October",
                        hasBeenCaught: false)
 
 var ranchuGoldfish = Fish(name: "Ranchu Goldfish",
@@ -527,7 +527,7 @@ var ranchuGoldfish = Fish(name: "Ranchu Goldfish",
                           location: "Pond",
                           shadowSize: 2,
                           time: "9AM - 4PM",
-                          months: "All Year",
+                          months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                           hasBeenCaught: false)
 
 var ray = Fish(name: "Ray",
@@ -535,7 +535,7 @@ var ray = Fish(name: "Ray",
                price: 3000, location: "Sea",
                shadowSize: 5,
                time: "4AM - 9PM",
-               months: "Aug through Nov",
+               months: "August, September, October, and November",
                hasBeenCaught: false)
 
 var redSnapper = Fish(name: "Red Snapper",
@@ -544,7 +544,7 @@ var redSnapper = Fish(name: "Red Snapper",
                       location: "Sea",
                       shadowSize: 4,
                       time: "All Day",
-                      months: "All Year",
+                      months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                       hasBeenCaught: false)
 
 var ribbonEel = Fish(name: "Ribbon Eel",
@@ -553,7 +553,7 @@ var ribbonEel = Fish(name: "Ribbon Eel",
                      location: "Sea",
                      shadowSize: 0,
                      time: "All Day",
-                     months: "June through Oct",
+                     months: "June, July, August, September, and October",
                      hasBeenCaught: false)
 // This eel's shadow is also "narrow"
 
@@ -563,7 +563,7 @@ var sadddledBichir = Fish(name: "Saddled Bichir",
                           location: "River",
                           shadowSize: 4,
                           time: "9PM - 4AM",
-                          months: "June through Sept",
+                          months: "June, July, August, and September",
                           hasBeenCaught: false)
 
 var salmon = Fish(name: "Salmon",
@@ -581,7 +581,7 @@ var sawShark = Fish(name: "Saw Shark",
                     location: "Sea",
                     shadowSize: 6,
                     time: "4PM - 9AM",
-                    months: "June through Sept",
+                    months: "June, July, August, and September",
                     hasBeenCaught: false)
 // Also has a fin
 
@@ -591,7 +591,7 @@ var seaBass = Fish(name: "Sea Bass",
                    location: "Sea",
                    shadowSize: 5,
                    time: "All Day",
-                   months: "All Year",
+                   months: "January, February, March, April, May, June, July, August, September, October, November, and December",
                    hasBeenCaught: false)
 
 var seaButterfly = Fish(name: "Sea Butterfly",
@@ -600,7 +600,7 @@ var seaButterfly = Fish(name: "Sea Butterfly",
                         location: "Sea",
                         shadowSize: 1,
                         time: "All Day",
-                        months: "Dec through March",
+                        months: "December, January, February, and March",
                         hasBeenCaught: false)
 
 var seaHorse = Fish(name: "Sea Horse",
@@ -609,7 +609,7 @@ var seaHorse = Fish(name: "Sea Horse",
                     location: "Sea",
                     shadowSize: 1,
                     time: "All Day",
-                    months: "Apr through Nov",
+                    months: "April, May, June, July, August, September, October, and November",
                     hasBeenCaught: false)
 
 var snappingTurtle = Fish(name: "Snapping Turtle",
@@ -618,7 +618,7 @@ var snappingTurtle = Fish(name: "Snapping Turtle",
                           location: "River",
                           shadowSize: 4,
                           time: "9PM - 4AM",
-                          months: "Apr through Oct",
+                          months: "April, May, June, July, and October",
                           hasBeenCaught: false)
 
 var softShelledTurtle = Fish(name: "Soft-Shelled Turtle",
@@ -636,7 +636,7 @@ var squid = Fish(name: "Squid",
                  location: "Sea",
                  shadowSize: 3,
                  time: "All Day",
-                 months: "Dec through Aug",
+                 months: "December, January, February, March, April, May, June, July, and August",
                  hasBeenCaught: false)
 
 var stringfish = Fish(name: "Stringfish",
@@ -645,7 +645,7 @@ var stringfish = Fish(name: "Stringfish",
                       location: "River (Clifftop)",
                       shadowSize: 5,
                       time: "4PM - 9AM",
-                      months: "Dec through Mar",
+                      months: "December, January, February, and March",
                       hasBeenCaught: false)
 
 var sturgeon = Fish(name: "Sturgeon",
@@ -654,7 +654,7 @@ var sturgeon = Fish(name: "Sturgeon",
                     location: "River (Mouth)",
                     shadowSize: 6,
                     time: "All Day",
-                    months: "Sept through Mar",
+                    months: "September, October, November, December, January, February, and March",
                     hasBeenCaught: false)
 
 var suckerfish = Fish(name: "Suckerfish",
@@ -663,7 +663,7 @@ var suckerfish = Fish(name: "Suckerfish",
                       location: "Sea",
                       shadowSize: 4,
                       time: "All Day",
-                      months: "June through Sept",
+                      months: "June, July, August, and September",
                       hasBeenCaught: false)
 // Also has a fin
 
@@ -673,7 +673,7 @@ var surgeonfish = Fish(name: "Suregonfish",
                        location: "Sea",
                        shadowSize: 2,
                        time: "All Day",
-                       months: "Apr through Sept",
+                       months: "April, May, June, July, August, and September",
                        hasBeenCaught: false)
 
 var sweeftfish = Fish(name: "Sweetfish",
@@ -682,7 +682,7 @@ var sweeftfish = Fish(name: "Sweetfish",
                       location: "River",
                       shadowSize: 3,
                       time: "All Day",
-                      months: "July through Sept",
+                      months: "July, August, and September",
                       hasBeenCaught: false)
 
 var tadpole = Fish(name: "Tadpole",
@@ -691,7 +691,7 @@ var tadpole = Fish(name: "Tadpole",
                    location: "Pond",
                    shadowSize: 1,
                    time: "All Day",
-                   months: "Mar through July",
+                   months: "March, April, May, June, and July",
                    hasBeenCaught: false)
 
 var tilapia = Fish(name: "Tilapia",
@@ -700,7 +700,7 @@ var tilapia = Fish(name: "Tilapia",
                    location: "River",
                    shadowSize: 3,
                    time: "All Day",
-                   months: "June through Oct",
+                   months: "June, July, August, September, and October",
                    hasBeenCaught: false)
 
 var tuna = Fish(name: "Tuna",
@@ -709,7 +709,7 @@ var tuna = Fish(name: "Tuna",
                 location: "Pier",
                 shadowSize: 6,
                 time: "All DDay",
-                months: "Nov through Apr",
+                months: "November, December, January, February, March, and April",
                 hasBeenCaught: false)
 
 var whaleShark = Fish(name: "Whale Shark",
@@ -718,7 +718,7 @@ var whaleShark = Fish(name: "Whale Shark",
                       location: "Sea",
                       shadowSize: 6,
                       time: "All Day",
-                      months: "June through Sept",
+                      months: "June, July, August, and September",
                       hasBeenCaught: false)
 
 var yellowPerch = Fish(name: "Yellow Perch",
@@ -727,7 +727,7 @@ var yellowPerch = Fish(name: "Yellow Perch",
                        location: "River",
                        shadowSize: 3,
                        time: "All Day",
-                       months: "Oct through Mar",
+                       months: "October, November, December, January, February, and March",
                        hasBeenCaught: false)
 
 var zebraTurkeyfish = Fish(name: "Zebra Turkeyfish",
@@ -736,9 +736,57 @@ var zebraTurkeyfish = Fish(name: "Zebra Turkeyfish",
                            location: "Sea",
                            shadowSize: 3,
                            time: "All day",
-                           months: "Apr through Nov",
+                           months: "April, May, June, July, August, September, October, and November",
                            hasBeenCaught: false)
 
-var allFish = [anchovy, angelfish, arapaima, arowana, barredKnifejaw, barreleye, betta, bitterling, blackBass, blowfish, blueMarlin, blueGill, butterflyFish, carp, catfish, char, cherrySalmon, clownFish, coelacanth, crawfish, crucianCarp, dab, dace, dorado, footballFish, freshwaterGoby, frog, gar, giantSnakehead, giantTrevally, goldenTrout, goldfish, greatWhiteShark, guppy, hammerheadShark, horseMackerel, killifish, kingSalmon, koi, loach, mahiMahi, mittenCrab, morayEel, napoleonfish, neonTetra, nibbleFish, oarfish, oceanSunfish, oliveFlounder, paleChub, pike, piranha, pondSmelt, popeyedGoldfish, pufferFish, rainbowfish, ranchuGoldfish, ray, redSnapper, ribbonEel, sadddledBichir, salmon, sawShark, seaBass, seaButterfly, seaHorse, snappingTurtle, softShelledTurtle, squid, stringfish, suckerfish, surgeonfish, sweeftfish, tadpole, tilapia, tuna, whaleShark, yellowPerch, zebraTurkeyfish]
+var allFish = [anchovy, angelfish, arapaima, arowana, barredKnifejaw, barreleye, betta, bitterling, blackBass, blowfish, blueMarchlin, blueGill, butterflyFish, carp, catfish, char, cherrySalmon, clownFish, coelacanth, crawfish, crucianCarp, dab, dace, dorado, footballFish, freshwaterGoby, frog, gar, giantSnakehead, giantTrevally, goldenTrout, goldfish, greatWhiteShark, guppy, hammerheadShark, horseMackerel, killifish, kingSalmon, koi, loach, mahiMahi, mittenCrab, morayEel, napoleonfish, neonTetra, nibbleFish, oarfish, oceanSunfish, oliveFlounder, paleChub, pike, piranha, pondSmelt, popeyedGoldfish, pufferFish, rainbowfish, ranchuGoldfish, ray, redSnapper, ribbonEel, sadddledBichir, salmon, sawShark, seaBass, seaButterfly, seaHorse, snappingTurtle, softShelledTurtle, squid, stringfish, suckerfish, surgeonfish, sweeftfish, tadpole, tilapia, tuna, whaleShark, yellowPerch, zebraTurkeyfish]
+
+var catchableFish: [Fish] = []
+
+var catchableSeaFish: [Fish] = []
+var catchablePondFish: [Fish] = []
+var catchablePierFish: [Fish] = []
+var catchableRiverFish: [Fish] = []
+var catchableClifftopFish: [Fish] = []
+var catchableSeaFishWhileRaining: [Fish] = []
+
+func catchableFishThisMonth() {
+    let now = Date()
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MMM"
+    let currentMonth = dateFormatter.string(from: now)
+    
+    for fish in allFish {
+        guard let fishMonths = fish.months else { return }
+        if fishMonths.contains(currentMonth) {
+            catchableFish.append(fish)
+            
+            guard let fishName = fish.name,
+                let fishLocation = fish.location else { return }
+            print("\(fishName) can be caught right now in \(fishLocation)!\n")
+        }
+    }
+}
+
+func determineCatchableFishLocations() {
+    
+    for fish in catchableFish {
+        guard let fishLocation = fish.location else { return }
+        
+        if fishLocation.contains("Sea") {
+            catchableSeaFish.append(fish)
+        } else if fishLocation.contains("Pond") {
+            catchablePondFish.append(fish)
+        } else if fishLocation.contains("Pier") {
+            catchablePierFish.append(fish)
+        } else if fishLocation.contains("River") {
+            catchableRiverFish.append(fish)
+        } else if fishLocation.contains("clifftop") {
+            catchableClifftopFish.append(fish)
+        } else {
+            print("missing location: \(fishLocation)")
+        }
+    }
+}
 
 

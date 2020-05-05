@@ -26,6 +26,8 @@ class FishDetailViewController: UIViewController {
     var fishMonths: String = ""
     var defaults = UserDefaults.standard
     
+    var arrayOfFishes: [Fish] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateFish()
@@ -61,7 +63,6 @@ class FishDetailViewController: UIViewController {
             caughtSwitch.isOn = false
         }
     }
-
 
     @IBAction func caughtSwitchChanged(_ sender: UISwitch) {
         

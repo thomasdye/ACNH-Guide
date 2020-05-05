@@ -10,6 +10,7 @@ import UIKit
 
 class FishTableTableViewController: UITableViewController {
     
+    var arrayOfFishes: [Fish] = []
     
     let greenBackgroundColor = UIColor(hue: 0.2833, saturation: 0.49, brightness: 1, alpha: 1.0)
     let redBackgroundColor = UIColor(hue: 0, saturation: 0.49, brightness: 0.9, alpha: 1.0)
@@ -17,8 +18,8 @@ class FishTableTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        catchableFishThisMonth()
+        determineCatchableFishLocations()
     }
     
     override func viewWillAppear(_ animated: Bool) {
