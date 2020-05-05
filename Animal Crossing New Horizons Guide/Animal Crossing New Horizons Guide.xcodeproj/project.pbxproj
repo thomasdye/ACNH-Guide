@@ -18,7 +18,7 @@
 		ED320C33244E558400FD7886 /* Fossil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C32244E558400FD7886 /* Fossil.swift */; };
 		ED667ABA244F362F00D73B58 /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667AB9244F362F00D73B58 /* Fish.swift */; };
 		ED667ABC244F377900D73B58 /* FishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667ABB244F377900D73B58 /* FishDetailViewController.swift */; };
-		ED667ABE244F378B00D73B58 /* FishTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667ABD244F378B00D73B58 /* FishTableTableViewController.swift */; };
+		ED667ABE244F378B00D73B58 /* FishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667ABD244F378B00D73B58 /* FishTableViewController.swift */; };
 		ED667AC82450714A00D73B58 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667AC72450714A00D73B58 /* Bug.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		ED320C32244E558400FD7886 /* Fossil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fossil.swift; sourceTree = "<group>"; };
 		ED667AB9244F362F00D73B58 /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
 		ED667ABB244F377900D73B58 /* FishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailViewController.swift; sourceTree = "<group>"; };
-		ED667ABD244F378B00D73B58 /* FishTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableTableViewController.swift; sourceTree = "<group>"; };
+		ED667ABD244F378B00D73B58 /* FishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableViewController.swift; sourceTree = "<group>"; };
 		ED667AC72450714A00D73B58 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED2BA4102461BC2300A722C9 /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED320C2D244E500800FD7886 /* FossilsTableViewController.swift */,
+				ED667ABD244F378B00D73B58 /* FishTableViewController.swift */,
+			);
+			path = "Table Views";
+			sourceTree = "<group>";
+		};
+		ED2BA4112461BC5C00A722C9 /* Detail Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED320C2F244E503900FD7886 /* FossilDetailViewController.swift */,
+				ED667ABB244F377900D73B58 /* FishDetailViewController.swift */,
+			);
+			path = "Detail Views";
+			sourceTree = "<group>";
+		};
 		ED320C09244E4D1C00FD7886 = {
 			isa = PBXGroup;
 			children = (
@@ -87,10 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				ED320C2A244E4FC300FD7886 /* GuideViewController.swift */,
-				ED320C2D244E500800FD7886 /* FossilsTableViewController.swift */,
-				ED320C2F244E503900FD7886 /* FossilDetailViewController.swift */,
-				ED667ABB244F377900D73B58 /* FishDetailViewController.swift */,
-				ED667ABD244F378B00D73B58 /* FishTableTableViewController.swift */,
+				ED2BA4112461BC5C00A722C9 /* Detail Views */,
+				ED2BA4102461BC2300A722C9 /* Table Views */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -177,7 +193,7 @@
 			files = (
 				ED667ABA244F362F00D73B58 /* Fish.swift in Sources */,
 				ED320C2E244E500800FD7886 /* FossilsTableViewController.swift in Sources */,
-				ED667ABE244F378B00D73B58 /* FishTableTableViewController.swift in Sources */,
+				ED667ABE244F378B00D73B58 /* FishTableViewController.swift in Sources */,
 				ED320C33244E558400FD7886 /* Fossil.swift in Sources */,
 				ED667AC82450714A00D73B58 /* Bug.swift in Sources */,
 				ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */,

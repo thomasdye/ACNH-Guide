@@ -665,7 +665,6 @@ var suckerfish = Fish(name: "Suckerfish",
                       time: "All Day",
                       months: "June, July, August, and September",
                       hasBeenCaught: false)
-// Also has a fin
 
 var surgeonfish = Fish(name: "Suregonfish",
                        image: UIImage(named: "surgeonfish"),
@@ -763,7 +762,7 @@ func catchableFishThisMonth() {
             
             guard let fishName = fish.name,
                 let fishLocation = fish.location else { return }
-            print("\(fishName) can be caught right now in \(fishLocation)!\n")
+//            print("\(fishName) can be caught right now in \(fishLocation)!\n")
         }
     }
 }
@@ -788,5 +787,3 @@ func determineCatchableFishLocations() {
         }
     }
 }
-
-

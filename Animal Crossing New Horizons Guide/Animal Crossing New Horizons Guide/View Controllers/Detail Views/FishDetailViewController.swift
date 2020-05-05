@@ -33,6 +33,7 @@ class FishDetailViewController: UIViewController {
         updateFish()
         loadDefaults()
         checkIfCaught()
+        setUpLabels()
     }
     
     func saveDefaults() {
@@ -45,14 +46,28 @@ class FishDetailViewController: UIViewController {
         selectedFish.hasBeenCaught = defaults.bool(forKey: defaultsKey!)
     }
     
+    func setUpLabels() {
+        monthsLabel.numberOfLines = 0
+        
+        
+    }
+    
     func updateFish() {
+        
+        
         title = selectedFish.name
-        priceLabel.text = "💰 Bells: \(selectedFish.price ?? 0)"
-        shadowSizeLabel.text = "🐟 Shadow Size: \(selectedFish.shadowSize ?? 0)"
-        timeLabel.text = "🕙 Time: \(selectedFish.time ?? "")"
-        monthsLabel.text = "📆 Months: \(selectedFish.months ?? "")"
+        
+        guard let price = selectedFish.price,
+            let shadowSize = selectedFish.shadowSize,
+            let time = selectedFish.time,
+            let months = selectedFish.months,
+            let location = selectedFish.location else { return }
+        priceLabel.text = "💰 Bells: \(price)"
+        shadowSizeLabel.text = "🐟 Shadow Size: \(shadowSize)"
+        timeLabel.text = "🕙 Time: \(time)"
+        monthsLabel.text = "📆 Months: \(months)"
         fishImage.image = selectedFish.image
-        locationLabel.text = "🗺 Location: \(selectedFish.location ?? "")"
+        locationLabel.text = "🗺 Location: \(location)"
     }
     
     

@@ -9,7 +9,7 @@
 import UIKit
 
 // Create Fossil Struct
-struct Fossil {
+struct Fossil: Equatable {
     var name: String?
     var price: Int?
     var image: UIImage?
@@ -680,3 +680,6 @@ var tRexFossils = [tRexSkull.name,
                    tRexTail.name]
 
 var allFossils = [acanthostega, amber, ammonite, anomalocaris, archaeopteryx, australopith, coprolite, dinosaurTrack, dunkleosteus, eusthenopteron, juramaia, myllokunmingia, sharkToothPattern, trilobite, ankyloSkull, ankyloTorso, ankyloTail, archelonSkull, archelonTail, brachioSkull, brachioChest, brachioPelvis, brachioTail, deinonyTorso, deinonyTail, dimetrodonSkull, dimetrodonTorso, diploSkull, diploNeck, diploChest, diploPelvis, diploTail, diploTailTip, iguanodonSkull, iguanodonTorso, iguanodonTail, mammothSkull, mammothTorso, megaceroSkull, megaceroTorso, megaceroTail, leftMegaloSide, rightMegaloSide, ophthalmoSkull, ophthalmoTorso, pachysaurusSkull, pachysaurusTail, parasaurSkull, parasaurTorso, parasaurTail, plesioSkull, plesioBody, plesioTail, rightPteraWing, pteraBody, leftPteraWing, rightQuetzalWing, quetzalTorso, leftQuetzalWing, sabertoothSkull, sabertoothTail, spinoSkull, spinoTorso, spinoTail, stegoSkull, stegoTorso, stegoTail, triceraSkull, triceraTorso, triceraTail, tRexSkull, tRexTorso, tRexTail]
+
+var notFoundFossils: [Fossil] = []
+var foundFossils: [Fossil] = []

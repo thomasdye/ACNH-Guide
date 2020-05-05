@@ -1,5 +1,5 @@
 //
-//  FishTableTableViewController.swift
+//  FishTableViewController.swift
 //  Animal Crossing New Horizons Guide
 //
 //  Created by Thomas Dye on 4/21/20.
