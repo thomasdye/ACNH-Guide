@@ -21,15 +21,15 @@ class FossilsTableViewController: UITableViewController {
     let defaults = UserDefaults.standard
     let allFossilsReset = allFossils
     
-    @IBOutlet weak var sortButton: UIBarButtonItem!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpSortButton()
+        tableView.reloadData()
+        title = "Fossils"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tableView.reloadData()
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -87,32 +87,4 @@ class FossilsTableViewController: UITableViewController {
             fossilDetailVC.selectedFossil = selectedFossil
         }
     }
-    
-    func setUpSortButton() {
-        sortButton.title = "Not Found"
-        sortButton.tintColor = greenBackgroundColor
-        title = "Fossils - All"
-    }
-    
-    @IBAction func sortButtonTapped(_ sender: UIBarButtonItem) {
-        
-        if sortButton.title == "All" {
-            sortButton.title = "Not Found"
-            title = "Fossils - All"
-            allFossils = allFossilsReset
-            tableView.reloadData()
-        } else if sortButton.title == "Not Found" {
-            sortButton.title = "Found"
-            title = "Fossils - Not Found"
-            allFossils = notFoundFossils
-            tableView.reloadData()
-        } else if sortButton.title == "Found" {
-            sortButton.title = "All"
-            title = "Fossils - Found"
-            allFossils = foundFossils
-            tableView.reloadData()
-        }
-
-    }
-    
 }

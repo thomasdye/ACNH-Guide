@@ -96,7 +96,7 @@ class FishTableViewController: UITableViewController {
     func setUpSortButton() {
         let now = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM"
+        dateFormatter.dateFormat = "MMMM"
         let currentMonth = dateFormatter.string(from: now)
         
         sortButton.title = currentMonth
@@ -106,17 +106,17 @@ class FishTableViewController: UITableViewController {
     @IBAction func sortButtonTapped(_ sender: UIBarButtonItem) {
         let now = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM"
+        dateFormatter.dateFormat = "MMMM"
         let currentMonth = dateFormatter.string(from: now)
         
         if sortButton.title == currentMonth {
             sortButton.title = "All"
-            title = "Fish in \(currentMonth)"
+            title = "Fish - \(currentMonth)"
             allFish = catchableFish
             tableView.reloadData()
         } else {
             sortButton.title = currentMonth
-            title = "Fish"
+            title = "Fish - All"
             allFish = allFishReset
             tableView.reloadData()
         }

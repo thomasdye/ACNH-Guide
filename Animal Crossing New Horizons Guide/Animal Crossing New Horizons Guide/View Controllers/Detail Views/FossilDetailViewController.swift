@@ -77,6 +77,7 @@ class FossilDetailViewController: UIViewController {
         if foundSwitch.isOn == true {
             selectedFossil.hasBeenFound = true
             saveDefaults()
+            
         } else {
             selectedFossil.hasBeenFound = false
             saveDefaults()

@@ -85,16 +85,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="hNm-0P-DS6"/>
-                    <navigationItem key="navigationItem" title="Fossils" id="jZz-qU-rjp">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="l9d-CY-0A2">
-                            <connections>
-                                <action selector="sortButtonTapped:" destination="Cu8-kV-Lri" id="SLc-Gy-0fw"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="sortButton" destination="l9d-CY-0A2" id="3zr-Pl-Jlg"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Fossils" id="jZz-qU-rjp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjv-D5-gki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,7 +181,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQk-Vp-Evz">
-                                <rect key="frame" x="20" y="184" width="374" height="24"/>
+                                <rect key="frame" x="20" y="184" width="75.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -249,7 +240,6 @@
                             <constraint firstItem="NqG-Kj-96h" firstAttribute="centerX" secondItem="3JK-By-DG0" secondAttribute="centerX" id="Dlf-FC-W86"/>
                             <constraint firstItem="IQM-c2-JJq" firstAttribute="leading" secondItem="a2M-ix-UDX" secondAttribute="leading" constant="20" id="MNl-pc-3X9"/>
                             <constraint firstItem="Pzz-ZH-rTM" firstAttribute="top" secondItem="IQM-c2-JJq" secondAttribute="bottom" constant="10" id="Sf6-E8-jSL"/>
-                            <constraint firstItem="a2M-ix-UDX" firstAttribute="trailing" secondItem="EQk-Vp-Evz" secondAttribute="trailing" constant="20" id="SyO-YH-AHG"/>
                             <constraint firstItem="a2M-ix-UDX" firstAttribute="trailing" secondItem="yZr-Nl-Sdq" secondAttribute="trailing" constant="20" id="Ypu-JY-mxl"/>
                             <constraint firstItem="IQM-c2-JJq" firstAttribute="top" secondItem="Rth-95-FYB" secondAttribute="bottom" constant="10" id="abH-zI-Q5N"/>
                             <constraint firstItem="a2M-ix-UDX" firstAttribute="trailing" secondItem="Rth-95-FYB" secondAttribute="trailing" constant="20" id="cI5-8H-Zeu"/>

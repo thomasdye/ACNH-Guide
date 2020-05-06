@@ -104,8 +104,8 @@ var blowfish = Fish(name: "Blowfish",
                     months: "November, December, January, and February",
                     hasBeenCaught: false)
 
-var blueMarchlin = Fish(name: "Blue Marchlin",
-                      image: UIImage(named: "blueMarchlin"),
+var blueMarlin = Fish(name: "Blue Marlin",
+                      image: UIImage(named: "blueMarlin"),
                       price: 10000,
                       location: "Pier",
                       shadowSize: 6,
@@ -133,7 +133,8 @@ var butterflyFish = Fish(name: "Butterfly Fish",
 
 var carp = Fish(name: "Carp",
                 image: UIImage(named: "carp"),
-                price: 300, location: "Pond",
+                price: 300,
+                location: "Pond",
                 shadowSize: 4,
                 time: "All Day",
                 months: "January, February, March, April, May, June, July, August, September, October, November, and December",
@@ -193,7 +194,7 @@ var crawfish = Fish(name: "Crawfish",
                     hasBeenCaught: false)
 
 var crucianCarp = Fish(name: "Crucian Carp",
-                       image: UIImage(named: "crucian-carp"),
+                       image: UIImage(named: "crucianCarp"),
                        price: 160,
                        location: "River",
                        shadowSize: 2,
@@ -229,7 +230,7 @@ var dorado = Fish(name: "Dorado",
                   hasBeenCaught: false)
 
 var footballFish = Fish(name: "Football Fish",
-                        image: UIImage(named: "football-fish"),
+                        image: UIImage(named: "footballFish"),
                         price: 2500,
                         location: "Sea",
                         shadowSize: 4,
@@ -238,7 +239,7 @@ var footballFish = Fish(name: "Football Fish",
                         hasBeenCaught: false)
 
 var freshwaterGoby = Fish(name: "Freshwater Goby",
-                          image: UIImage(named: "freshwater-goby"),
+                          image: UIImage(named: "freshwaterGoby"),
                           price: 400,
                           location: "River",
                           shadowSize: 2,
@@ -265,7 +266,7 @@ var gar = Fish(name: "Gar",
                hasBeenCaught: false)
 
 var giantSnakehead = Fish(name: "Giant Snakehead",
-                          image: UIImage(named: "giant-snakehead"),
+                          image: UIImage(named: "giantSnakehead"),
                           price: 5500,
                           location: "Pond",
                           shadowSize: 4,
@@ -274,7 +275,7 @@ var giantSnakehead = Fish(name: "Giant Snakehead",
                           hasBeenCaught: false)
 
 var giantTrevally = Fish(name: "Giant Trevally",
-                         image: UIImage(named: "giant-trevally"),
+                         image: UIImage(named: "giantTrevally"),
                          price: 4500,
                          location: "Pier",
                          shadowSize: 5,
@@ -283,7 +284,7 @@ var giantTrevally = Fish(name: "Giant Trevally",
                          hasBeenCaught: false)
 
 var goldenTrout = Fish(name: "Golden Trout",
-                       image: UIImage(named: "golden-trout"),
+                       image: UIImage(named: "goldenTrout"),
                        price: 15000,
                        location: "River (Clifftop)",
                        shadowSize: 3,
@@ -301,7 +302,7 @@ var goldfish = Fish(name: "Goldfish",
                     hasBeenCaught: false)
 
 var greatWhiteShark = Fish(name: "Great White Shark",
-                           image: UIImage(named: "great-white-shark"),
+                           image: UIImage(named: "greatWhiteShark"),
                            price: 15000,
                            location: "Sea",
                            shadowSize: 6,
@@ -320,7 +321,7 @@ var guppy = Fish(name: "Guppy",
                  hasBeenCaught: false)
 
 var hammerheadShark = Fish(name: "Hammerhead Shark",
-                           image: UIImage(named: "hammerhead-shark"),
+                           image: UIImage(named: "hammerheadShark"),
                            price: 8000,
                            location: "Sea",
                            shadowSize: 6,
@@ -330,7 +331,7 @@ var hammerheadShark = Fish(name: "Hammerhead Shark",
 // Also has a fin on the shadow
 
 var horseMackerel = Fish(name: "Horse Mackerel",
-                         image: UIImage(named: "horse-mackerel"),
+                         image: UIImage(named: "horseMackerel"),
                          price: 150,
                          location: "Sea",
                          shadowSize: 2,
@@ -348,7 +349,7 @@ var killifish = Fish(name: "Killifish",
                      hasBeenCaught: false)
 
 var kingSalmon = Fish(name: "King Salmon",
-                      image: UIImage(named: "king-salmon"),
+                      image: UIImage(named: "kingSalmon"),
                       price: 1800,
                       location: "River (Mouth)",
                       shadowSize: 6,
@@ -375,7 +376,7 @@ var loach = Fish(name: "Loach",
                  hasBeenCaught: false)
 
 var mahiMahi = Fish(name: "Mahi-Mahi",
-                    image: UIImage(named: "mahi-mahi"),
+                    image: UIImage(named: "mahiMahi"),
                     price: 6000,
                     location: "Pier",
                     shadowSize: 5,
@@ -384,7 +385,7 @@ var mahiMahi = Fish(name: "Mahi-Mahi",
                     hasBeenCaught: false)
 
 var mittenCrab = Fish(name: "Mitten Crab",
-                      image: UIImage(named: "mitten-crab"),
+                      image: UIImage(named: "mittenCrab"),
                       price: 2000,
                       location: "River",
                       shadowSize: 2,
@@ -393,7 +394,7 @@ var mittenCrab = Fish(name: "Mitten Crab",
                       hasBeenCaught: false)
 
 var morayEel = Fish(name: "Moray Eel",
-                    image: UIImage(named: "moray-eel"),
+                    image: UIImage(named: "morayEel"),
                     price: 2000,
                     location: "Sea",
                     shadowSize: 0,
@@ -413,7 +414,7 @@ var napoleonfish = Fish(name: "Napoleonfish",
                         hasBeenCaught: false)
 
 var neonTetra = Fish(name: "Neon Tetra",
-                     image: UIImage(named: "neon-tetra"),
+                     image: UIImage(named: "neonTetra"),
                      price: 500,
                      location: "River",
                      shadowSize: 1,
@@ -422,7 +423,7 @@ var neonTetra = Fish(name: "Neon Tetra",
                      hasBeenCaught: false)
 
 var nibbleFish = Fish(name: "Nibble Fish",
-                      image: UIImage(named: "nibble-fish"),
+                      image: UIImage(named: "nibbleFish"),
                       price: 1500,
                       location: "River",
                       shadowSize: 1,
@@ -440,7 +441,7 @@ var oarfish = Fish(name: "Oarfish",
                    hasBeenCaught: false)
 
 var oceanSunfish = Fish(name: "Ocean Sunfish",
-                        image: UIImage(named: "ocean-sunfish"),
+                        image: UIImage(named: "oceanSunfish"),
                         price: 4000,
                         location: "Sea",
                         shadowSize: 6,
@@ -450,7 +451,7 @@ var oceanSunfish = Fish(name: "Ocean Sunfish",
 // Also has a fin
 
 var oliveFlounder = Fish(name: "Olive Flounder",
-                         image: UIImage(named: "olive-flounder"),
+                         image: UIImage(named: "oliveFlounder"),
                          price: 800,
                          location: "Sea",
                          shadowSize: 5,
@@ -459,7 +460,7 @@ var oliveFlounder = Fish(name: "Olive Flounder",
                          hasBeenCaught: false)
 
 var paleChub = Fish(name: "Pale Chub",
-                    image: UIImage(named: "pale-chub"),
+                    image: UIImage(named: "paleChub"),
                     price: 200,
                     location: "River",
                     shadowSize: 1,
@@ -486,7 +487,7 @@ var piranha = Fish(name: "Piranha",
                    hasBeenCaught: false)
 
 var pondSmelt = Fish(name: "Pond Smelt",
-                     image: UIImage(named: "Pond Smelt"),
+                     image: UIImage(named: "pondSmelt"),
                      price: 500,
                      location: "River",
                      shadowSize: 2,
@@ -495,7 +496,7 @@ var pondSmelt = Fish(name: "Pond Smelt",
                      hasBeenCaught: false)
 
 var popeyedGoldfish = Fish(name: "Pop-Eyed Goldfish",
-                           image: UIImage(named: "pop-eyed-goldfish"),
+                           image: UIImage(named: "popEyedGoldfish"),
                            price: 1300,
                            location: "Pond",
                            shadowSize: 1,
@@ -504,7 +505,7 @@ var popeyedGoldfish = Fish(name: "Pop-Eyed Goldfish",
                            hasBeenCaught: false)
 
 var pufferFish = Fish(name: "Puffer Fish",
-                      image: UIImage(named: "puffer-fish"),
+                      image: UIImage(named: "pufferFish"),
                       price: 250,
                       location: "Sea",
                       shadowSize: 3,
@@ -522,7 +523,7 @@ var rainbowfish = Fish(name: "Rainbowfish",
                        hasBeenCaught: false)
 
 var ranchuGoldfish = Fish(name: "Ranchu Goldfish",
-                          image: UIImage(named: "ranchu-goldfish"),
+                          image: UIImage(named: "ranchuGoldfish"),
                           price: 4500,
                           location: "Pond",
                           shadowSize: 2,
@@ -539,7 +540,7 @@ var ray = Fish(name: "Ray",
                hasBeenCaught: false)
 
 var redSnapper = Fish(name: "Red Snapper",
-                      image: UIImage(named: "red-snapper"),
+                      image: UIImage(named: "redSnapper"),
                       price: 3000,
                       location: "Sea",
                       shadowSize: 4,
@@ -548,7 +549,7 @@ var redSnapper = Fish(name: "Red Snapper",
                       hasBeenCaught: false)
 
 var ribbonEel = Fish(name: "Ribbon Eel",
-                     image: UIImage(named: "ribbon-eel"),
+                     image: UIImage(named: "ribbonEel"),
                      price: 600,
                      location: "Sea",
                      shadowSize: 0,
@@ -558,7 +559,7 @@ var ribbonEel = Fish(name: "Ribbon Eel",
 // This eel's shadow is also "narrow"
 
 var sadddledBichir = Fish(name: "Saddled Bichir",
-                          image: UIImage(named: "saddled-bichir"),
+                          image: UIImage(named: "saddledBichir"),
                           price: 4000,
                           location: "River",
                           shadowSize: 4,
@@ -576,7 +577,7 @@ var salmon = Fish(name: "Salmon",
                   hasBeenCaught: false)
 
 var sawShark = Fish(name: "Saw Shark",
-                    image: UIImage(named: "saw-shark"),
+                    image: UIImage(named: "sawShark"),
                     price: 12000,
                     location: "Sea",
                     shadowSize: 6,
@@ -586,7 +587,7 @@ var sawShark = Fish(name: "Saw Shark",
 // Also has a fin
 
 var seaBass = Fish(name: "Sea Bass",
-                   image: UIImage(named: "sea-bass"),
+                   image: UIImage(named: "seaBass"),
                    price: 400,
                    location: "Sea",
                    shadowSize: 5,
@@ -595,7 +596,7 @@ var seaBass = Fish(name: "Sea Bass",
                    hasBeenCaught: false)
 
 var seaButterfly = Fish(name: "Sea Butterfly",
-                        image: UIImage(named: "sea-butterfly"),
+                        image: UIImage(named: "seaButterfly"),
                         price: 1000,
                         location: "Sea",
                         shadowSize: 1,
@@ -604,7 +605,7 @@ var seaButterfly = Fish(name: "Sea Butterfly",
                         hasBeenCaught: false)
 
 var seaHorse = Fish(name: "Sea Horse",
-                    image: UIImage(named: "sea-horse"),
+                    image: UIImage(named: "seaHorse"),
                     price: 1100,
                     location: "Sea",
                     shadowSize: 1,
@@ -613,7 +614,7 @@ var seaHorse = Fish(name: "Sea Horse",
                     hasBeenCaught: false)
 
 var snappingTurtle = Fish(name: "Snapping Turtle",
-                          image: UIImage(named: "snapping-turtle"),
+                          image: UIImage(named: "snappingTurtle"),
                           price: 5000,
                           location: "River",
                           shadowSize: 4,
@@ -622,7 +623,7 @@ var snappingTurtle = Fish(name: "Snapping Turtle",
                           hasBeenCaught: false)
 
 var softShelledTurtle = Fish(name: "Soft-Shelled Turtle",
-                             image: UIImage(named: "soft-shelled turtle"),
+                             image: UIImage(named: "softShelledTurtle"),
                              price: 3750,
                              location: "River",
                              shadowSize: 4,
@@ -712,7 +713,7 @@ var tuna = Fish(name: "Tuna",
                 hasBeenCaught: false)
 
 var whaleShark = Fish(name: "Whale Shark",
-                      image: UIImage(named: "whale-shark"),
+                      image: UIImage(named: "whaleShark"),
                       price: 13000,
                       location: "Sea",
                       shadowSize: 6,
@@ -721,7 +722,7 @@ var whaleShark = Fish(name: "Whale Shark",
                       hasBeenCaught: false)
 
 var yellowPerch = Fish(name: "Yellow Perch",
-                       image: UIImage(named: "yellow-perch"),
+                       image: UIImage(named: "yellowPerch"),
                        price: 300,
                        location: "River",
                        shadowSize: 3,
@@ -730,7 +731,7 @@ var yellowPerch = Fish(name: "Yellow Perch",
                        hasBeenCaught: false)
 
 var zebraTurkeyfish = Fish(name: "Zebra Turkeyfish",
-                           image: UIImage(named: "zebra-turkeyfish"),
+                           image: UIImage(named: "zebraTurkeyfish"),
                            price: 500,
                            location: "Sea",
                            shadowSize: 3,
@@ -738,7 +739,7 @@ var zebraTurkeyfish = Fish(name: "Zebra Turkeyfish",
                            months: "April, May, June, July, August, September, October, and November",
                            hasBeenCaught: false)
 
-var allFish = [anchovy, angelfish, arapaima, arowana, barredKnifejaw, barreleye, betta, bitterling, blackBass, blowfish, blueMarchlin, blueGill, butterflyFish, carp, catfish, char, cherrySalmon, clownFish, coelacanth, crawfish, crucianCarp, dab, dace, dorado, footballFish, freshwaterGoby, frog, gar, giantSnakehead, giantTrevally, goldenTrout, goldfish, greatWhiteShark, guppy, hammerheadShark, horseMackerel, killifish, kingSalmon, koi, loach, mahiMahi, mittenCrab, morayEel, napoleonfish, neonTetra, nibbleFish, oarfish, oceanSunfish, oliveFlounder, paleChub, pike, piranha, pondSmelt, popeyedGoldfish, pufferFish, rainbowfish, ranchuGoldfish, ray, redSnapper, ribbonEel, sadddledBichir, salmon, sawShark, seaBass, seaButterfly, seaHorse, snappingTurtle, softShelledTurtle, squid, stringfish, suckerfish, surgeonfish, sweeftfish, tadpole, tilapia, tuna, whaleShark, yellowPerch, zebraTurkeyfish]
+var allFish = [anchovy, angelfish, arapaima, arowana, barredKnifejaw, barreleye, betta, bitterling, blackBass, blowfish, blueMarlin, blueGill, butterflyFish, carp, catfish, char, cherrySalmon, clownFish, coelacanth, crawfish, crucianCarp, dab, dace, dorado, footballFish, freshwaterGoby, frog, gar, giantSnakehead, giantTrevally, goldenTrout, goldfish, greatWhiteShark, guppy, hammerheadShark, horseMackerel, killifish, kingSalmon, koi, loach, mahiMahi, mittenCrab, morayEel, napoleonfish, neonTetra, nibbleFish, oarfish, oceanSunfish, oliveFlounder, paleChub, pike, piranha, pondSmelt, popeyedGoldfish, pufferFish, rainbowfish, ranchuGoldfish, ray, redSnapper, ribbonEel, sadddledBichir, salmon, sawShark, seaBass, seaButterfly, seaHorse, snappingTurtle, softShelledTurtle, squid, stringfish, suckerfish, surgeonfish, sweeftfish, tadpole, tilapia, tuna, whaleShark, yellowPerch, zebraTurkeyfish]
 
 var catchableFish: [Fish] = []
 
@@ -762,7 +763,7 @@ func catchableFishThisMonth() {
             
             guard let fishName = fish.name,
                 let fishLocation = fish.location else { return }
-//            print("\(fishName) can be caught right now in \(fishLocation)!\n")
+            print("\(fishName) can be caught right now in \(fishLocation)!\n")
         }
     }
 }
