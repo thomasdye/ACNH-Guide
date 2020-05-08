@@ -33,7 +33,7 @@
         <!--Fossils-->
         <scene sceneID="afT-aL-5oE">
             <objects>
-                <navigationController id="KFR-br-GqI" sceneMemberID="viewController">
+                <navigationController id="KFR-br-GqI" customClass="FossilsNavigationController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Fossils" id="4r1-Rm-iSK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="B4p-CY-jf0">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>

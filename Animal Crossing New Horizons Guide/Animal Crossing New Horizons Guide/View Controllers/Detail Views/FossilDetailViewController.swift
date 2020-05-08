@@ -33,7 +33,7 @@ class FossilDetailViewController: UIViewController {
         checkIfDinosaur()
         loadDefaults()
         checkIfFound()
-
+        setUpSwitch()
     }
 
     func saveDefaults() {
@@ -79,20 +79,32 @@ class FossilDetailViewController: UIViewController {
         relatedFossils.adjustsFontSizeToFitWidth = true
     }
     
+    func setUpSwitch() {
+        if foundSwitch.isOn == true {
+            foundSwitch.thumbTintColor = .systemBlue
+            foundSwitch.onTintColor = .white
+        } else {
+            foundSwitch.thumbTintColor = .gray
+        }
+    }
+    
     @IBAction func foundSwitchChanged(_ sender: UISwitch) {
         
         if foundSwitch.isOn == true {
             selectedFossil.hasBeenFound = true
             saveDefaults()
-            UIView.animate(withDuration: 1) {
+            UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = self.greenBackgroundColor
             }
+            foundSwitch.thumbTintColor = .systemBlue
+            foundSwitch.onTintColor = .white
         } else {
             selectedFossil.hasBeenFound = false
             saveDefaults()
-            UIView.animate(withDuration: 1) {
+            UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = UIColor.systemBackground
             }
+            foundSwitch.thumbTintColor = .gray
         }
     }
 }

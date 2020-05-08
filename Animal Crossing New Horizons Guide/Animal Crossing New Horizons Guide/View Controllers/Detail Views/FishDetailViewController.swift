@@ -37,6 +37,7 @@ class FishDetailViewController: UIViewController {
         loadDefaults()
         checkIfCaught()
         setUpLabels()
+        setUpSwitch()
     }
     
     func saveDefaults() {
@@ -83,21 +84,33 @@ class FishDetailViewController: UIViewController {
             self.view.backgroundColor = UIColor.systemBackground
         }
     }
+    
+    func setUpSwitch() {
+        if caughtSwitch.isOn == true {
+            caughtSwitch.thumbTintColor = .systemBlue
+            caughtSwitch.onTintColor = .white
+        } else {
+            caughtSwitch.thumbTintColor = .gray
+        }
+    }
 
     @IBAction func caughtSwitchChanged(_ sender: UISwitch) {
         
         if caughtSwitch.isOn == true {
             selectedFish.hasBeenCaught = true
             saveDefaults()
-            UIView.animate(withDuration: 1) {
+            UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = self.greenBackgroundColor
             }
+            caughtSwitch.thumbTintColor = .systemBlue
+            caughtSwitch.onTintColor = .white
         } else {
             selectedFish.hasBeenCaught = false
             saveDefaults()
-            UIView.animate(withDuration: 1) {
+            UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = UIColor.systemBackground
             }
+            caughtSwitch.thumbTintColor = .gray
         }
     }
     
