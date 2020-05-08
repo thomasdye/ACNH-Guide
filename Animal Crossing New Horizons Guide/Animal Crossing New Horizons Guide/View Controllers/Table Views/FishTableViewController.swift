@@ -24,6 +24,7 @@ class FishTableViewController: UITableViewController {
 
     let defaults = UserDefaults.standard
     let allFishReset = allFish
+    let fishes = allFish
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,17 +50,23 @@ class FishTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FishCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FishCell", for: indexPath) as! FishTableViewCell
         
         var fish = allFish[indexPath.row]
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM"
+        let currentMonth = dateFormatter.string(from: now)
         
-        guard let fishName = fish.name,
-            let fishLocation = fish.location,
-            let fishTime = fish.time,
-            let fishPrice = fish.price else { return UITableViewCell() }
-        cell.textLabel?.text = "\(fishName)"
-        cell.detailTextLabel?.numberOfLines = 0
-        cell.detailTextLabel?.text = "Location: \(fishLocation)\nTime: \(fishTime)\nBells: \(fishPrice)"
+        cell.fishNameLabel.text = fish.name
+        cell.fishBellsLabel.text = String(fish.price!)
+        cell.fishImage.image = fish.image
+        
+        if (fish.months?.contains(currentMonth))! {
+            cell.catchableLabel.text = "Yes"
+        } else {
+            cell.catchableLabel.text = "No"
+        }
         
         // Load defaults function
         func loadDefaults() {

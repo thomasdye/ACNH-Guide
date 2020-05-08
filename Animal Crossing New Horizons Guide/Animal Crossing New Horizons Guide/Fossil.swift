@@ -333,7 +333,7 @@ var mammothTorso = Fossil(name: "Mammoth Torso",
                           image: UIImage(named: "mammothTorso"),
                           isDinosaur: true,
                           dinosaurSpecies: "Mammoth",
-                          relatedFossils: "Mammoth Tail",
+                          relatedFossils: "Mammoth Skull",
                           hasBeenFound: false)
 
 var mammothSkulls = [mammothSkull.name,

@@ -20,11 +20,13 @@ class FossilsTableViewController: UITableViewController {
                                       alpha: 1.0)
     let defaults = UserDefaults.standard
     let allFossilsReset = allFossils
+    var foundFossilsCount: Int = 0
+    var notFoundFossilsCount: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
-        title = "Fossils"
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,27 +47,23 @@ class FossilsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FossilCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FossilCell", for: indexPath) as! FossilTableViewCell
         
         var fossil = allFossils[indexPath.row]
-        cell.textLabel?.text = fossil.name
-        cell.detailTextLabel?.text = "Bells: \(fossil.price ?? 0)"
+        
+        cell.fossilImage.image = fossil.image
+        cell.fossilNameLabel.text = fossil.name
+        cell.fossilBellsLabel.text = String(fossil.price!)
         
         // Load defaults function
         func loadDefaults() {
             let defaultsKey = fossil.name
             fossil.hasBeenFound = defaults.bool(forKey: defaultsKey!)
-            
-            if fossil.hasBeenFound == false && notFoundFossils.contains(fossil) == false {
-                notFoundFossils.append(fossil)
-            } else if fossil.hasBeenFound == true && foundFossils.contains(fossil) == false {
-                foundFossils.append(fossil)
-            }
         }
         
         // Load in user defaults
         loadDefaults()
-        
+
         if fossil.hasBeenFound == true {
             cell.backgroundColor = greenBackgroundColor
             cell.tintColor = grayBackgroundColor
