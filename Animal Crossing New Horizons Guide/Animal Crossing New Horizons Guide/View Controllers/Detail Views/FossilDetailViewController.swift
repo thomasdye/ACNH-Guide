@@ -21,6 +21,10 @@ class FossilDetailViewController: UIViewController {
     var dinosaurSpecies: String = ""
     var allDinosaurFossils: String = ""
     var defaults = UserDefaults.standard
+    let greenBackgroundColor = UIColor(hue: 0.4639,
+                                       saturation: 1,
+                                       brightness: 0.89,
+                                       alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +33,7 @@ class FossilDetailViewController: UIViewController {
         checkIfDinosaur()
         loadDefaults()
         checkIfFound()
+
     }
 
     func saveDefaults() {
@@ -62,8 +67,10 @@ class FossilDetailViewController: UIViewController {
     func checkIfFound() {
         if selectedFossil.hasBeenFound == true {
             foundSwitch.isOn = true
+            self.view.backgroundColor = self.greenBackgroundColor
         } else {
             foundSwitch.isOn = false
+            self.view.backgroundColor = UIColor.systemBackground
         }
     }
     
@@ -77,10 +84,15 @@ class FossilDetailViewController: UIViewController {
         if foundSwitch.isOn == true {
             selectedFossil.hasBeenFound = true
             saveDefaults()
-            
+            UIView.animate(withDuration: 1) {
+                self.view.backgroundColor = self.greenBackgroundColor
+            }
         } else {
             selectedFossil.hasBeenFound = false
             saveDefaults()
+            UIView.animate(withDuration: 1) {
+                self.view.backgroundColor = UIColor.systemBackground
+            }
         }
     }
 }

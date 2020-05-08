@@ -25,8 +25,11 @@ class FishDetailViewController: UIViewController {
     var fishShadowSize: Int = 0
     var fishMonths: String = ""
     var defaults = UserDefaults.standard
-    
     var arrayOfFishes: [Fish] = []
+    let greenBackgroundColor = UIColor(hue: 0.4639,
+                                       saturation: 1,
+                                       brightness: 0.89,
+                                       alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,8 +77,10 @@ class FishDetailViewController: UIViewController {
     func checkIfCaught() {
         if selectedFish.hasBeenCaught == true {
             caughtSwitch.isOn = true
+            self.view.backgroundColor = self.greenBackgroundColor
         } else {
             caughtSwitch.isOn = false
+            self.view.backgroundColor = UIColor.systemBackground
         }
     }
 
@@ -84,9 +89,15 @@ class FishDetailViewController: UIViewController {
         if caughtSwitch.isOn == true {
             selectedFish.hasBeenCaught = true
             saveDefaults()
+            UIView.animate(withDuration: 1) {
+                self.view.backgroundColor = self.greenBackgroundColor
+            }
         } else {
             selectedFish.hasBeenCaught = false
             saveDefaults()
+            UIView.animate(withDuration: 1) {
+                self.view.backgroundColor = UIColor.systemBackground
+            }
         }
     }
     

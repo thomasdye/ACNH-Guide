@@ -108,6 +108,10 @@ class FishTableViewController: UITableViewController {
         
         sortButton.title = currentMonth
         sortButton.tintColor = greenBackgroundColor
+        sortButton.setTitleTextAttributes([
+            NSAttributedString.Key.font : UIFont(name: "FinkHeavy", size: 26)!],
+                                          for: .normal)
+        
     }
     
     @IBAction func sortButtonTapped(_ sender: UIBarButtonItem) {

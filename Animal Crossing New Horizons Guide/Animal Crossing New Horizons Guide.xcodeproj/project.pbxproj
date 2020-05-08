@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		ED1F305924651BE0008269F7 /* FishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F305824651BE0008269F7 /* FishTableViewCell.swift */; };
 		ED1F305B2465231A008269F7 /* FossilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F305A2465231A008269F7 /* FossilTableViewCell.swift */; };
+		ED1F30612465C8DA008269F7 /* FinkHeavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED1F30602465C8DA008269F7 /* FinkHeavy.ttf */; };
+		ED1F30632465CD2A008269F7 /* AnimalCrossingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F30622465CD2A008269F7 /* AnimalCrossingTabBarController.swift */; };
 		ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C15244E4D1C00FD7886 /* AppDelegate.swift */; };
 		ED320C18244E4D1C00FD7886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */; };
 		ED320C1D244E4D1C00FD7886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320C1B244E4D1C00FD7886 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		ED1F305824651BE0008269F7 /* FishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableViewCell.swift; sourceTree = "<group>"; };
 		ED1F305A2465231A008269F7 /* FossilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FossilTableViewCell.swift; sourceTree = "<group>"; };
+		ED1F30602465C8DA008269F7 /* FinkHeavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FinkHeavy.ttf; sourceTree = "<group>"; };
+		ED1F30622465CD2A008269F7 /* AnimalCrossingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCrossingTabBarController.swift; sourceTree = "<group>"; };
 		ED320C12244E4D1C00FD7886 /* Animal Crossing New Horizons Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal Crossing New Horizons Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED320C15244E4D1C00FD7886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED1F305F2465C8B4008269F7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ED1F30602465C8DA008269F7 /* FinkHeavy.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		ED2BA4102461BC2300A722C9 /* Table Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +111,11 @@
 				ED320C15244E4D1C00FD7886 /* AppDelegate.swift */,
 				ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */,
 				ED320C1E244E4D2200FD7886 /* Assets.xcassets */,
-				ED320C23244E4D2300FD7886 /* Info.plist */,
 				ED320C32244E558400FD7886 /* Fossil.swift */,
 				ED667AB9244F362F00D73B58 /* Fish.swift */,
 				ED667AC72450714A00D73B58 /* Bug.swift */,
+				ED320C23244E4D2300FD7886 /* Info.plist */,
+				ED1F305F2465C8B4008269F7 /* Fonts */,
 			);
 			path = "Animal Crossing New Horizons Guide";
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				ED320C2A244E4FC300FD7886 /* GuideViewController.swift */,
+				ED1F30622465CD2A008269F7 /* AnimalCrossingTabBarController.swift */,
 				ED2BA4112461BC5C00A722C9 /* Detail Views */,
 				ED2BA4102461BC2300A722C9 /* Table Views */,
 			);
@@ -186,6 +200,7 @@
 			files = (
 				ED320C22244E4D2200FD7886 /* LaunchScreen.storyboard in Resources */,
 				ED320C1F244E4D2200FD7886 /* Assets.xcassets in Resources */,
+				ED1F30612465C8DA008269F7 /* FinkHeavy.ttf in Resources */,
 				ED320C1D244E4D1C00FD7886 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED1F305924651BE0008269F7 /* FishTableViewCell.swift in Sources */,
+				ED1F30632465CD2A008269F7 /* AnimalCrossingTabBarController.swift in Sources */,
 				ED667ABA244F362F00D73B58 /* Fish.swift in Sources */,
 				ED320C2E244E500800FD7886 /* FossilsTableViewController.swift in Sources */,
 				ED667ABE244F378B00D73B58 /* FishTableViewController.swift in Sources */,
