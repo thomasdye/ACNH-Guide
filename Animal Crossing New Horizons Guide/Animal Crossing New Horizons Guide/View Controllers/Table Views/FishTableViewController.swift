@@ -127,7 +127,7 @@ class FishTableViewController: UITableViewController {
             tableView.reloadData()
         } else {
             sortButton.title = currentMonth
-            title = "Fish - All"
+            title = "Fish"
             allFish = allFishReset
             tableView.reloadData()
         }
