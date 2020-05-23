@@ -25,6 +25,8 @@ class FishTableViewController: UITableViewController {
     let defaults = UserDefaults.standard
     let allFishReset = allFish
     let fishes = allFish
+    var caughtFish: Int = 0
+    var notCaughtFish: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +37,27 @@ class FishTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.tableView.reloadData()
+        resetFishCount()
+        determineCaughtFish()
+        title = "Fish - (\(caughtFish)/\(notCaughtFish))"
+    }
+    
+    func determineCaughtFish() {
+        for fish in allFish {
+            let defaultsKey = fish.name
+            let fishHasBeenCaught = defaults.bool(forKey: defaultsKey!)
+            
+            if fishHasBeenCaught == true {
+                caughtFish += 1
+            } else {
+                notCaughtFish += 1
+            }
+        }
+    }
+    
+    func resetFishCount() {
+        caughtFish = 0
+        notCaughtFish = 0
     }
 
     // MARK: - Table view data source

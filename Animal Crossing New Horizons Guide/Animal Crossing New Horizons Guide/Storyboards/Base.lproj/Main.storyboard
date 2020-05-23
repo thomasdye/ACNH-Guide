@@ -40,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Cu8-kV-Lri" kind="relationship" relationship="rootViewController" id="Phs-h3-Meg"/>
+                        <segue destination="Cu8-kV-Lri" kind="relationship" relationship="rootViewController" id="N34-Ss-RUp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnZ-Eg-Nlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -55,9 +55,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="OQg-hM-emh">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FossilCell" id="rkO-eD-oDQ" customClass="FossilTableViewCell" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="110.5"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="110.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkO-eD-oDQ" id="wtG-yt-KNi">
                                     <rect key="frame" x="0.0" y="0.0" width="383" height="110.5"/>
@@ -116,6 +121,9 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="hNm-0P-DS6"/>
                     <navigationItem key="navigationItem" title="Fossils" id="jZz-qU-rjp"/>
+                    <connections>
+                        <outlet property="searchBar" destination="OQg-hM-emh" id="nDg-wI-f8p"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjv-D5-gki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

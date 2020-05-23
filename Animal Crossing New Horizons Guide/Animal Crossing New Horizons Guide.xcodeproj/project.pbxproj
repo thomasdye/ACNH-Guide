@@ -12,6 +12,7 @@
 		ED1F30612465C8DA008269F7 /* FinkHeavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED1F30602465C8DA008269F7 /* FinkHeavy.ttf */; };
 		ED1F30632465CD2A008269F7 /* AnimalCrossingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F30622465CD2A008269F7 /* AnimalCrossingTabBarController.swift */; };
 		ED1F30652465D51D008269F7 /* FossilsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F30642465D51D008269F7 /* FossilsNavigationController.swift */; };
+		ED1F306A246711CA008269F7 /* NewFossilsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F3069246711CA008269F7 /* NewFossilsViewController.swift */; };
 		ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C15244E4D1C00FD7886 /* AppDelegate.swift */; };
 		ED320C18244E4D1C00FD7886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */; };
 		ED320C1D244E4D1C00FD7886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED320C1B244E4D1C00FD7886 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		ED1F30602465C8DA008269F7 /* FinkHeavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FinkHeavy.ttf; sourceTree = "<group>"; };
 		ED1F30622465CD2A008269F7 /* AnimalCrossingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCrossingTabBarController.swift; sourceTree = "<group>"; };
 		ED1F30642465D51D008269F7 /* FossilsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FossilsNavigationController.swift; sourceTree = "<group>"; };
+		ED1F3069246711CA008269F7 /* NewFossilsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFossilsViewController.swift; sourceTree = "<group>"; };
 		ED320C12244E4D1C00FD7886 /* Animal Crossing New Horizons Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal Crossing New Horizons Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED320C15244E4D1C00FD7886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				ED1F30622465CD2A008269F7 /* AnimalCrossingTabBarController.swift */,
 				ED1F30642465D51D008269F7 /* FossilsNavigationController.swift */,
+				ED1F3069246711CA008269F7 /* NewFossilsViewController.swift */,
 				ED2BA4112461BC5C00A722C9 /* Detail Views */,
 				ED2BA4102461BC2300A722C9 /* Table Views */,
 			);
@@ -221,6 +224,7 @@
 				ED320C33244E558400FD7886 /* Fossil.swift in Sources */,
 				ED667AC82450714A00D73B58 /* Bug.swift in Sources */,
 				ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */,
+				ED1F306A246711CA008269F7 /* NewFossilsViewController.swift in Sources */,
 				ED1F305B2465231A008269F7 /* FossilTableViewCell.swift in Sources */,
 				ED320C18244E4D1C00FD7886 /* SceneDelegate.swift in Sources */,
 				ED667ABC244F377900D73B58 /* FishDetailViewController.swift in Sources */,
