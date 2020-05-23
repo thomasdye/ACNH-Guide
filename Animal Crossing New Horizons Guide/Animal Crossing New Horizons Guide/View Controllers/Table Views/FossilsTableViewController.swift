@@ -137,6 +137,10 @@ class FossilsTableViewController: UITableViewController, UISearchBarDelegate {
         self.searchBar.endEditing(true)
     }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.searchBar.endEditing(true)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowFossilSegue" {
             
