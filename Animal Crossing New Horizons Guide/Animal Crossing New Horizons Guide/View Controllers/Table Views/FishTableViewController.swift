@@ -14,7 +14,7 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var sortButton: UIBarButtonItem!
     
-    var filteredFish: [Fish] = []
+    var filteredFish: [Fish] = allFish
     
     let greenBackgroundColor = UIColor(hue: 0.4639,
                                        saturation: 1,
@@ -46,7 +46,7 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         self.tableView.reloadData()
         resetFishCount()
         determineCaughtFish()
-        title = "Fish - (\(caughtFish)/\(allFish.count))"
+        title = "Fish - (\(caughtFish)/\(notCaughtFish))"
     }
     
     func determineCaughtFish() {
@@ -125,7 +125,7 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         // Use the filter method to iterate over all items in the data array
         // For each item, return true if the item should be included and false if the
         // item should NOT be included
-        filteredFish = searchText.isEmpty ? allFish : allFish.filter { (item: Fish) -> Bool in
+        filteredFish = searchText.isEmpty ? allFish : filteredFish.filter { (item: Fish) -> Bool in
             // If dataItem matches the searchText, return true to include it
             return item.name!.range(of: searchText,
                                     options: .caseInsensitive,
@@ -181,12 +181,12 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         if sortButton.title == currentMonth {
             sortButton.title = "All"
             title = "Fish - \(currentMonth)"
-            allFish = catchableFish
+            filteredFish = catchableFish
             tableView.reloadData()
         } else {
             sortButton.title = currentMonth
             title = "Fish"
-            allFish = allFishReset
+            filteredFish = allFishReset
             tableView.reloadData()
         }
     }
