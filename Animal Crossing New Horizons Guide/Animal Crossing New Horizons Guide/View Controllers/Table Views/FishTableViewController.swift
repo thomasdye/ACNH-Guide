@@ -8,9 +8,13 @@
 
 import UIKit
 
-class FishTableViewController: UITableViewController {
+class FishTableViewController: UITableViewController, UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     @IBOutlet weak var sortButton: UIBarButtonItem!
+    
+    var filteredFish: [Fish] = []
     
     let greenBackgroundColor = UIColor(hue: 0.4639,
                                        saturation: 1,
@@ -33,6 +37,9 @@ class FishTableViewController: UITableViewController {
         catchableFishThisMonth()
         determineCatchableFishLocations()
         setUpSortButton()
+        tableView.dataSource = self
+        searchBar.delegate = self
+        filteredFish = allFish
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,13 +76,13 @@ class FishTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return allFish.count
+        return filteredFish.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FishCell", for: indexPath) as! FishTableViewCell
         
-        var fish = allFish[indexPath.row]
+        var fish = filteredFish[indexPath.row]
         let now = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM"
@@ -112,13 +119,29 @@ class FishTableViewController: UITableViewController {
         return cell
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // When there is no text, filteredData is the same as the original data
+        // When user has entered text into the search box
+        // Use the filter method to iterate over all items in the data array
+        // For each item, return true if the item should be included and false if the
+        // item should NOT be included
+        filteredFish = searchText.isEmpty ? allFish : allFish.filter { (item: Fish) -> Bool in
+            // If dataItem matches the searchText, return true to include it
+            return item.name!.range(of: searchText,
+                                    options: .caseInsensitive,
+                                    range: nil,
+                                    locale: nil) != nil
+        }
+        tableView.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowFishSegue" {
             
             guard let indexPath = tableView.indexPathForSelectedRow,
                 let fishDetailVC = segue.destination as? FishDetailViewController else { return }
             
-            let selectedFish = allFish[indexPath.row]
+            let selectedFish = filteredFish[indexPath.row]
             fishDetailVC.selectedFish = selectedFish
         }
     }
