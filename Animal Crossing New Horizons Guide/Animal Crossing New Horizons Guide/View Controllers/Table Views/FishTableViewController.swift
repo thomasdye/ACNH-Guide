@@ -46,7 +46,7 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         self.tableView.reloadData()
         resetFishCount()
         determineCaughtFish()
-        title = "Fish - (\(caughtFish)/\(notCaughtFish))"
+        title = "Fish - (\(caughtFish)/\(allFish.count))"
     }
     
     func determineCaughtFish() {
