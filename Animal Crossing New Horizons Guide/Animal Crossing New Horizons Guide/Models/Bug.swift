@@ -437,7 +437,7 @@ var orchidMantis = Critter(name: "Orchid Mantis",
                            months: "March, April, May, June, July, August, September, October and November",
                            hasBeenCaught: false)
 
-var paperKiteButtefly = Critter(name: "Paper Kite Buttefly",
+var paperKiteButterfly = Critter(name: "Paper Kite Butterfly",
                                 image: UIImage(named: "paperKiteButterfly"),
                                 price: 1000,
                                 location: "Flying",
@@ -445,7 +445,7 @@ var paperKiteButtefly = Critter(name: "Paper Kite Buttefly",
                                 months: "January, February, March, April, May, June, July, August, September, October, November and December",
                                 hasBeenCaught: false)
 
-var peacockButtefly = Critter(name: "Peacock Buttefly",
+var peacockButterfly = Critter(name: "Peacock Butterfly",
                               image: UIImage(named: "peacockButterfly"),
                               price: 2500,
                               location: "Flying Near Hybrid Flowers",
@@ -565,7 +565,7 @@ var spider = Critter(name: "Spider",
                      hasBeenCaught: false)
 
 var stinkBug = Critter(name: "Stinkbug",
-                       image: UIImage(named: "stinkbug"),
+                       image: UIImage(named: "stinkBug"),
                        price: 120,
                        location: "On Flowers",
                        time: "All Day",
@@ -652,7 +652,7 @@ var yellowButterfly = Critter(name: "Yellow Butterfly",
                               months: "March, April, May, June, September and October",
                               hasBeenCaught: false)
 
-let allBugs: [Critter] = [agriasButterfly, ant, atlasMoth, bagworm, bandedDragonfly, bellCricket, blueWeevilBeetle, brownCicada, centipede, cicadaShell, citrusLonghornedBeetle, commonBluebottle, commonButterfly, cricket, cyclommatusStag, damselfy, darnerDragonfly, divingBeetle, dungBeetle, earthBoringDungBeetle, emperorButterfly, eveningCicada, firefly, flea, fly, giantCicada, giantStag, giantWaterBug, giraffeStag, goldenStag, goliathBeetle, grasshopper, greatPurpleEmperor, hermitCrab, honeybee, hornedAtlas, hornedDynastid, hornedElephant, hornedHercules, jewelBeetle, ladybug, longLocust, madagascanSunsetMoth, manFacedStinkBug, mantis, migratoryLocust, miyamaStag, moleCricket, monarchButterfly, mosquito, moth, orchidMantis, paperKiteButtefly, peacockButtefly, pillBug, pondskater, queenAlexandrasBirdwing, rainbowStag, rajahBrookesBirdwing, redDragonfly, riceGrasshopper, robustCicada, rosaliaBatesiBeetle, sawStag, scarabBeetle, scorpion, snail, spider, stinkBug, tarantula, tigerBeetle, tigerButterfly, violinBeetle, walkerCicada, walkingLeaf, walkingStick, wasp, wharfRoach, yellowButterfly]
+let allBugs: [Critter] = [agriasButterfly, ant, atlasMoth, bagworm, bandedDragonfly, bellCricket, blueWeevilBeetle, brownCicada, centipede, cicadaShell, citrusLonghornedBeetle, commonBluebottle, commonButterfly, cricket, cyclommatusStag, damselfy, darnerDragonfly, divingBeetle, dungBeetle, earthBoringDungBeetle, emperorButterfly, eveningCicada, firefly, flea, fly, giantCicada, giantStag, giantWaterBug, giraffeStag, goldenStag, goliathBeetle, grasshopper, greatPurpleEmperor, hermitCrab, honeybee, hornedAtlas, hornedDynastid, hornedElephant, hornedHercules, jewelBeetle, ladybug, longLocust, madagascanSunsetMoth, manFacedStinkBug, mantis, migratoryLocust, miyamaStag, moleCricket, monarchButterfly, mosquito, moth, orchidMantis, paperKiteButterfly, peacockButterfly, pillBug, pondskater, queenAlexandrasBirdwing, rainbowStag, rajahBrookesBirdwing, redDragonfly, riceGrasshopper, robustCicada, rosaliaBatesiBeetle, sawStag, scarabBeetle, scorpion, snail, spider, stinkBug, tarantula, tigerBeetle, tigerButterfly, violinBeetle, walkerCicada, walkingLeaf, walkingStick, wasp, wharfRoach, yellowButterfly]
 
 var catchableBugs: [Critter] = []
 
