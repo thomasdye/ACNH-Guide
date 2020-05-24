@@ -25,6 +25,9 @@
 		ED667ABC244F377900D73B58 /* FishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667ABB244F377900D73B58 /* FishDetailViewController.swift */; };
 		ED667ABE244F378B00D73B58 /* FishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667ABD244F378B00D73B58 /* FishTableViewController.swift */; };
 		ED667AC82450714A00D73B58 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667AC72450714A00D73B58 /* Bug.swift */; };
+		EDBBD036247A345300DCBE44 /* BugTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBD035247A345300DCBE44 /* BugTableViewCell.swift */; };
+		EDBBD038247A34AF00DCBE44 /* BugsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBD037247A34AF00DCBE44 /* BugsTableViewController.swift */; };
+		EDBBD03A247A368900DCBE44 /* BugDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBD039247A368900DCBE44 /* BugDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		ED667ABB244F377900D73B58 /* FishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailViewController.swift; sourceTree = "<group>"; };
 		ED667ABD244F378B00D73B58 /* FishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableViewController.swift; sourceTree = "<group>"; };
 		ED667AC72450714A00D73B58 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
+		EDBBD035247A345300DCBE44 /* BugTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugTableViewCell.swift; sourceTree = "<group>"; };
+		EDBBD037247A34AF00DCBE44 /* BugsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsTableViewController.swift; sourceTree = "<group>"; };
+		EDBBD039247A368900DCBE44 /* BugDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +75,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		ED2BA4102461BC2300A722C9 /* Table Views */ = {
+		ED2BA4102461BC2300A722C9 /* Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
-				ED320C2D244E500800FD7886 /* FossilsTableViewController.swift */,
-				ED667ABD244F378B00D73B58 /* FishTableViewController.swift */,
 				ED1F305824651BE0008269F7 /* FishTableViewCell.swift */,
 				ED1F305A2465231A008269F7 /* FossilTableViewCell.swift */,
+				EDBBD035247A345300DCBE44 /* BugTableViewCell.swift */,
 			);
-			path = "Table Views";
+			path = "Table View Cells";
 			sourceTree = "<group>";
 		};
 		ED2BA4112461BC5C00A722C9 /* Detail Views */ = {
@@ -85,6 +90,7 @@
 			children = (
 				ED320C2F244E503900FD7886 /* FossilDetailViewController.swift */,
 				ED667ABB244F377900D73B58 /* FishDetailViewController.swift */,
+				EDBBD039247A368900DCBE44 /* BugDetailViewController.swift */,
 			);
 			path = "Detail Views";
 			sourceTree = "<group>";
@@ -126,8 +132,11 @@
 				ED1F30622465CD2A008269F7 /* AnimalCrossingTabBarController.swift */,
 				ED1F30642465D51D008269F7 /* FossilsNavigationController.swift */,
 				ED1F3069246711CA008269F7 /* NewFossilsViewController.swift */,
+				ED320C2D244E500800FD7886 /* FossilsTableViewController.swift */,
+				ED667ABD244F378B00D73B58 /* FishTableViewController.swift */,
+				EDBBD037247A34AF00DCBE44 /* BugsTableViewController.swift */,
 				ED2BA4112461BC5C00A722C9 /* Detail Views */,
-				ED2BA4102461BC2300A722C9 /* Table Views */,
+				ED2BA4102461BC2300A722C9 /* Table View Cells */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -223,8 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBBD038247A34AF00DCBE44 /* BugsTableViewController.swift in Sources */,
 				ED1F305924651BE0008269F7 /* FishTableViewCell.swift in Sources */,
 				ED1F30632465CD2A008269F7 /* AnimalCrossingTabBarController.swift in Sources */,
+				EDBBD036247A345300DCBE44 /* BugTableViewCell.swift in Sources */,
 				ED667ABA244F362F00D73B58 /* Fish.swift in Sources */,
 				ED320C2E244E500800FD7886 /* FossilsTableViewController.swift in Sources */,
 				ED667ABE244F378B00D73B58 /* FishTableViewController.swift in Sources */,
@@ -235,6 +246,7 @@
 				ED1F306A246711CA008269F7 /* NewFossilsViewController.swift in Sources */,
 				ED1F305B2465231A008269F7 /* FossilTableViewCell.swift in Sources */,
 				ED320C18244E4D1C00FD7886 /* SceneDelegate.swift in Sources */,
+				EDBBD03A247A368900DCBE44 /* BugDetailViewController.swift in Sources */,
 				ED667ABC244F377900D73B58 /* FishDetailViewController.swift in Sources */,
 				ED320C30244E503900FD7886 /* FossilDetailViewController.swift in Sources */,
 			);

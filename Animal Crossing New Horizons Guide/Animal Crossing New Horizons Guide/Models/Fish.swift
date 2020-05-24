@@ -772,6 +772,7 @@ func catchableFishThisMonth() {
     }
 }
 
+// Not being used yet
 func determineCatchableFishLocations() {
     
     for fish in catchableFish {
@@ -785,7 +786,7 @@ func determineCatchableFishLocations() {
             catchablePierFish.append(fish)
         } else if fishLocation.contains("River") {
             catchableRiverFish.append(fish)
-        } else if fishLocation.contains("clifftop") {
+        } else if fishLocation.contains("Clifftop") {
             catchableClifftopFish.append(fish)
         } else {
             print("missing location: \(fishLocation)")

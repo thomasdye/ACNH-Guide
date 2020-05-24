@@ -42,7 +42,7 @@ class FossilsTableViewController: UITableViewController, UISearchBarDelegate {
         tableView.reloadData()
         resetFossilCount()
         determineFoundFossils()
-        title = "Fossils - (\(foundFossilsCount)/\(totalFossils))"
+//        title = "Fossils - (\(foundFossilsCount)/\(allFossils.count))"
     }
     
     func determineFoundFossils() {

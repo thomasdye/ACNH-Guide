@@ -1,20 +1,20 @@
 //
-//  FishTableViewController.swift
+//  BugsTableViewController.swift
 //  Animal Crossing New Horizons Guide
 //
-//  Created by Thomas Dye on 4/21/20.
+//  Created by Thomas Dye on 5/24/20.
 //  Copyright © 2020 Thomas Dye. All rights reserved.
 //
 
 import UIKit
 
-class FishTableViewController: UITableViewController, UISearchBarDelegate {
+class BugsTableViewController: UITableViewController, UISearchBarDelegate {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
     @IBOutlet weak var sortButton: UIBarButtonItem!
     
-    var filteredFish: [Fish] = allFish
+    var filteredBugs: [Critter] = allBugs
     
     let greenBackgroundColor = UIColor(hue: 0.4639,
                                        saturation: 1,
@@ -27,43 +27,42 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
                                       alpha: 1.0)
 
     let defaults = UserDefaults.standard
-    let allFishReset = allFish
-    var caughtFish: Int = 0
+    let allBugsReset = allBugs
+    var caughtBugs: Int = 0
     var notCaughtFish: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        catchableFishThisMonth()
-        determineCatchableFishLocations()
+        catchableBugsThisMonth()
         setUpSortButton()
         
         tableView.dataSource = self
         searchBar.delegate = self
-        filteredFish = allFish
+        filteredBugs = allBugs
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tableView.reloadData()
-        resetFishCount()
-        determineCaughtFish()
-        title = "Fish - (\(caughtFish)/\(notCaughtFish))"
+        resetBugCount()
+        determineCaughtBugs()
+//        title = "Bugs - (\(caughtBugs)/\(allBugs.count))"
     }
     
-    func determineCaughtFish() {
-        for fish in allFish {
-            let defaultsKey = fish.name
-            let fishHasBeenCaught = defaults.bool(forKey: defaultsKey!)
+    func determineCaughtBugs() {
+        for bug in allBugs {
+            let defaultsKey = bug.name
+            let bugHasBeenCaught = defaults.bool(forKey: defaultsKey!)
             
-            if fishHasBeenCaught == true {
-                caughtFish += 1
+            if bugHasBeenCaught == true {
+                caughtBugs += 1
             } else {
                 notCaughtFish += 1
             }
         }
     }
     
-    func resetFishCount() {
-        caughtFish = 0
+    func resetBugCount() {
+        caughtBugs = 0
         notCaughtFish = 0
     }
 
@@ -76,24 +75,25 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return filteredFish.count
+        return filteredBugs.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FishCell", for: indexPath) as! FishTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BugCell", for: indexPath) as! BugTableViewCell
         
-        var fish = filteredFish[indexPath.row]
+        var bug = filteredBugs[indexPath.row]
         let now = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM"
         let currentMonth = dateFormatter.string(from: now)
         
-        cell.fishNameLabel.text = fish.name
-        cell.fishBellsLabel.text = String(fish.price!)
-        cell.fishImage.image = fish.image
+        cell.bugNameLabel.text = bug.name
+
+        cell.bugBellsLabel.text = String(bug.price!)
+        cell.bugImage.image = bug.image
         
-        guard let fishMonths = fish.months else { return cell }
-        if (fishMonths.contains(currentMonth)) {
+        guard let bugMonths = bug.months else { return cell }
+        if (bugMonths.contains(currentMonth)) {
             cell.catchableLabel.text = "Yes"
         } else {
             cell.catchableLabel.text = "No"
@@ -101,14 +101,14 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         
         // Load defaults function
         func loadDefaults() {
-            let defaultsKey = fish.name
-            fish.hasBeenCaught = defaults.bool(forKey: defaultsKey!)
+            let defaultsKey = bug.name
+            bug.hasBeenCaught = defaults.bool(forKey: defaultsKey!)
         }
         
         // Load in user defaults
         loadDefaults()
         
-        if fish.hasBeenCaught == true {
+        if bug.hasBeenCaught == true {
             cell.backgroundColor = greenBackgroundColor
             cell.tintColor = grayBackgroundColor
             cell.accessoryType = .checkmark
@@ -126,7 +126,7 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         // Use the filter method to iterate over all items in the data array
         // For each item, return true if the item should be included and false if the
         // item should NOT be included
-        filteredFish = searchText.isEmpty ? allFish : allFish.filter { (item: Fish) -> Bool in
+        filteredBugs = searchText.isEmpty ? allBugs : allBugs.filter { (item: Critter) -> Bool in
             // If dataItem matches the searchText, return true to include it
             
             guard let name = item.name,
@@ -154,13 +154,13 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowFishSegue" {
+        if segue.identifier == "ShowBugSegue" {
             
             guard let indexPath = tableView.indexPathForSelectedRow,
-                let fishDetailVC = segue.destination as? FishDetailViewController else { return }
+                let bugDetailVC = segue.destination as? BugDetailViewController else { return }
             
-            let selectedFish = filteredFish[indexPath.row]
-            fishDetailVC.selectedFish = selectedFish
+            let selectedBug = filteredBugs[indexPath.row]
+            bugDetailVC.selectedBug = selectedBug
         }
     }
     
@@ -186,13 +186,13 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         
         if sortButton.title == currentMonth {
             sortButton.title = "All"
-            title = "Fish - \(currentMonth)"
-            filteredFish = catchableFish
+            title = "Bugs - \(currentMonth)"
+            filteredBugs = catchableBugs
             tableView.reloadData()
         } else {
             sortButton.title = currentMonth
-            title = "Fish"
-            filteredFish = allFishReset
+            title = "Bugs"
+            filteredBugs = allBugsReset
             tableView.reloadData()
         }
     }
