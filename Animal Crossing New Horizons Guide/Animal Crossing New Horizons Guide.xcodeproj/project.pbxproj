@@ -108,14 +108,12 @@
 		ED320C14244E4D1C00FD7886 /* Animal Crossing New Horizons Guide */ = {
 			isa = PBXGroup;
 			children = (
+				EDBBD034247A082E00DCBE44 /* Models */,
 				ED320C2C244E4FCB00FD7886 /* Storyboards */,
 				ED320C29244E4F8200FD7886 /* View Controllers */,
 				ED320C15244E4D1C00FD7886 /* AppDelegate.swift */,
 				ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */,
 				ED320C1E244E4D2200FD7886 /* Assets.xcassets */,
-				ED320C32244E558400FD7886 /* Fossil.swift */,
-				ED667AB9244F362F00D73B58 /* Fish.swift */,
-				ED667AC72450714A00D73B58 /* Bug.swift */,
 				ED320C23244E4D2300FD7886 /* Info.plist */,
 				ED1F305F2465C8B4008269F7 /* Fonts */,
 			);
@@ -141,6 +139,16 @@
 				ED320C20244E4D2200FD7886 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EDBBD034247A082E00DCBE44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED320C32244E558400FD7886 /* Fossil.swift */,
+				ED667AB9244F362F00D73B58 /* Fish.swift */,
+				ED667AC72450714A00D73B58 /* Bug.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

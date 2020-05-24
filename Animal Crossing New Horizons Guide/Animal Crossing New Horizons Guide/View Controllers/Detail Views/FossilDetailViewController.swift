@@ -48,17 +48,21 @@ class FossilDetailViewController: UIViewController {
     
     func updateFossil() {
         title = selectedFossil.name
-        fossilPrice.text = "Bells: \(selectedFossil.price ?? 0)"
+        guard let price = selectedFossil.price else { return }
+        fossilPrice.text = "💰 Bells: \(price)"
         fossilImage.image = selectedFossil.image
     }
     
     func checkIfDinosaur() {
         if selectedFossil.isDinosaur == true {
-            dinosaurSpecies = "Species: \(selectedFossil.dinosaurSpecies ?? "")"
-            allDinosaurFossils = "Related Fossils: \(selectedFossil.relatedFossils ?? "")"
+            guard let species = selectedFossil.dinosaurSpecies,
+                let relatedFossils = selectedFossil.relatedFossils else { return }
+            dinosaurSpecies = "Species: \(species)"
+            allDinosaurFossils = "Related Fossils: \(relatedFossils)"
             
         } else {
-            
+            dinosaurSpecies = ""
+            allDinosaurFossils = ""
         }
         isDinosaurLabel.text = dinosaurSpecies
         relatedFossils.text = allDinosaurFossils

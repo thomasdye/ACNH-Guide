@@ -28,7 +28,6 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
 
     let defaults = UserDefaults.standard
     let allFishReset = allFish
-    let fishes = allFish
     var caughtFish: Int = 0
     var notCaughtFish: Int = 0
     
@@ -37,6 +36,7 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         catchableFishThisMonth()
         determineCatchableFishLocations()
         setUpSortButton()
+        
         tableView.dataSource = self
         searchBar.delegate = self
         filteredFish = allFish
@@ -92,7 +92,8 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         cell.fishBellsLabel.text = String(fish.price!)
         cell.fishImage.image = fish.image
         
-        if (fish.months?.contains(currentMonth))! {
+        guard let fishMonths = fish.months else { return cell }
+        if (fishMonths.contains(currentMonth)) {
             cell.catchableLabel.text = "Yes"
         } else {
             cell.catchableLabel.text = "No"
@@ -125,9 +126,14 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
         // Use the filter method to iterate over all items in the data array
         // For each item, return true if the item should be included and false if the
         // item should NOT be included
-        filteredFish = searchText.isEmpty ? allFish : filteredFish.filter { (item: Fish) -> Bool in
+        filteredFish = searchText.isEmpty ? allFish : allFish.filter { (item: Fish) -> Bool in
             // If dataItem matches the searchText, return true to include it
-            return item.name!.range(of: searchText,
+            
+            guard let name = item.name,
+                let months = item.months,
+                let location = item.location else { return false}
+            let searchTerms = name + months + location
+            return searchTerms.range(of: searchText,
                                     options: .caseInsensitive,
                                     range: nil,
                                     locale: nil) != nil
@@ -136,7 +142,7 @@ class FishTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-            self.searchBar.showsCancelButton = true
+        self.searchBar.showsCancelButton = true
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
