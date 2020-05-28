@@ -37,7 +37,7 @@
 		ED1F30622465CD2A008269F7 /* AnimalCrossingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCrossingTabBarController.swift; sourceTree = "<group>"; };
 		ED1F30642465D51D008269F7 /* FossilsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FossilsNavigationController.swift; sourceTree = "<group>"; };
 		ED1F3069246711CA008269F7 /* NewFossilsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFossilsViewController.swift; sourceTree = "<group>"; };
-		ED320C12244E4D1C00FD7886 /* Animal Crossing New Horizons Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal Crossing New Horizons Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED320C12244E4D1C00FD7886 /* ACNH Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACNH Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED320C15244E4D1C00FD7886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED320C17244E4D1C00FD7886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ED320C1C244E4D1C00FD7886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		ED320C13244E4D1C00FD7886 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED320C12244E4D1C00FD7886 /* Animal Crossing New Horizons Guide.app */,
+				ED320C12244E4D1C00FD7886 /* ACNH Collector.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			);
 			name = "Animal Crossing New Horizons Guide";
 			productName = "Animal Crossing New Horizons Guide";
-			productReference = ED320C12244E4D1C00FD7886 /* Animal Crossing New Horizons Guide.app */;
+			productReference = ED320C12244E4D1C00FD7886 /* ACNH Collector.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -395,15 +395,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB72Z627AT;
 				INFOPLIST_FILE = "Animal Crossing New Horizons Guide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.4.0;
+				MARKETING_VERSION = 3.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thomasdye.Animal-Crossing-New-Horizons-Guide";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ACNH Collector";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,15 +415,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB72Z627AT;
 				INFOPLIST_FILE = "Animal Crossing New Horizons Guide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.4.0;
+				MARKETING_VERSION = 3.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thomasdye.Animal-Crossing-New-Horizons-Guide";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ACNH Collector";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

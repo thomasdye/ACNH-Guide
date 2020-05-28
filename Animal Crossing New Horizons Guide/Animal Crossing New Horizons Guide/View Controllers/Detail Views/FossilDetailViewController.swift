@@ -49,23 +49,41 @@ class FossilDetailViewController: UIViewController {
     func updateFossil() {
         title = selectedFossil.name
         guard let price = selectedFossil.price else { return }
-        fossilPrice.text = "💰 Bells: \(price)"
+        
+        // Create number formatter to format add commas to numbers over 999
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        guard let formattedBells = numberFormatter.string(from: NSNumber(value: price)) else { return }
+        fossilPrice.text = "💰 Bells: \(formattedBells)"
         fossilImage.image = selectedFossil.image
     }
     
     func checkIfDinosaur() {
         if selectedFossil.isDinosaur == true {
             guard let species = selectedFossil.dinosaurSpecies,
-                let relatedFossils = selectedFossil.relatedFossils else { return }
-            dinosaurSpecies = "Species: \(species)"
-            allDinosaurFossils = "Related Fossils: \(relatedFossils)"
+                let relatedFossilsText = selectedFossil.relatedFossils else { return }
+            dinosaurSpecies = "🦖 Species: \(species)"
             
+            // Format Months String for smaller devices (Fish that list every month take up a lot of room)
+            let relatedFossilsString = "🦴 Related Fossils: \(relatedFossilsText)"
+            let attributedString = NSMutableAttributedString(string: relatedFossilsString)
+            attributedString.addAttribute(.font, value: UIFont.init(name: "FinkHeavy", size: 25)!, range: NSRange(location: 0, length: 18))
+            
+            // Get length of month string to change font to size: 18
+            let lengthOfRelatedFossils = relatedFossilsText.count
+            print("lengthOfMonths: \(lengthOfRelatedFossils)")
+            attributedString.addAttribute(.font, value: UIFont.init(name: "FinkHeavy", size: 17)!, range: NSRange(location: 20, length: lengthOfRelatedFossils))
+            relatedFossils.attributedText = attributedString
+
         } else {
             dinosaurSpecies = ""
             allDinosaurFossils = ""
+            relatedFossils.text = ""
+
         }
         isDinosaurLabel.text = dinosaurSpecies
-        relatedFossils.text = allDinosaurFossils
+        
     }
     
     func checkIfFound() {

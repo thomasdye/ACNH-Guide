@@ -16,7 +16,9 @@ struct Fish {
     var shadowSize: Int?
     var time: String?
     var months: String?
+    var captureQuote: String?
     var hasBeenCaught: Bool?
+    
 }
 
 var anchovy = Fish(name: "Anchovy",
@@ -26,6 +28,7 @@ var anchovy = Fish(name: "Anchovy",
                    shadowSize: 2,
                    time: "4AM - 9PM",
                    months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                   captureQuote: "I caught an Anchovy! Stay away from my pizza!",
                    hasBeenCaught: false)
 
 var angelfish = Fish(name: "Angelfish",
@@ -35,6 +38,7 @@ var angelfish = Fish(name: "Angelfish",
                      shadowSize: 2,
                      time: "4PM - 9AM",
                      months: "May, June, July, August, September, and October",
+                     captureQuote: "I caught an Angelfish! That other fish told me to do it!",
                      hasBeenCaught: false)
 
 var arapaima = Fish(name: "Arapaima",
@@ -43,6 +47,7 @@ var arapaima = Fish(name: "Arapaima",
                     location: "River",
                     shadowSize: 6, time: "4PM - 9AM",
                     months: "June, July, August, and September",
+                    captureQuote: "I caught an Arapaima! How did it get here? Arapaiknow!",
                     hasBeenCaught: false)
 
 var arowana = Fish(name: "Arowana",
@@ -52,6 +57,7 @@ var arowana = Fish(name: "Arowana",
                    shadowSize: 4,
                    time: "4PM - 9AM",
                    months: "June, July, August, and September",
+                   captureQuote: "I caught an Arowana! I'd make a jow, but I don't 'wana.",
                    hasBeenCaught: false)
 
 var barredKnifejaw = Fish(name: "Barred Knifejaw",
@@ -61,6 +67,7 @@ var barredKnifejaw = Fish(name: "Barred Knifejaw",
                           shadowSize: 3,
                           time: "All Day",
                           months: "March, April, May, June, July, August, September, October, and November",
+                          captureQuote: "I caught a Barred Knifejaw! They must have a hard time eating!",
                           hasBeenCaught: false)
 
 var barreleye = Fish(name: "Barreleye",
@@ -70,6 +77,7 @@ var barreleye = Fish(name: "Barreleye",
                      shadowSize: 2,
                      time: "9PM - 4AM",
                      months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                     captureQuote: "I caught a Barreleye! Like eyeing a fish in a barrel!",
                      hasBeenCaught: false)
 
 var betta = Fish(name: "Betta",
@@ -79,6 +87,7 @@ var betta = Fish(name: "Betta",
                  shadowSize: 2,
                  time: "9AM - 4PM",
                  months: "May, June, July, August, September, and October",
+                 captureQuote: "I caught a Betta! I betta not drop it!",
                  hasBeenCaught: false)
 
 var bitterling = Fish(name: "Bitterling",
@@ -88,6 +97,7 @@ var bitterling = Fish(name: "Bitterling",
                       shadowSize: 1,
                       time: "All Day",
                       months: "November, December, January, February, and March",
+                      captureQuote: "I caught a Bitterling! It's mad at me, but only a little.",
                       hasBeenCaught: false)
 
 var blackBass = Fish(name: "Black Bass",
@@ -97,6 +107,7 @@ var blackBass = Fish(name: "Black Bass",
                      shadowSize: 4,
                      time: "All Day",
                      months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                     captureQuote: "I caught a Black Bass! The most metal of all fish!",
                      hasBeenCaught: false)
 
 var blowfish = Fish(name: "Blowfish",
@@ -106,6 +117,7 @@ var blowfish = Fish(name: "Blowfish",
                     shadowSize: 3,
                     time: "9PM - 4AM",
                     months: "November, December, January, and February",
+                    captureQuote: "I caught a Blowfish! I'm blown away!",
                     hasBeenCaught: false)
 
 var blueMarlin = Fish(name: "Blue Marlin",
@@ -115,15 +127,17 @@ var blueMarlin = Fish(name: "Blue Marlin",
                       shadowSize: 6,
                       time: "All Day",
                       months: "July, August, September, November, December, January, February, March, and Aprilil",
+                      captureQuote: "I caught a Blue Marlin! Listen to this fish. It's got a point.",
                       hasBeenCaught: false)
 
-var blueGill = Fish(name: "Blue Gill",
-                    image: UIImage(named: "blueGill"),
+var bluegill = Fish(name: "Bluegill",
+                    image: UIImage(named: "bluegill"),
                     price: 180,
                     location: "River",
                     shadowSize: 2,
                     time: "9AM - 4PM",
                     months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                    captureQuote: "I caught a Bluegill! Do you think it calls me \"pinklung\"?",
                     hasBeenCaught: false)
 
 var butterflyFish = Fish(name: "Butterfly Fish",
@@ -133,6 +147,7 @@ var butterflyFish = Fish(name: "Butterfly Fish",
                          shadowSize: 2,
                          time: "All Day",
                          months: "April, May, June, July, August, and September",
+                         captureQuote: "I caught a Butterfly Fish! Did it change from a caterpillar fish?",
                          hasBeenCaught: false)
 
 var carp = Fish(name: "Carp",
@@ -142,6 +157,7 @@ var carp = Fish(name: "Carp",
                 shadowSize: 4,
                 time: "All Day",
                 months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                captureQuote: "I caught a Carp! If I catch another they can carpool!",
                 hasBeenCaught: false)
 
 var catfish = Fish(name: "Catfish",
@@ -151,6 +167,7 @@ var catfish = Fish(name: "Catfish",
                    shadowSize: 4,
                    time: "4PM - 9AM",
                    months: "May, June, July, August, September, and October",
+                   captureQuote: "I caught a Catfish! I'm more of a dogfish person...",
                    hasBeenCaught: false)
 
 var char = Fish(name: "Char",
@@ -160,6 +177,7 @@ var char = Fish(name: "Char",
                 shadowSize: 3,
                 time: "4PM - 9AM",
                 months: "March, April, May, June, September, October, and November",
+                captureQuote: "I caught a Char! Now I'm gonna sit on it!",
                 hasBeenCaught: false)
 
 var cherrySalmon = Fish(name: "Cherry Salmon",
@@ -169,6 +187,7 @@ var cherrySalmon = Fish(name: "Cherry Salmon",
                         shadowSize: 3,
                         time: "4PM - 9AM",
                         months: "March, April, May, June, September, October, and November",
+                        captureQuote: "I caught a Cherry Salmon! It's the perfect topper for a marlin sundae!",
                         hasBeenCaught: false)
 
 var clownFish = Fish(name: "Clown Fish",
@@ -177,6 +196,7 @@ var clownFish = Fish(name: "Clown Fish",
                      shadowSize: 1,
                      time: "All Day",
                      months: "April, May, June, July, August, and September",
+                     captureQuote: "I caught a Clown Fish! How many can fir in a carfish?",
                      hasBeenCaught: false)
 
 var coelacanth = Fish(name: "Coelacanth",
@@ -186,6 +206,7 @@ var coelacanth = Fish(name: "Coelacanth",
                       shadowSize: 6,
                       time: "All Day",
                       months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                      captureQuote: "I caught a Coelacanth! Think positive! Be a coela-CAN!",
                       hasBeenCaught: false)
 
 var crawfish = Fish(name: "Crawfish",
@@ -195,6 +216,7 @@ var crawfish = Fish(name: "Crawfish",
                     shadowSize: 2,
                     time: "All Day",
                     months: "April, May, June, July, August, and September",
+                    captureQuote: "I caught a Crawfish! Or else it's a lobster, and I'm a giant!",
                     hasBeenCaught: false)
 
 var crucianCarp = Fish(name: "Crucian Carp",
@@ -204,6 +226,7 @@ var crucianCarp = Fish(name: "Crucian Carp",
                        shadowSize: 2,
                        time: "All Day",
                        months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                       captureQuote: "I caught a Crucian Carp! My skills are sharp!",
                        hasBeenCaught: false)
 
 var dab = Fish(name: "Dab",
@@ -213,6 +236,7 @@ var dab = Fish(name: "Dab",
                shadowSize: 3,
                time: "All Day",
                months: "October, November, December, January, February, March, and April",
+               captureQuote: "I caught a Dab! Not bad!",
                hasBeenCaught: false)
 
 var dace = Fish(name: "Dace",
@@ -222,6 +246,7 @@ var dace = Fish(name: "Dace",
                 shadowSize: 3,
                 time: "4PM - 9AM",
                 months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                captureQuote: "I caught a Dace! Hope I have some space!",
                 hasBeenCaught: false)
 
 var dorado = Fish(name: "Dorado",
@@ -231,6 +256,7 @@ var dorado = Fish(name: "Dorado",
                   shadowSize: 5,
                   time: "4AM - 9PM",
                   months: "June, July, August, and September",
+                  captureQuote: "I caught a Dorado! 🎶 I say \"Dorado\" you say \"Doraydo\" 🎶",
                   hasBeenCaught: false)
 
 var footballFish = Fish(name: "Football Fish",
@@ -240,6 +266,7 @@ var footballFish = Fish(name: "Football Fish",
                         shadowSize: 4,
                         time: "4PM - 9AM",
                         months: "November, December, January, February, and March",
+                        captureQuote: "I caught a Football Fish! Some countries call it a soccer fish!",
                         hasBeenCaught: false)
 
 var freshwaterGoby = Fish(name: "Freshwater Goby",
@@ -249,6 +276,7 @@ var freshwaterGoby = Fish(name: "Freshwater Goby",
                           shadowSize: 2,
                           time: "4PM - 9AM",
                           months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                          captureQuote: "I caught a Freshwater Goby! Time to go bye-bye!",
                           hasBeenCaught: false)
 
 var frog = Fish(name: "Frog",
@@ -258,6 +286,7 @@ var frog = Fish(name: "Frog",
                 shadowSize: 2,
                 time: "All Day",
                 months: "May, June, July, and August",
+                captureQuote: "I caught a Frog! Or it's a new neighbor... and I have some apologizing to do.",
                 hasBeenCaught: false)
 
 var gar = Fish(name: "Gar",
@@ -267,6 +296,7 @@ var gar = Fish(name: "Gar",
                shadowSize: 2,
                time: "All Day",
                months: "July, August, and September",
+               captureQuote: "I caught a Gar! Yar! It's a gar! Har har!",
                hasBeenCaught: false)
 
 var giantSnakehead = Fish(name: "Giant Snakehead",
@@ -276,6 +306,7 @@ var giantSnakehead = Fish(name: "Giant Snakehead",
                           shadowSize: 4,
                           time: "9AM - 4PM",
                           months: "June, July, and August",
+                          captureQuote: "I caught a Giant Snakehead! Um...but I asked for a medium?",
                           hasBeenCaught: false)
 
 var giantTrevally = Fish(name: "Giant Trevally",
@@ -285,6 +316,7 @@ var giantTrevally = Fish(name: "Giant Trevally",
                          shadowSize: 5,
                          time: "All Day",
                          months: "May, June, July, August, September, and October",
+                         captureQuote: "I caught a Giant Trevally! Yeah, I'm pretty well-trevalled.",
                          hasBeenCaught: false)
 
 var goldenTrout = Fish(name: "Golden Trout",
@@ -294,6 +326,7 @@ var goldenTrout = Fish(name: "Golden Trout",
                        shadowSize: 3,
                        time: "4Pm - 9AM",
                        months: "March, April, May, September, October, and November",
+                       captureQuote: "I caught a Golden Trout! But the real treasure? Friendship.",
                        hasBeenCaught: false)
 
 var goldfish = Fish(name: "Goldfish",
@@ -303,6 +336,7 @@ var goldfish = Fish(name: "Goldfish",
                     shadowSize: 1,
                     time: "All Day",
                     months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                    captureQuote: "I caught a Goldfish! It's worth its weight in fish!",
                     hasBeenCaught: false)
 
 var greatWhiteShark = Fish(name: "Great White Shark",
@@ -312,6 +346,7 @@ var greatWhiteShark = Fish(name: "Great White Shark",
                            shadowSize: 6,
                            time: "4PM - 9AM",
                            months: "June, July, August, and September",
+                           captureQuote: "I caught a Great White Shark! Watch out for its jaws!",
                            hasBeenCaught: false)
 // The GWS has a fin above it's shadow, not sure if that's something you want to put in here
 
@@ -322,6 +357,7 @@ var guppy = Fish(name: "Guppy",
                  shadowSize: 1,
                  time: "9AM - 4PM",
                  months: "April, May, June, July, August, September, October, and November",
+                 captureQuote: "I caught a Guppy! Welcome to the team, newbie!",
                  hasBeenCaught: false)
 
 var hammerheadShark = Fish(name: "Hammerhead Shark",
@@ -331,6 +367,7 @@ var hammerheadShark = Fish(name: "Hammerhead Shark",
                            shadowSize: 6,
                            time: "4PM - 9AM",
                            months: "June, July, August, and September",
+                           captureQuote: "I caught a Hammerhead Shark! I hit the nail on the head!",
                            hasBeenCaught: false)
 // Also has a fin on the shadow
 
@@ -341,6 +378,7 @@ var horseMackerel = Fish(name: "Horse Mackerel",
                          shadowSize: 2,
                          time: "All Day",
                          months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                         captureQuote: "I caught a Horse Mackerel! Of course, Mack...er..el.",
                          hasBeenCaught: false)
 
 var killifish = Fish(name: "Killifish",
@@ -350,6 +388,7 @@ var killifish = Fish(name: "Killifish",
                      shadowSize: 1,
                      time: "All Day",
                      months: "April, May, June, July, and August",
+                     captureQuote: "I caught a Killifish! The streams are safe again.",
                      hasBeenCaught: false)
 
 var kingSalmon = Fish(name: "King Salmon",
@@ -359,6 +398,7 @@ var kingSalmon = Fish(name: "King Salmon",
                       shadowSize: 6,
                       time: "All Day",
                       months: "September",
+                      captureQuote: "I caught a King Salmon! Checkmate!",
                       hasBeenCaught: false)
 
 var koi = Fish(name: "Koi",
@@ -368,6 +408,7 @@ var koi = Fish(name: "Koi",
                shadowSize: 4,
                time: "4PM - 9AM",
                months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+               captureQuote: "I caught a Koi! I don't know why it's so sht... or such a bad speller...",
                hasBeenCaught: false)
 
 var loach = Fish(name: "Loach",
@@ -377,6 +418,7 @@ var loach = Fish(name: "Loach",
                  shadowSize: 2,
                  time: "All Day",
                  months: "March, April, and May",
+                 captureQuote: "I caught a Loach! It's... looking at me with reproach.",
                  hasBeenCaught: false)
 
 var mahiMahi = Fish(name: "Mahi-Mahi",
@@ -386,6 +428,7 @@ var mahiMahi = Fish(name: "Mahi-Mahi",
                     shadowSize: 5,
                     time: "All Day",
                     months: "May, June, July, August, September, and October",
+                    captureQuote: "I caught a Mahi-Mahi! It's all mahine-mahine.",
                     hasBeenCaught: false)
 
 var mittenCrab = Fish(name: "Mitten Crab",
@@ -395,6 +438,7 @@ var mittenCrab = Fish(name: "Mitten Crab",
                       shadowSize: 2,
                       time: "4PM - 9AM",
                       months: "September, October, and November",
+                      captureQuote: "I caught a Mitten Crab! One more and I'm ready for winter!",
                       hasBeenCaught: false)
 
 var morayEel = Fish(name: "Moray Eel",
@@ -404,6 +448,7 @@ var morayEel = Fish(name: "Moray Eel",
                     shadowSize: 0,
                     time: "All Day",
                     months: "August, September, and October",
+                    captureQuote: "I caught a Moray Eel! When you're in love, that's a moray!",
                     hasBeenCaught: false)
 
 // The moray eel's shadow is listed as "narrow", not an int
@@ -415,6 +460,7 @@ var napoleonfish = Fish(name: "Napoleonfish",
                         shadowSize: 6,
                         time: "4AM - 9PM",
                         months: "Julyy and August",
+                        captureQuote: "I caught a Napoleonfish! It's not as big as it thinks!",
                         hasBeenCaught: false)
 
 var neonTetra = Fish(name: "Neon Tetra",
@@ -424,6 +470,7 @@ var neonTetra = Fish(name: "Neon Tetra",
                      shadowSize: 1,
                      time: "9AM - 4PM",
                      months: "April, May, June, July, August, September, October, and November",
+                     captureQuote: "I caught a Neon Tetra! Wasn't hard to track.",
                      hasBeenCaught: false)
 
 var nibbleFish = Fish(name: "Nibble Fish",
@@ -433,6 +480,7 @@ var nibbleFish = Fish(name: "Nibble Fish",
                       shadowSize: 1,
                       time: "9AM - 4PM",
                       months: "May, June, July, August, and September",
+                      captureQuote: "I caught a Nibble Fish! Do you regret nibbling now?",
                       hasBeenCaught: false)
 
 var oarfish = Fish(name: "Oarfish",
@@ -442,6 +490,7 @@ var oarfish = Fish(name: "Oarfish",
                    shadowSize: 6,
                    time: "All Day",
                    months: "December, Januaryuary, February, March, and April",
+                   captureQuote: "I caught an oarfish! I hope I catch morefish! ",
                    hasBeenCaught: false)
 
 var oceanSunfish = Fish(name: "Ocean Sunfish",
@@ -451,6 +500,7 @@ var oceanSunfish = Fish(name: "Ocean Sunfish",
                         shadowSize: 6,
                         time: "4AM - 9PM",
                         months: "July, August, and September",
+                        captureQuote: "I caught an Ocean Sunfish! My day is brighter already! ",
                         hasBeenCaught: false)
 // Also has a fin
 
@@ -461,6 +511,7 @@ var oliveFlounder = Fish(name: "Olive Flounder",
                          shadowSize: 5,
                          time: "All Day",
                          months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                         captureQuote: "I caught an Olive Flounder! That's not the pits!",
                          hasBeenCaught: false)
 
 var paleChub = Fish(name: "Pale Chub",
@@ -470,6 +521,7 @@ var paleChub = Fish(name: "Pale Chub",
                     shadowSize: 1,
                     time: "9AM - 4PM",
                     months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                    captureQuote: "I caught a Pale Chub! That name seems a bit judgy...",
                     hasBeenCaught: false)
 
 var pike = Fish(name: "Pike",
@@ -479,6 +531,7 @@ var pike = Fish(name: "Pike",
                 shadowSize: 5,
                 time: "All Day",
                 months: "September, October, November, and December",
+                captureQuote: "I caught a Pike! Think a swordfish would be up for a duel?",
                 hasBeenCaught: false)
 
 var piranha = Fish(name: "Piranha",
@@ -488,6 +541,7 @@ var piranha = Fish(name: "Piranha",
                    shadowSize: 2,
                    time: "9AM - 4PM / 9PM - 4AM",
                    months: "June, July, August, and September",
+                   captureQuote: "I caught a Piranha! Or did it catch ME?!",
                    hasBeenCaught: false)
 
 var pondSmelt = Fish(name: "Pond Smelt",
@@ -497,6 +551,7 @@ var pondSmelt = Fish(name: "Pond Smelt",
                      shadowSize: 2,
                      time: "All Day",
                      months: "December, January, and February",
+                     captureQuote: "I caught a Pond Smelt! Whoever smelt it dealt it!",
                      hasBeenCaught: false)
 
 var popeyedGoldfish = Fish(name: "Pop-Eyed Goldfish",
@@ -506,6 +561,7 @@ var popeyedGoldfish = Fish(name: "Pop-Eyed Goldfish",
                            shadowSize: 1,
                            time: "9AM - 4PM",
                            months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                           captureQuote: "I caught a Pop-Eyed Goldfish! It should have eaten its spinach!",
                            hasBeenCaught: false)
 
 var pufferFish = Fish(name: "Puffer Fish",
@@ -515,6 +571,7 @@ var pufferFish = Fish(name: "Puffer Fish",
                       shadowSize: 3,
                       time: "All Day",
                       months: "July, August, and September",
+                      captureQuote: "I caught a Puffer Fish! I thought you would be tougher, fish!",
                       hasBeenCaught: false)
 
 var rainbowfish = Fish(name: "Rainbowfish",
@@ -524,6 +581,7 @@ var rainbowfish = Fish(name: "Rainbowfish",
                        shadowSize: 1,
                        time: "9AM - 4PM",
                        months: "May, June, July, August, September, and October",
+                       captureQuote: "I caught a Rainbow Fish! Where's my pot of goldfish?",
                        hasBeenCaught: false)
 
 var ranchuGoldfish = Fish(name: "Ranchu Goldfish",
@@ -533,6 +591,7 @@ var ranchuGoldfish = Fish(name: "Ranchu Goldfish",
                           shadowSize: 2,
                           time: "9AM - 4PM",
                           months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                          captureQuote: "I caught a Ranchu Goldfish! But I prefer balsamicu goldfish!",
                           hasBeenCaught: false)
 
 var ray = Fish(name: "Ray",
@@ -541,6 +600,7 @@ var ray = Fish(name: "Ray",
                shadowSize: 5,
                time: "4AM - 9PM",
                months: "August, September, October, and November",
+               captureQuote: "I caught a Ray! A few more and I'll have a tan!",
                hasBeenCaught: false)
 
 var redSnapper = Fish(name: "Red Snapper",
@@ -550,6 +610,7 @@ var redSnapper = Fish(name: "Red Snapper",
                       shadowSize: 4,
                       time: "All Day",
                       months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                      captureQuote: "I caught a Red Snapper! It looks pretty dapper!",
                       hasBeenCaught: false)
 
 var ribbonEel = Fish(name: "Ribbon Eel",
@@ -559,6 +620,7 @@ var ribbonEel = Fish(name: "Ribbon Eel",
                      shadowSize: 0,
                      time: "All Day",
                      months: "June, July, August, September, and October",
+                     captureQuote: "I caught a Ribbon Eel! Can it tie itself into a bow?",
                      hasBeenCaught: false)
 // This eel's shadow is also "narrow"
 
@@ -569,6 +631,7 @@ var sadddledBichir = Fish(name: "Saddled Bichir",
                           shadowSize: 4,
                           time: "9PM - 4AM",
                           months: "June, July, August, and September",
+                          captureQuote: "I caught a Saddled Bichir! And me without my tiny riding crop...",
                           hasBeenCaught: false)
 
 var salmon = Fish(name: "Salmon",
@@ -578,6 +641,7 @@ var salmon = Fish(name: "Salmon",
                   shadowSize: 4,
                   time: "All Day",
                   months: "September",
+                  captureQuote: "I caught a Salmon! It's all upstream from here!",
                   hasBeenCaught: false)
 
 var sawShark = Fish(name: "Saw Shark",
@@ -587,6 +651,7 @@ var sawShark = Fish(name: "Saw Shark",
                     shadowSize: 6,
                     time: "4PM - 9AM",
                     months: "June, July, August, and September",
+                    captureQuote: "I caught a Saw Shark! You could call it a sea saw!",
                     hasBeenCaught: false)
 // Also has a fin
 
@@ -597,6 +662,7 @@ var seaBass = Fish(name: "Sea Bass",
                    shadowSize: 5,
                    time: "All Day",
                    months: "January, February, March, April, May, June, July, August, September, October, November, and December",
+                   captureQuote: "I caught a Sea Bass! No, wait- it's at least a C+!",
                    hasBeenCaught: false)
 
 var seaButterfly = Fish(name: "Sea Butterfly",
@@ -606,6 +672,7 @@ var seaButterfly = Fish(name: "Sea Butterfly",
                         shadowSize: 1,
                         time: "All Day",
                         months: "December, January, February, and March",
+                        captureQuote: "I caught a Sea Butterfly! Try not to cnofuse it for a sea moth!",
                         hasBeenCaught: false)
 
 var seaHorse = Fish(name: "Sea Horse",
@@ -615,6 +682,7 @@ var seaHorse = Fish(name: "Sea Horse",
                     shadowSize: 1,
                     time: "All Day",
                     months: "April, May, June, July, August, September, October, and November",
+                    captureQuote: "I caught a Sea Horse! But... where's its sea jockey?",
                     hasBeenCaught: false)
 
 var snappingTurtle = Fish(name: "Snapping Turtle",
@@ -624,6 +692,7 @@ var snappingTurtle = Fish(name: "Snapping Turtle",
                           shadowSize: 4,
                           time: "9PM - 4AM",
                           months: "April, May, June, July, and October",
+                          captureQuote: "I caught a Snapping Turtle! How can it snap without fingers?",
                           hasBeenCaught: false)
 
 var softShelledTurtle = Fish(name: "Soft-Shelled Turtle",
@@ -633,6 +702,7 @@ var softShelledTurtle = Fish(name: "Soft-Shelled Turtle",
                              shadowSize: 4,
                              time: "4PM - 9AM",
                              months: "August and September",
+                             captureQuote: "I caught a Soft-Shelled Turtle! I should take a shellfie!",
                              hasBeenCaught: false)
 
 var squid = Fish(name: "Squid",
@@ -642,6 +712,7 @@ var squid = Fish(name: "Squid",
                  shadowSize: 3,
                  time: "All Day",
                  months: "December, January, February, March, April, May, June, July, and August",
+                 captureQuote: "I caught a Squid! Do they... not actually \"bloop\"?",
                  hasBeenCaught: false)
 
 var stringfish = Fish(name: "Stringfish",
@@ -651,6 +722,7 @@ var stringfish = Fish(name: "Stringfish",
                       shadowSize: 5,
                       time: "4PM - 9AM",
                       months: "December, January, February, and March",
+                      captureQuote: "OH MY GOSH! I caught a Stringfish! Five more and I'll have a guitarfish!",
                       hasBeenCaught: false)
 
 var sturgeon = Fish(name: "Sturgeon",
@@ -660,6 +732,7 @@ var sturgeon = Fish(name: "Sturgeon",
                     shadowSize: 6,
                     time: "All Day",
                     months: "September, October, November, December, January, February, and March",
+                    captureQuote: "I caught a Sturgeon! Wonder if it can perform sturgery...",
                     hasBeenCaught: false)
 
 var suckerfish = Fish(name: "Suckerfish",
@@ -669,6 +742,7 @@ var suckerfish = Fish(name: "Suckerfish",
                       shadowSize: 4,
                       time: "All Day",
                       months: "June, July, August, and September",
+                      captureQuote: "I caught a Suckerfish! I thought it was a shark! Of, wait - now I get it. \"Sucker\"",
                       hasBeenCaught: false)
 
 var surgeonfish = Fish(name: "Suregonfish",
@@ -678,6 +752,7 @@ var surgeonfish = Fish(name: "Suregonfish",
                        shadowSize: 2,
                        time: "All Day",
                        months: "April, May, June, July, August, and September",
+                       captureQuote: "I caught a Surgeonfish! Scalpel! Forceps! Fish hook!",
                        hasBeenCaught: false)
 
 var sweeftfish = Fish(name: "Sweetfish",
@@ -687,6 +762,7 @@ var sweeftfish = Fish(name: "Sweetfish",
                       shadowSize: 3,
                       time: "All Day",
                       months: "July, August, and September",
+                      captureQuote: "I caught a Sweetfish! Hmmm. I've had sweeter!",
                       hasBeenCaught: false)
 
 var tadpole = Fish(name: "Tadpole",
@@ -696,6 +772,7 @@ var tadpole = Fish(name: "Tadpole",
                    shadowSize: 1,
                    time: "All Day",
                    months: "March, April, May, June, and July",
+                   captureQuote: "I caught a tadpole... It's just a tad small.",
                    hasBeenCaught: false)
 
 var tilapia = Fish(name: "Tilapia",
@@ -705,6 +782,7 @@ var tilapia = Fish(name: "Tilapia",
                    shadowSize: 3,
                    time: "All Day",
                    months: "June, July, August, September, and October",
+                   captureQuote: "I caught a Tilapia! It makes me happy-a!",
                    hasBeenCaught: false)
 
 var tuna = Fish(name: "Tuna",
@@ -714,6 +792,7 @@ var tuna = Fish(name: "Tuna",
                 shadowSize: 6,
                 time: "All DDay",
                 months: "November, December, January, February, March, and April",
+                captureQuote: "I caught a Tuna! It's a little off-key!",
                 hasBeenCaught: false)
 
 var whaleShark = Fish(name: "Whale Shark",
@@ -723,6 +802,7 @@ var whaleShark = Fish(name: "Whale Shark",
                       shadowSize: 6,
                       time: "All Day",
                       months: "June, July, August, and September",
+                      captureQuote: "Thar she blows! I caught a Whale Shark! I'm tellin' ya, it was thiiiiiiiiiiiiiiis big!",
                       hasBeenCaught: false)
 
 var yellowPerch = Fish(name: "Yellow Perch",
@@ -732,6 +812,7 @@ var yellowPerch = Fish(name: "Yellow Perch",
                        shadowSize: 3,
                        time: "All Day",
                        months: "October, November, December, January, February, and March",
+                       captureQuote: "I caught a Yellow Perch! Those yellow birds have to sit somewhere!",
                        hasBeenCaught: false)
 
 var zebraTurkeyfish = Fish(name: "Zebra Turkeyfish",
@@ -741,9 +822,10 @@ var zebraTurkeyfish = Fish(name: "Zebra Turkeyfish",
                            shadowSize: 3,
                            time: "All day",
                            months: "April, May, June, July, August, September, October, and November",
+                           captureQuote: "I caught a Zebra Turkeyfish! Land, air, water - make up your mind!",
                            hasBeenCaught: false)
 
-var allFish = [anchovy, angelfish, arapaima, arowana, barredKnifejaw, barreleye, betta, bitterling, blackBass, blowfish, blueMarlin, blueGill, butterflyFish, carp, catfish, char, cherrySalmon, clownFish, coelacanth, crawfish, crucianCarp, dab, dace, dorado, footballFish, freshwaterGoby, frog, gar, giantSnakehead, giantTrevally, goldenTrout, goldfish, greatWhiteShark, guppy, hammerheadShark, horseMackerel, killifish, kingSalmon, koi, loach, mahiMahi, mittenCrab, morayEel, napoleonfish, neonTetra, nibbleFish, oarfish, oceanSunfish, oliveFlounder, paleChub, pike, piranha, pondSmelt, popeyedGoldfish, pufferFish, rainbowfish, ranchuGoldfish, ray, redSnapper, ribbonEel, sadddledBichir, salmon, sawShark, seaBass, seaButterfly, seaHorse, snappingTurtle, softShelledTurtle, squid, stringfish, suckerfish, surgeonfish, sweeftfish, tadpole, tilapia, tuna, whaleShark, yellowPerch, zebraTurkeyfish]
+var allFish = [anchovy, angelfish, arapaima, arowana, barredKnifejaw, barreleye, betta, bitterling, blackBass, blowfish, blueMarlin, bluegill, butterflyFish, carp, catfish, char, cherrySalmon, clownFish, coelacanth, crawfish, crucianCarp, dab, dace, dorado, footballFish, freshwaterGoby, frog, gar, giantSnakehead, giantTrevally, goldenTrout, goldfish, greatWhiteShark, guppy, hammerheadShark, horseMackerel, killifish, kingSalmon, koi, loach, mahiMahi, mittenCrab, morayEel, napoleonfish, neonTetra, nibbleFish, oarfish, oceanSunfish, oliveFlounder, paleChub, pike, piranha, pondSmelt, popeyedGoldfish, pufferFish, rainbowfish, ranchuGoldfish, ray, redSnapper, ribbonEel, sadddledBichir, salmon, sawShark, seaBass, seaButterfly, seaHorse, snappingTurtle, softShelledTurtle, squid, stringfish, suckerfish, surgeonfish, sweeftfish, tadpole, tilapia, tuna, whaleShark, yellowPerch, zebraTurkeyfish]
 
 var catchableFish: [Fish] = []
 

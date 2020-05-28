@@ -64,7 +64,7 @@
         <!--Fossils-->
         <scene sceneID="qbi-ym-81O">
             <objects>
-                <tableViewController id="Cu8-kV-Lri" customClass="FossilsTableViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Cu8-kV-Lri" customClass="FossilsTableViewController" customModule="ACNH_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dUI-Lp-hp3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,15 +75,15 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FossilCell" id="rkO-eD-oDQ" customClass="FossilTableViewCell" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="414" height="110.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FossilCell" id="rkO-eD-oDQ" customClass="FossilTableViewCell" customModule="ACNH_Collector" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="100.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkO-eD-oDQ" id="wtG-yt-KNi">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="110.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383" height="100.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uPC-hf-dA1">
-                                            <rect key="frame" x="10" y="5" width="100" height="100.5"/>
+                                            <rect key="frame" x="10" y="0.0" width="100" height="100.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="YrU-QF-dF9"/>
                                                 <constraint firstAttribute="height" constant="100" id="lh8-AH-eID"/>
@@ -112,13 +112,13 @@
                                         <constraint firstItem="qes-3N-DNh" firstAttribute="leading" secondItem="uPC-hf-dA1" secondAttribute="trailing" constant="10" id="1bl-d5-fs2"/>
                                         <constraint firstItem="mMQ-ne-uIW" firstAttribute="leading" secondItem="uPC-hf-dA1" secondAttribute="trailing" constant="10" id="25b-V2-cZ1"/>
                                         <constraint firstItem="uPC-hf-dA1" firstAttribute="leading" secondItem="wtG-yt-KNi" secondAttribute="leading" constant="10" id="2y3-qJ-Xax"/>
-                                        <constraint firstItem="uPC-hf-dA1" firstAttribute="top" secondItem="wtG-yt-KNi" secondAttribute="top" constant="5" id="8hV-OS-ffx"/>
+                                        <constraint firstItem="uPC-hf-dA1" firstAttribute="top" secondItem="wtG-yt-KNi" secondAttribute="top" id="8hV-OS-ffx"/>
                                         <constraint firstItem="qes-3N-DNh" firstAttribute="top" secondItem="wtG-yt-KNi" secondAttribute="topMargin" constant="10" id="HQm-kM-mUm"/>
                                         <constraint firstItem="Znm-R3-oQA" firstAttribute="top" secondItem="qes-3N-DNh" secondAttribute="bottom" constant="10" id="Oib-gA-VtA"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="qes-3N-DNh" secondAttribute="trailing" constant="10" id="Oj2-Ms-3kC"/>
                                         <constraint firstItem="mMQ-ne-uIW" firstAttribute="top" secondItem="qes-3N-DNh" secondAttribute="bottom" constant="10" id="f6m-pb-rmJ"/>
                                         <constraint firstItem="Znm-R3-oQA" firstAttribute="leading" secondItem="mMQ-ne-uIW" secondAttribute="trailing" constant="5" id="mvs-BO-eIZ"/>
-                                        <constraint firstAttribute="bottom" secondItem="uPC-hf-dA1" secondAttribute="bottom" constant="5" id="xfr-ds-9tp"/>
+                                        <constraint firstAttribute="bottom" secondItem="uPC-hf-dA1" secondAttribute="bottom" id="xfr-ds-9tp"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -147,7 +147,7 @@
         <!--Fish-->
         <scene sceneID="Edb-iC-G4A">
             <objects>
-                <tableViewController id="bMS-9t-09d" customClass="FishTableViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="bMS-9t-09d" customClass="FishTableViewController" customModule="ACNH_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DNy-DW-lDt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +158,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FishCell" id="8KF-TT-Uom" customClass="FishTableViewCell" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FishCell" id="8KF-TT-Uom" customClass="FishTableViewCell" customModule="ACNH_Collector" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="110.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8KF-TT-Uom" id="nlf-5j-TAQ">
@@ -254,43 +254,43 @@
         <!--Fish Name-->
         <scene sceneID="Gue-GP-0Xd">
             <objects>
-                <viewController id="r0Q-Mn-LgS" customClass="FishDetailViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="r0Q-Mn-LgS" customClass="FishDetailViewController" customModule="ACNH_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3JK-By-DG0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bells" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZr-Nl-Sdq">
-                                <rect key="frame" x="20" y="170" width="374" height="24.5"/>
+                                <rect key="frame" x="20" y="150" width="374" height="24.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQk-Vp-Evz">
-                                <rect key="frame" x="20" y="204.5" width="92.5" height="24.5"/>
+                                <rect key="frame" x="20" y="184.5" width="92.5" height="24.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shadow Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rth-95-FYB">
-                                <rect key="frame" x="20" y="239" width="374" height="24.5"/>
+                                <rect key="frame" x="20" y="219" width="374" height="24.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQM-c2-JJq">
-                                <rect key="frame" x="20" y="273.5" width="374" height="24.5"/>
+                                <rect key="frame" x="20" y="253.5" width="374" height="24.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Months" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzz-ZH-rTM">
-                                <rect key="frame" x="20" y="308" width="374" height="24.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Months" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzz-ZH-rTM">
+                                <rect key="frame" x="20" y="288" width="374" height="24.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMp-OE-wIK">
-                                <rect key="frame" x="20" y="342.5" width="150" height="31"/>
+                                <rect key="frame" x="132" y="462.5" width="150" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caught?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mti-gE-Tg9">
                                         <rect key="frame" x="0.0" y="0.0" width="101" height="31"/>
@@ -306,35 +306,44 @@
                                     </switch>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="gHf-bB-YWn"/>
+                                    <constraint firstAttribute="width" constant="150" id="7Hc-dq-wvG"/>
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NqG-Kj-96h">
-                                <rect key="frame" x="107" y="418.5" width="200" height="200"/>
+                                <rect key="frame" x="132" y="312.5" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="MLU-CE-11u"/>
-                                    <constraint firstAttribute="height" constant="200" id="ekr-H9-ivV"/>
+                                    <constraint firstAttribute="width" constant="150" id="MLU-CE-11u"/>
+                                    <constraint firstAttribute="height" constant="150" id="ekr-H9-ivV"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capture Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vij-xM-3iB">
+                                <rect key="frame" x="10" y="513.5" width="394" height="24.5"/>
+                                <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="a2M-ix-UDX" firstAttribute="trailing" secondItem="IQM-c2-JJq" secondAttribute="trailing" constant="20" id="0P2-XF-V8t"/>
+                            <constraint firstItem="Vij-xM-3iB" firstAttribute="leading" secondItem="a2M-ix-UDX" secondAttribute="leading" constant="10" id="19d-7c-y6Y"/>
                             <constraint firstItem="Pzz-ZH-rTM" firstAttribute="leading" secondItem="a2M-ix-UDX" secondAttribute="leading" constant="20" id="1io-2X-GxN"/>
-                            <constraint firstItem="yMp-OE-wIK" firstAttribute="top" secondItem="Pzz-ZH-rTM" secondAttribute="bottom" constant="10" id="3pP-9P-HMt"/>
                             <constraint firstItem="NqG-Kj-96h" firstAttribute="centerX" secondItem="3JK-By-DG0" secondAttribute="centerX" id="Dlf-FC-W86"/>
                             <constraint firstItem="IQM-c2-JJq" firstAttribute="leading" secondItem="a2M-ix-UDX" secondAttribute="leading" constant="20" id="MNl-pc-3X9"/>
+                            <constraint firstItem="Vij-xM-3iB" firstAttribute="top" secondItem="yMp-OE-wIK" secondAttribute="bottom" constant="20" id="Mqd-Jl-pUq"/>
                             <constraint firstItem="Pzz-ZH-rTM" firstAttribute="top" secondItem="IQM-c2-JJq" secondAttribute="bottom" constant="10" id="Sf6-E8-jSL"/>
+                            <constraint firstItem="NqG-Kj-96h" firstAttribute="top" secondItem="Pzz-ZH-rTM" secondAttribute="bottom" id="UUX-GK-xD1"/>
                             <constraint firstItem="a2M-ix-UDX" firstAttribute="trailing" secondItem="yZr-Nl-Sdq" secondAttribute="trailing" constant="20" id="Ypu-JY-mxl"/>
                             <constraint firstItem="IQM-c2-JJq" firstAttribute="top" secondItem="Rth-95-FYB" secondAttribute="bottom" constant="10" id="abH-zI-Q5N"/>
                             <constraint firstItem="a2M-ix-UDX" firstAttribute="trailing" secondItem="Rth-95-FYB" secondAttribute="trailing" constant="20" id="cI5-8H-Zeu"/>
-                            <constraint firstItem="yZr-Nl-Sdq" firstAttribute="top" secondItem="a2M-ix-UDX" secondAttribute="top" constant="30" id="d75-Ss-ioh"/>
+                            <constraint firstItem="yMp-OE-wIK" firstAttribute="top" secondItem="NqG-Kj-96h" secondAttribute="bottom" id="clO-XK-cbM"/>
+                            <constraint firstItem="yZr-Nl-Sdq" firstAttribute="top" secondItem="a2M-ix-UDX" secondAttribute="top" constant="10" id="d75-Ss-ioh"/>
                             <constraint firstItem="Rth-95-FYB" firstAttribute="leading" secondItem="a2M-ix-UDX" secondAttribute="leading" constant="20" id="dJk-cS-bcU"/>
-                            <constraint firstItem="NqG-Kj-96h" firstAttribute="top" secondItem="yMp-OE-wIK" secondAttribute="bottom" constant="45" id="iBi-69-4nK"/>
                             <constraint firstItem="Rth-95-FYB" firstAttribute="top" secondItem="EQk-Vp-Evz" secondAttribute="bottom" constant="10" id="k6h-hH-fsV"/>
                             <constraint firstItem="yZr-Nl-Sdq" firstAttribute="leading" secondItem="a2M-ix-UDX" secondAttribute="leading" constant="20" id="kDS-cs-mIB"/>
                             <constraint firstItem="a2M-ix-UDX" firstAttribute="trailing" secondItem="Pzz-ZH-rTM" secondAttribute="trailing" constant="20" id="l8F-Qj-LDp"/>
-                            <constraint firstItem="yMp-OE-wIK" firstAttribute="leading" secondItem="a2M-ix-UDX" secondAttribute="leading" constant="20" id="thu-1z-lPG"/>
+                            <constraint firstItem="yMp-OE-wIK" firstAttribute="centerX" secondItem="a2M-ix-UDX" secondAttribute="centerX" id="oJo-Zx-dQB"/>
+                            <constraint firstItem="a2M-ix-UDX" firstAttribute="trailing" secondItem="Vij-xM-3iB" secondAttribute="trailing" constant="10" id="v9p-oY-EMZ"/>
                             <constraint firstItem="EQk-Vp-Evz" firstAttribute="top" secondItem="yZr-Nl-Sdq" secondAttribute="bottom" constant="10" id="wHK-wA-thy"/>
                             <constraint firstItem="EQk-Vp-Evz" firstAttribute="leading" secondItem="a2M-ix-UDX" secondAttribute="leading" constant="20" id="wp9-Us-RHE"/>
                         </constraints>
@@ -342,6 +351,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Fish Name" id="IOS-yW-RoQ"/>
                     <connections>
+                        <outlet property="captureQuoteLabel" destination="Vij-xM-3iB" id="LoE-NI-bY6"/>
                         <outlet property="caughtSwitch" destination="eTb-QZ-IW6" id="Mzq-35-SLW"/>
                         <outlet property="fishImage" destination="NqG-Kj-96h" id="BlG-tb-kiN"/>
                         <outlet property="locationLabel" destination="EQk-Vp-Evz" id="GWq-lc-oFy"/>
@@ -358,7 +368,7 @@
         <!--Fossil Name-->
         <scene sceneID="vCi-uc-fC5">
             <objects>
-                <viewController id="gf6-Z4-FvL" customClass="FossilDetailViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gf6-Z4-FvL" customClass="FossilDetailViewController" customModule="ACNH_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="trh-CH-iMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -381,46 +391,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Brd-tz-o7i">
+                                <rect key="frame" x="132" y="263.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Gxn-dg-Ozv"/>
+                                    <constraint firstAttribute="width" constant="150" id="Pvx-Xg-qL0"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLH-Bc-iAW">
-                                <rect key="frame" x="20" y="273.5" width="150" height="31"/>
+                                <rect key="frame" x="129.5" y="413.5" width="155" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Found?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAx-uH-5zS">
-                                        <rect key="frame" x="0.0" y="0.0" width="101" height="31"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donated?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAx-uH-5zS">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="31"/>
                                         <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tls-hH-lpT">
-                                        <rect key="frame" x="101" y="0.0" width="51" height="31"/>
+                                        <rect key="frame" x="106" y="0.0" width="51" height="31"/>
                                         <connections>
                                             <action selector="foundSwitchChanged:" destination="gf6-Z4-FvL" eventType="valueChanged" id="6cV-Al-yDB"/>
                                         </connections>
                                     </switch>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="5co-C4-iXA"/>
+                                    <constraint firstAttribute="width" constant="155" id="dR8-Aq-gK0"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Brd-tz-o7i">
-                                <rect key="frame" x="107" y="324.5" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Gxn-dg-Ozv"/>
-                                    <constraint firstAttribute="width" constant="200" id="Pvx-Xg-qL0"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Dc1-4t-uLU" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="8Ra-KG-l2x"/>
                             <constraint firstItem="ETU-6h-cTX" firstAttribute="trailing" secondItem="1E3-Mf-eK0" secondAttribute="trailing" constant="20" id="91i-io-zhn"/>
-                            <constraint firstItem="vLH-Bc-iAW" firstAttribute="top" secondItem="1E3-Mf-eK0" secondAttribute="bottom" constant="10" id="Ff0-sz-pFq"/>
+                            <constraint firstItem="Brd-tz-o7i" firstAttribute="top" secondItem="1E3-Mf-eK0" secondAttribute="bottom" id="AqJ-Cp-vgX"/>
+                            <constraint firstItem="vLH-Bc-iAW" firstAttribute="top" secondItem="Brd-tz-o7i" secondAttribute="bottom" id="KNd-Ql-4GD"/>
                             <constraint firstItem="ETU-6h-cTX" firstAttribute="trailing" secondItem="oHQ-Lk-FLY" secondAttribute="trailing" constant="20" id="M4a-bW-lIU"/>
+                            <constraint firstItem="vLH-Bc-iAW" firstAttribute="centerX" secondItem="ETU-6h-cTX" secondAttribute="centerX" id="Qv2-UD-eAS"/>
                             <constraint firstItem="1E3-Mf-eK0" firstAttribute="top" secondItem="oHQ-Lk-FLY" secondAttribute="bottom" constant="10" id="UAq-Ud-44e"/>
                             <constraint firstItem="Dc1-4t-uLU" firstAttribute="top" secondItem="ETU-6h-cTX" secondAttribute="top" constant="30" id="Xg0-Fo-RhP"/>
                             <constraint firstItem="Brd-tz-o7i" firstAttribute="centerX" secondItem="trh-CH-iMk" secondAttribute="centerX" id="ZdY-5B-MXq"/>
-                            <constraint firstItem="vLH-Bc-iAW" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="bNN-ru-lSd"/>
                             <constraint firstItem="oHQ-Lk-FLY" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="jBU-rJ-vgH"/>
-                            <constraint firstItem="Brd-tz-o7i" firstAttribute="top" secondItem="vLH-Bc-iAW" secondAttribute="bottom" constant="20" id="jJU-tu-fBG"/>
                             <constraint firstItem="1E3-Mf-eK0" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="rAt-MK-btL"/>
                             <constraint firstItem="ETU-6h-cTX" firstAttribute="trailing" secondItem="Dc1-4t-uLU" secondAttribute="trailing" constant="20" id="uSm-be-2Tz"/>
                             <constraint firstItem="oHQ-Lk-FLY" firstAttribute="top" secondItem="Dc1-4t-uLU" secondAttribute="bottom" constant="10" id="ysh-jh-Hmg"/>
@@ -443,7 +453,7 @@
         <!--Animal Crossing Tab Bar Controller-->
         <scene sceneID="51x-DC-oxr">
             <objects>
-                <tabBarController id="AT9-lJ-eaT" customClass="AnimalCrossingTabBarController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="AT9-lJ-eaT" customClass="AnimalCrossingTabBarController" customModule="ACNH_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eUL-o7-J4o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -463,7 +473,9 @@
         <scene sceneID="LP2-cF-yT5">
             <objects>
                 <navigationController id="AxZ-T7-mJR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fish" id="Nmg-lM-8oD"/>
+                    <tabBarItem key="tabBarItem" title="Fish" id="Nmg-lM-8oD">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="dsZ-ae-y2H">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -480,7 +492,9 @@
         <scene sceneID="sLW-pK-4aT">
             <objects>
                 <navigationController id="sQN-CX-gg7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fossils" id="ZMg-CJ-rGE"/>
+                    <tabBarItem key="tabBarItem" title="Fossils" id="ZMg-CJ-rGE">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="C1Z-O2-oLP">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -497,7 +511,9 @@
         <scene sceneID="NUY-oH-69u">
             <objects>
                 <navigationController title="Bugs" id="cfu-ud-BMS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bugs" id="eD9-Ur-6mj"/>
+                    <tabBarItem key="tabBarItem" title="Bugs" id="eD9-Ur-6mj">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="286-jd-QyT">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -513,7 +529,7 @@
         <!--Bugs-->
         <scene sceneID="lAF-fd-1h4">
             <objects>
-                <tableViewController id="eDi-GG-M1K" customClass="BugsTableViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="eDi-GG-M1K" customClass="BugsTableViewController" customModule="ACNH_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HvG-x6-NWy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -524,7 +540,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BugCell" id="mUk-Wn-yMB" customClass="BugTableViewCell" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BugCell" id="mUk-Wn-yMB" customClass="BugTableViewCell" customModule="ACNH_Collector" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="110.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mUk-Wn-yMB" id="IVe-IN-b6O">
@@ -620,7 +636,7 @@
         <!--Bug Name-->
         <scene sceneID="0ce-gr-h6h">
             <objects>
-                <viewController id="0f4-Mv-spM" customClass="BugDetailViewController" customModule="Animal_Crossing_New_Horizons_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0f4-Mv-spM" customClass="BugDetailViewController" customModule="ACNH_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DMK-hP-tOU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -649,8 +665,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-kN-Kvm">
+                                <rect key="frame" x="132" y="298" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="nFu-7o-ldS"/>
+                                    <constraint firstAttribute="height" constant="150" id="wQx-cn-p2s"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-jv-qlg">
-                                <rect key="frame" x="20" y="308" width="150" height="31"/>
+                                <rect key="frame" x="132" y="448" width="150" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caught?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-gF-QSt">
                                         <rect key="frame" x="0.0" y="0.0" width="101" height="31"/>
@@ -666,39 +689,31 @@
                                     </switch>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="blQ-VW-Fal"/>
+                                    <constraint firstAttribute="width" constant="150" id="Wuo-Rm-SeK"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-kN-Kvm">
-                                <rect key="frame" x="107" y="384" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="ERA-Ur-JJB"/>
-                                    <constraint firstAttribute="width" constant="200" id="cPt-rm-fae"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="h5v-CD-gCh" firstAttribute="leading" secondItem="DRi-wc-IaM" secondAttribute="leading" constant="20" id="3r2-T6-jiI"/>
                             <constraint firstItem="DRi-wc-IaM" firstAttribute="trailing" secondItem="Lx0-OB-2A1" secondAttribute="trailing" constant="20" id="5o3-bB-gYr"/>
+                            <constraint firstItem="aUb-kN-Kvm" firstAttribute="centerX" secondItem="DRi-wc-IaM" secondAttribute="centerX" id="74c-dL-Obm"/>
                             <constraint firstItem="WaJ-LF-J5A" firstAttribute="leading" secondItem="DRi-wc-IaM" secondAttribute="leading" constant="20" id="Bbs-9Z-Jz4"/>
-                            <constraint firstItem="Lim-jv-qlg" firstAttribute="leading" secondItem="DRi-wc-IaM" secondAttribute="leading" constant="20" id="BkQ-wQ-461"/>
                             <constraint firstItem="h5v-CD-gCh" firstAttribute="top" secondItem="6p3-sE-ER6" secondAttribute="bottom" constant="10" id="C3k-f1-gpB"/>
                             <constraint firstItem="WaJ-LF-J5A" firstAttribute="top" secondItem="DRi-wc-IaM" secondAttribute="top" constant="30" id="EGc-tS-Rtu"/>
+                            <constraint firstItem="Lim-jv-qlg" firstAttribute="top" secondItem="aUb-kN-Kvm" secondAttribute="bottom" id="G1C-Av-ztk"/>
                             <constraint firstItem="6p3-sE-ER6" firstAttribute="top" secondItem="Lx0-OB-2A1" secondAttribute="bottom" constant="10" id="LhT-xr-fPa"/>
                             <constraint firstItem="Lx0-OB-2A1" firstAttribute="top" secondItem="WaJ-LF-J5A" secondAttribute="bottom" constant="10" id="PFE-9X-ioh"/>
                             <constraint firstItem="h5v-CD-gCh" firstAttribute="top" secondItem="6p3-sE-ER6" secondAttribute="bottom" constant="10" id="aba-X0-wWm"/>
                             <constraint firstItem="DRi-wc-IaM" firstAttribute="trailing" secondItem="h5v-CD-gCh" secondAttribute="trailing" constant="20" id="btg-Au-5dB"/>
-                            <constraint firstItem="aUb-kN-Kvm" firstAttribute="centerX" secondItem="h5v-CD-gCh" secondAttribute="centerX" id="e8d-KA-9vu"/>
                             <constraint firstItem="6p3-sE-ER6" firstAttribute="top" secondItem="Lx0-OB-2A1" secondAttribute="bottom" constant="10" id="eTM-im-mZy"/>
                             <constraint firstItem="DRi-wc-IaM" firstAttribute="trailing" secondItem="6p3-sE-ER6" secondAttribute="trailing" constant="20" id="fBa-CJ-tYx"/>
-                            <constraint firstItem="aUb-kN-Kvm" firstAttribute="top" secondItem="Lim-jv-qlg" secondAttribute="bottom" constant="45" id="jrc-5t-S8p"/>
                             <constraint firstItem="Lx0-OB-2A1" firstAttribute="leading" secondItem="DRi-wc-IaM" secondAttribute="leading" constant="20" id="kIf-eG-lqX"/>
                             <constraint firstItem="Lx0-OB-2A1" firstAttribute="top" secondItem="WaJ-LF-J5A" secondAttribute="bottom" constant="10" id="kM0-MP-jdP"/>
                             <constraint firstItem="DRi-wc-IaM" firstAttribute="trailing" secondItem="WaJ-LF-J5A" secondAttribute="trailing" constant="20" id="luW-hv-5Gl"/>
-                            <constraint firstItem="Lim-jv-qlg" firstAttribute="top" secondItem="h5v-CD-gCh" secondAttribute="bottom" constant="10" id="xZN-GT-qoW"/>
-                            <constraint firstItem="Lim-jv-qlg" firstAttribute="top" secondItem="h5v-CD-gCh" secondAttribute="bottom" constant="10" id="y0i-Ww-arQ"/>
+                            <constraint firstItem="Lim-jv-qlg" firstAttribute="centerX" secondItem="DRi-wc-IaM" secondAttribute="centerX" id="yb4-3C-At6"/>
                             <constraint firstItem="6p3-sE-ER6" firstAttribute="leading" secondItem="DRi-wc-IaM" secondAttribute="leading" constant="20" id="yoZ-Yq-a4h"/>
+                            <constraint firstItem="aUb-kN-Kvm" firstAttribute="top" secondItem="h5v-CD-gCh" secondAttribute="bottom" id="yom-C8-k8s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DRi-wc-IaM"/>
                     </view>

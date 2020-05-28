@@ -17,6 +17,7 @@ class FishDetailViewController: UIViewController {
     @IBOutlet weak var monthsLabel: UILabel!
     @IBOutlet weak var caughtSwitch: UISwitch!
     @IBOutlet weak var fishImage: UIImageView!
+    @IBOutlet weak var captureQuoteLabel: UILabel!
     
     var selectedFish: Fish = Fish()
     var fishPrice: String = ""
@@ -52,8 +53,6 @@ class FishDetailViewController: UIViewController {
     
     func setUpLabels() {
         monthsLabel.numberOfLines = 0
-        
-        
     }
     
     func updateFish() {
@@ -61,17 +60,35 @@ class FishDetailViewController: UIViewController {
         
         title = selectedFish.name
         
-        guard let price = selectedFish.price,
+        guard let bells = selectedFish.price,
             let shadowSize = selectedFish.shadowSize,
             let time = selectedFish.time,
             let months = selectedFish.months,
             let location = selectedFish.location else { return }
-        priceLabel.text = "💰 Bells: \(price)"
+        
+        // Format Months String for smaller devices (Fish that list every month take up a lot of room)
+        let monthsString = "📆 Months: \(months)"
+        let attributedString = NSMutableAttributedString(string: monthsString)
+        attributedString.addAttribute(.font, value: UIFont.init(name: "FinkHeavy", size: 25)!, range: NSRange(location: 0, length: 10))
+        
+        // Get length of month string to change font to size: 18
+        let lengthOfMonths = months.count
+        print("lengthOfMonths: \(lengthOfMonths)")
+        attributedString.addAttribute(.font, value: UIFont.init(name: "FinkHeavy", size: 18)!, range: NSRange(location: 11, length: lengthOfMonths))
+        
+        // Create number formatter to format add commas to numbers over 999
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        guard let formattedBells = numberFormatter.string(from: NSNumber(value: bells)) else { return }
+
+        priceLabel.text = "💰 Bells: \(formattedBells)"
         shadowSizeLabel.text = "🐟 Shadow Size: \(shadowSize)"
         timeLabel.text = "🕙 Time: \(time)"
-        monthsLabel.text = "📆 Months: \(months)"
+        monthsLabel.attributedText = attributedString
         fishImage.image = selectedFish.image
         locationLabel.text = "🗺 Location: \(location)"
+        
     }
     
     
@@ -79,7 +96,11 @@ class FishDetailViewController: UIViewController {
         if selectedFish.hasBeenCaught == true {
             caughtSwitch.isOn = true
             self.view.backgroundColor = self.greenBackgroundColor
+            guard let captureQuote = selectedFish.captureQuote else { return }
+            captureQuoteLabel.text = "\"\(captureQuote)\""
+            
         } else {
+            captureQuoteLabel.text = ""
             caughtSwitch.isOn = false
             self.view.backgroundColor = UIColor.systemBackground
         }
@@ -97,22 +118,26 @@ class FishDetailViewController: UIViewController {
     @IBAction func caughtSwitchChanged(_ sender: UISwitch) {
         
         if caughtSwitch.isOn == true {
+            guard let captureQuote = selectedFish.captureQuote else { return }
+            self.captureQuoteLabel.alpha = 0
             selectedFish.hasBeenCaught = true
             saveDefaults()
             UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = self.greenBackgroundColor
+                self.captureQuoteLabel.alpha = 1
+                self.captureQuoteLabel.text = "\"\(captureQuote)\""
             }
             caughtSwitch.thumbTintColor = .systemBlue
             caughtSwitch.onTintColor = .white
         } else {
+            
             selectedFish.hasBeenCaught = false
             saveDefaults()
             UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = UIColor.systemBackground
+                self.captureQuoteLabel.alpha = 0
             }
             caughtSwitch.thumbTintColor = .gray
         }
     }
-    
-
 }

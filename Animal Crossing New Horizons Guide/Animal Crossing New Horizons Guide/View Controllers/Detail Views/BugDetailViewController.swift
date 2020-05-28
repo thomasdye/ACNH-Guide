@@ -56,16 +56,31 @@ class BugDetailViewController: UIViewController {
     
     func updateBugs() {
         
-        
         title = selectedBug.name
         
-        guard let price = selectedBug.price,
+        guard let bells = selectedBug.price,
             let time = selectedBug.time,
             let months = selectedBug.months,
             let location = selectedBug.location else { return }
-        priceLabel.text = "💰 Bells: \(price)"
+        
+        // Format Months String for smaller devices (Fish that list every month take up a lot of room)
+        let monthsString = "📆 Months: \(months)"
+        let attributedString = NSMutableAttributedString(string: monthsString)
+        attributedString.addAttribute(.font, value: UIFont.init(name: "FinkHeavy", size: 25)!, range: NSRange(location: 0, length: 10))
+        
+        // Get length of month string to change font to size: 18
+        let lengthOfMonths = months.count
+        print("lengthOfMonths: \(lengthOfMonths)")
+        attributedString.addAttribute(.font, value: UIFont.init(name: "FinkHeavy", size: 18)!, range: NSRange(location: 11, length: lengthOfMonths))
+        
+        // Create number formatter to format add commas to numbers over 999
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        guard let formattedBells = numberFormatter.string(from: NSNumber(value: bells)) else { return }
+        priceLabel.text = "💰 Bells: \(formattedBells)"
         timeLabel.text = "🕙 Time: \(time)"
-        monthsLabel.text = "📆 Months: \(months)"
+        monthsLabel.attributedText = attributedString
         bugImage.image = selectedBug.image
         locationLabel.text = "🗺 Location: \(location)"
     }

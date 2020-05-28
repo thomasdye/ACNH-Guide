@@ -87,9 +87,16 @@ class BugsTableViewController: UITableViewController, UISearchBarDelegate {
         dateFormatter.dateFormat = "MMM"
         let currentMonth = dateFormatter.string(from: now)
         
+        guard let bells = bug.price else { return cell }
+        // Create number formatter to format add commas to numbers over 999
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        guard let formattedBells = numberFormatter.string(from: NSNumber(value: bells)) else { return cell }
+        
         cell.bugNameLabel.text = bug.name
 
-        cell.bugBellsLabel.text = String(bug.price!)
+        cell.bugBellsLabel.text = formattedBells
         cell.bugImage.image = bug.image
         
         guard let bugMonths = bug.months else { return cell }
