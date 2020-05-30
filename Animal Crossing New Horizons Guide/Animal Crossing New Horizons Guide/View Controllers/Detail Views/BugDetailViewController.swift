@@ -16,6 +16,7 @@ class BugDetailViewController: UIViewController {
     @IBOutlet weak var monthsLabel: UILabel!
     @IBOutlet weak var caughtSwitch: UISwitch!
     @IBOutlet weak var bugImage: UIImageView!
+    @IBOutlet weak var captureQuoteLabel: UILabel!
     
     var selectedBug: Critter = Critter()
     var bugPrice: String = ""
@@ -90,9 +91,12 @@ class BugDetailViewController: UIViewController {
         if selectedBug.hasBeenCaught == true {
             caughtSwitch.isOn = true
             self.view.backgroundColor = self.greenBackgroundColor
+            guard let captureQuote = selectedBug.captureQuote else { return }
+            captureQuoteLabel.text = "\"\(captureQuote)\""
         } else {
             caughtSwitch.isOn = false
             self.view.backgroundColor = UIColor.systemBackground
+            captureQuoteLabel.text = ""
         }
     }
     
@@ -108,10 +112,14 @@ class BugDetailViewController: UIViewController {
     @IBAction func caughtSwitchChanged(_ sender: UISwitch) {
         
         if caughtSwitch.isOn == true {
+            guard let captureQuote = selectedBug.captureQuote else { return }
+            self.captureQuoteLabel.alpha = 0
             selectedBug.hasBeenCaught = true
             saveDefaults()
             UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = self.greenBackgroundColor
+                self.captureQuoteLabel.alpha = 1
+                self.captureQuoteLabel.text = "\"\(captureQuote)\""
             }
             caughtSwitch.thumbTintColor = .systemBlue
             caughtSwitch.onTintColor = .white
@@ -120,6 +128,7 @@ class BugDetailViewController: UIViewController {
             saveDefaults()
             UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = UIColor.systemBackground
+                self.captureQuoteLabel.alpha = 0
             }
             caughtSwitch.thumbTintColor = .gray
         }

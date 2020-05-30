@@ -100,9 +100,9 @@ class FishDetailViewController: UIViewController {
             captureQuoteLabel.text = "\"\(captureQuote)\""
             
         } else {
-            captureQuoteLabel.text = ""
             caughtSwitch.isOn = false
             self.view.backgroundColor = UIColor.systemBackground
+            captureQuoteLabel.text = ""
         }
     }
     

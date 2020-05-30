@@ -196,7 +196,7 @@ var clownFish = Fish(name: "Clown Fish",
                      shadowSize: 1,
                      time: "All Day",
                      months: "April, May, June, July, August, and September",
-                     captureQuote: "I caught a Clown Fish! How many can fir in a carfish?",
+                     captureQuote: "I caught a Clown Fish! How many can fit in a carfish?",
                      hasBeenCaught: false)
 
 var coelacanth = Fish(name: "Coelacanth",

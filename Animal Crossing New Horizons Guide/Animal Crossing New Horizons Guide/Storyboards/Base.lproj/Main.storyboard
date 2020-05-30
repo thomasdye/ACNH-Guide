@@ -173,31 +173,31 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bells:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6u-gq-bGf">
-                                            <rect key="frame" x="120" y="49.5" width="41" height="19.5"/>
+                                            <rect key="frame" x="120" y="55" width="49" height="23.5"/>
                                             <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bells Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9D-NB-VLw">
-                                            <rect key="frame" x="166" y="49.5" width="141" height="19.5"/>
+                                            <rect key="frame" x="174" y="55" width="155" height="23.5"/>
                                             <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catchable:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tib-gV-RmJ">
-                                            <rect key="frame" x="120" y="79" width="87.5" height="19.5"/>
+                                            <rect key="frame" x="120" y="88.5" width="97" height="23.5"/>
                                             <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fish Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-on-dth">
-                                            <rect key="frame" x="120" y="10" width="253" height="29.5"/>
+                                            <rect key="frame" x="120" y="10" width="253" height="35"/>
                                             <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catchable Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxI-Gf-Qa0">
-                                            <rect key="frame" x="212.5" y="79" width="187.5" height="19.5"/>
+                                            <rect key="frame" x="222" y="88.5" width="203" height="23.5"/>
                                             <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -642,38 +642,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bells" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaJ-LF-J5A">
-                                <rect key="frame" x="20" y="170" width="374" height="24.5"/>
+                                <rect key="frame" x="20" y="150" width="374" height="24.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx0-OB-2A1">
-                                <rect key="frame" x="20" y="204.5" width="374" height="24.5"/>
+                                <rect key="frame" x="20" y="184.5" width="374" height="24.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6p3-sE-ER6">
-                                <rect key="frame" x="20" y="239" width="374" height="24.5"/>
+                                <rect key="frame" x="20" y="219" width="374" height="24.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Months" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5v-CD-gCh">
-                                <rect key="frame" x="20" y="273.5" width="374" height="24.5"/>
+                                <rect key="frame" x="20" y="253.5" width="374" height="24.5"/>
                                 <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-kN-Kvm">
-                                <rect key="frame" x="132" y="298" width="150" height="150"/>
+                                <rect key="frame" x="132" y="278" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="nFu-7o-ldS"/>
                                     <constraint firstAttribute="height" constant="150" id="wQx-cn-p2s"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-jv-qlg">
-                                <rect key="frame" x="132" y="448" width="150" height="31"/>
+                                <rect key="frame" x="132" y="428" width="150" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caught?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-gF-QSt">
                                         <rect key="frame" x="0.0" y="0.0" width="101" height="31"/>
@@ -692,6 +692,12 @@
                                     <constraint firstAttribute="width" constant="150" id="Wuo-Rm-SeK"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capture Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39B-B3-rEo">
+                                <rect key="frame" x="10" y="479" width="394" height="24.5"/>
+                                <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -700,17 +706,20 @@
                             <constraint firstItem="aUb-kN-Kvm" firstAttribute="centerX" secondItem="DRi-wc-IaM" secondAttribute="centerX" id="74c-dL-Obm"/>
                             <constraint firstItem="WaJ-LF-J5A" firstAttribute="leading" secondItem="DRi-wc-IaM" secondAttribute="leading" constant="20" id="Bbs-9Z-Jz4"/>
                             <constraint firstItem="h5v-CD-gCh" firstAttribute="top" secondItem="6p3-sE-ER6" secondAttribute="bottom" constant="10" id="C3k-f1-gpB"/>
-                            <constraint firstItem="WaJ-LF-J5A" firstAttribute="top" secondItem="DRi-wc-IaM" secondAttribute="top" constant="30" id="EGc-tS-Rtu"/>
+                            <constraint firstItem="WaJ-LF-J5A" firstAttribute="top" secondItem="DRi-wc-IaM" secondAttribute="top" constant="10" id="EGc-tS-Rtu"/>
                             <constraint firstItem="Lim-jv-qlg" firstAttribute="top" secondItem="aUb-kN-Kvm" secondAttribute="bottom" id="G1C-Av-ztk"/>
                             <constraint firstItem="6p3-sE-ER6" firstAttribute="top" secondItem="Lx0-OB-2A1" secondAttribute="bottom" constant="10" id="LhT-xr-fPa"/>
+                            <constraint firstItem="39B-B3-rEo" firstAttribute="leading" secondItem="DRi-wc-IaM" secondAttribute="leading" constant="10" id="MDL-CQ-Whh"/>
                             <constraint firstItem="Lx0-OB-2A1" firstAttribute="top" secondItem="WaJ-LF-J5A" secondAttribute="bottom" constant="10" id="PFE-9X-ioh"/>
                             <constraint firstItem="h5v-CD-gCh" firstAttribute="top" secondItem="6p3-sE-ER6" secondAttribute="bottom" constant="10" id="aba-X0-wWm"/>
                             <constraint firstItem="DRi-wc-IaM" firstAttribute="trailing" secondItem="h5v-CD-gCh" secondAttribute="trailing" constant="20" id="btg-Au-5dB"/>
                             <constraint firstItem="6p3-sE-ER6" firstAttribute="top" secondItem="Lx0-OB-2A1" secondAttribute="bottom" constant="10" id="eTM-im-mZy"/>
                             <constraint firstItem="DRi-wc-IaM" firstAttribute="trailing" secondItem="6p3-sE-ER6" secondAttribute="trailing" constant="20" id="fBa-CJ-tYx"/>
+                            <constraint firstItem="39B-B3-rEo" firstAttribute="top" secondItem="Lim-jv-qlg" secondAttribute="bottom" constant="20" id="jkK-rF-fWB"/>
                             <constraint firstItem="Lx0-OB-2A1" firstAttribute="leading" secondItem="DRi-wc-IaM" secondAttribute="leading" constant="20" id="kIf-eG-lqX"/>
                             <constraint firstItem="Lx0-OB-2A1" firstAttribute="top" secondItem="WaJ-LF-J5A" secondAttribute="bottom" constant="10" id="kM0-MP-jdP"/>
                             <constraint firstItem="DRi-wc-IaM" firstAttribute="trailing" secondItem="WaJ-LF-J5A" secondAttribute="trailing" constant="20" id="luW-hv-5Gl"/>
+                            <constraint firstItem="DRi-wc-IaM" firstAttribute="trailing" secondItem="39B-B3-rEo" secondAttribute="trailing" constant="10" id="oc5-jM-MRV"/>
                             <constraint firstItem="Lim-jv-qlg" firstAttribute="centerX" secondItem="DRi-wc-IaM" secondAttribute="centerX" id="yb4-3C-At6"/>
                             <constraint firstItem="6p3-sE-ER6" firstAttribute="leading" secondItem="DRi-wc-IaM" secondAttribute="leading" constant="20" id="yoZ-Yq-a4h"/>
                             <constraint firstItem="aUb-kN-Kvm" firstAttribute="top" secondItem="h5v-CD-gCh" secondAttribute="bottom" id="yom-C8-k8s"/>
@@ -720,6 +729,7 @@
                     <navigationItem key="navigationItem" title="Bug Name" id="GHw-iW-XHP"/>
                     <connections>
                         <outlet property="bugImage" destination="aUb-kN-Kvm" id="tWX-JT-r9l"/>
+                        <outlet property="captureQuoteLabel" destination="39B-B3-rEo" id="SL0-4i-4Fk"/>
                         <outlet property="caughtSwitch" destination="COj-7b-lNV" id="Em3-GT-87B"/>
                         <outlet property="locationLabel" destination="Lx0-OB-2A1" id="oMO-4W-YhM"/>
                         <outlet property="monthsLabel" destination="h5v-CD-gCh" id="DU3-Yc-7P9"/>
