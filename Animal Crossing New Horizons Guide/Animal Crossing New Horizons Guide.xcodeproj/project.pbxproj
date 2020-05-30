@@ -25,6 +25,9 @@
 		ED667ABC244F377900D73B58 /* FishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667ABB244F377900D73B58 /* FishDetailViewController.swift */; };
 		ED667ABE244F378B00D73B58 /* FishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667ABD244F378B00D73B58 /* FishTableViewController.swift */; };
 		ED667AC82450714A00D73B58 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667AC72450714A00D73B58 /* Bug.swift */; };
+		ED9E9A0A24821F46005E673E /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9A0924821F46005E673E /* PMAlertAction.swift */; };
+		ED9E9A0C24821F49005E673E /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9A0B24821F49005E673E /* PMAlertController.swift */; };
+		ED9E9A0E24821F4D005E673E /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED9E9A0D24821F4D005E673E /* PMAlertController.xib */; };
 		EDBBD036247A345300DCBE44 /* BugTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBD035247A345300DCBE44 /* BugTableViewCell.swift */; };
 		EDBBD038247A34AF00DCBE44 /* BugsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBD037247A34AF00DCBE44 /* BugsTableViewController.swift */; };
 		EDBBD03A247A368900DCBE44 /* BugDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBD039247A368900DCBE44 /* BugDetailViewController.swift */; };
@@ -51,6 +54,9 @@
 		ED667ABB244F377900D73B58 /* FishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailViewController.swift; sourceTree = "<group>"; };
 		ED667ABD244F378B00D73B58 /* FishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTableViewController.swift; sourceTree = "<group>"; };
 		ED667AC72450714A00D73B58 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
+		ED9E9A0924821F46005E673E /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
+		ED9E9A0B24821F49005E673E /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
+		ED9E9A0D24821F4D005E673E /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
 		EDBBD035247A345300DCBE44 /* BugTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugTableViewCell.swift; sourceTree = "<group>"; };
 		EDBBD037247A34AF00DCBE44 /* BugsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsTableViewController.swift; sourceTree = "<group>"; };
 		EDBBD039247A368900DCBE44 /* BugDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugDetailViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 				ED320C1E244E4D2200FD7886 /* Assets.xcassets */,
 				ED320C23244E4D2300FD7886 /* Info.plist */,
 				ED1F305F2465C8B4008269F7 /* Fonts */,
+				ED9E9A0724821F25005E673E /* Library */,
 			);
 			path = "Animal Crossing New Horizons Guide";
 			sourceTree = "<group>";
@@ -148,6 +155,24 @@
 				ED320C20244E4D2200FD7886 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ED9E9A0724821F25005E673E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				ED9E9A0824821F31005E673E /* PM Alert Controller */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		ED9E9A0824821F31005E673E /* PM Alert Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED9E9A0924821F46005E673E /* PMAlertAction.swift */,
+				ED9E9A0B24821F49005E673E /* PMAlertController.swift */,
+				ED9E9A0D24821F4D005E673E /* PMAlertController.xib */,
+			);
+			path = "PM Alert Controller";
 			sourceTree = "<group>";
 		};
 		EDBBD034247A082E00DCBE44 /* Models */ = {
@@ -221,6 +246,7 @@
 				ED320C22244E4D2200FD7886 /* LaunchScreen.storyboard in Resources */,
 				ED320C1F244E4D2200FD7886 /* Assets.xcassets in Resources */,
 				ED1F30612465C8DA008269F7 /* FinkHeavy.ttf in Resources */,
+				ED9E9A0E24821F4D005E673E /* PMAlertController.xib in Resources */,
 				ED320C1D244E4D1C00FD7886 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDBBD038247A34AF00DCBE44 /* BugsTableViewController.swift in Sources */,
+				ED9E9A0A24821F46005E673E /* PMAlertAction.swift in Sources */,
 				ED1F305924651BE0008269F7 /* FishTableViewCell.swift in Sources */,
 				ED1F30632465CD2A008269F7 /* AnimalCrossingTabBarController.swift in Sources */,
 				EDBBD036247A345300DCBE44 /* BugTableViewCell.swift in Sources */,
@@ -244,6 +271,7 @@
 				ED667AC82450714A00D73B58 /* Bug.swift in Sources */,
 				ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */,
 				ED1F306A246711CA008269F7 /* NewFossilsViewController.swift in Sources */,
+				ED9E9A0C24821F49005E673E /* PMAlertController.swift in Sources */,
 				ED1F305B2465231A008269F7 /* FossilTableViewCell.swift in Sources */,
 				ED320C18244E4D1C00FD7886 /* SceneDelegate.swift in Sources */,
 				EDBBD03A247A368900DCBE44 /* BugDetailViewController.swift in Sources */,

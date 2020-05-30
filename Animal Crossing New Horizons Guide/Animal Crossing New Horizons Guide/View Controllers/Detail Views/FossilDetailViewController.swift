@@ -16,6 +16,7 @@ class FossilDetailViewController: UIViewController {
     @IBOutlet weak var relatedFossils: UILabel!
     @IBOutlet weak var fossilImage: UIImageView!
     @IBOutlet weak var foundSwitch: UISwitch!
+    @IBOutlet weak var tellMeMoreButton: UIButton!
     
     var selectedFossil: Fossil = Fossil()
     var dinosaurSpecies: String = ""
@@ -129,4 +130,15 @@ class FossilDetailViewController: UIViewController {
             foundSwitch.thumbTintColor = .gray
         }
     }
+    
+    @IBAction func tellMeMoreButtonTapped(_ sender: UIButton) {
+        
+        guard let blathersQuote = selectedFossil.blathersQuote else { return }
+        let alertVC = PMAlertController(title: blathersQuote, description: "", image: UIImage(named: "blathers"), style: .alert)
+
+        alertVC.addAction(PMAlertAction(title: "Awesome!", style: .default, action: { () in
+                    print("Capture action OK")
+                }))
+
+        self.present(alertVC, animated: true, completion: nil)    }
 }

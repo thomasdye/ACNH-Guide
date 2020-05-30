@@ -16,6 +16,7 @@ struct Fossil: Equatable {
     var isDinosaur: Bool?
     var dinosaurSpecies: String?
     var relatedFossils: String?
+    var blathersQuote: String?
     var hasBeenFound: Bool?
 }
 
@@ -25,6 +26,7 @@ var acanthostega = Fossil(name: "Acanthostega",
                           price: 2000,
                           image: UIImage(named: "acanthostega"),
                           isDinosaur: false,
+                          blathersQuote: "The acanthostega! Said to be one of the earliest amphibians, it existed well before dinosaurs. Because they lived as fish not long before, they still had gills and very webbed \"hands.\" To toss away the life they knew and venture onto unknown lands... they must have been very brave! Hmm... Does it still count as bravery if you have no understanding of what you're doing?",
                           hasBeenFound: false)
 
 var amber = Fossil(name: "Amber",

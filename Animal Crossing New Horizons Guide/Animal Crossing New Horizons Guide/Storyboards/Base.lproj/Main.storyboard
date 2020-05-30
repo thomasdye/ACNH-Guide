@@ -418,6 +418,14 @@
                                     <constraint firstAttribute="width" constant="155" id="dR8-Aq-gK0"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ua-uv-I0L">
+                                <rect key="frame" x="10" y="751" width="394" height="32"/>
+                                <fontDescription key="fontDescription" name="FinkHeavy" family="FinkHeavy" pointSize="20"/>
+                                <state key="normal" title="Tell Me More"/>
+                                <connections>
+                                    <action selector="tellMeMoreButtonTapped:" destination="gf6-Z4-FvL" eventType="touchUpInside" id="WBI-jn-08J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -429,10 +437,13 @@
                             <constraint firstItem="vLH-Bc-iAW" firstAttribute="centerX" secondItem="ETU-6h-cTX" secondAttribute="centerX" id="Qv2-UD-eAS"/>
                             <constraint firstItem="1E3-Mf-eK0" firstAttribute="top" secondItem="oHQ-Lk-FLY" secondAttribute="bottom" constant="10" id="UAq-Ud-44e"/>
                             <constraint firstItem="Dc1-4t-uLU" firstAttribute="top" secondItem="ETU-6h-cTX" secondAttribute="top" constant="30" id="Xg0-Fo-RhP"/>
+                            <constraint firstItem="ETU-6h-cTX" firstAttribute="bottom" secondItem="5ua-uv-I0L" secondAttribute="bottom" constant="30" id="Yoh-5d-i3E"/>
                             <constraint firstItem="Brd-tz-o7i" firstAttribute="centerX" secondItem="trh-CH-iMk" secondAttribute="centerX" id="ZdY-5B-MXq"/>
                             <constraint firstItem="oHQ-Lk-FLY" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="jBU-rJ-vgH"/>
+                            <constraint firstItem="ETU-6h-cTX" firstAttribute="trailing" secondItem="5ua-uv-I0L" secondAttribute="trailing" constant="10" id="qGR-Kk-4K0"/>
                             <constraint firstItem="1E3-Mf-eK0" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="20" id="rAt-MK-btL"/>
                             <constraint firstItem="ETU-6h-cTX" firstAttribute="trailing" secondItem="Dc1-4t-uLU" secondAttribute="trailing" constant="20" id="uSm-be-2Tz"/>
+                            <constraint firstItem="5ua-uv-I0L" firstAttribute="leading" secondItem="ETU-6h-cTX" secondAttribute="leading" constant="10" id="wX0-0O-Zl5"/>
                             <constraint firstItem="oHQ-Lk-FLY" firstAttribute="top" secondItem="Dc1-4t-uLU" secondAttribute="bottom" constant="10" id="ysh-jh-Hmg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ETU-6h-cTX"/>
@@ -444,6 +455,7 @@
                         <outlet property="foundSwitch" destination="tls-hH-lpT" id="EX5-TP-IOW"/>
                         <outlet property="isDinosaurLabel" destination="Dc1-4t-uLU" id="oCR-Zo-SSs"/>
                         <outlet property="relatedFossils" destination="1E3-Mf-eK0" id="2BK-PA-afh"/>
+                        <outlet property="tellMeMoreButton" destination="5ua-uv-I0L" id="apV-HW-aUR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pY7-GV-YBf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

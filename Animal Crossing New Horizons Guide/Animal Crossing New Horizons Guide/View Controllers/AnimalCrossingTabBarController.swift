@@ -18,10 +18,7 @@ class AnimalCrossingTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
     }
     func setUpFont() {
-        let greenBackgroundColor = UIColor(hue: 0.4639,
-        saturation: 1,
-        brightness: 0.89,
-        alpha: 1.0)
+        let greenBackgroundColor = UIColor(hue: 0.4639, saturation: 1, brightness: 0.89, alpha: 1.0)
         let largeTitle = [NSAttributedString.Key.font: UIFont(name: "FinkHeavy", size: 45)!]
         let smallTitle = [NSAttributedString.Key.font: UIFont(name: "FinkHeavy", size: 25)!]
         let tabBarTitle = [NSAttributedString.Key.font: UIFont(name: "FinkHeavy", size: 20)!,
