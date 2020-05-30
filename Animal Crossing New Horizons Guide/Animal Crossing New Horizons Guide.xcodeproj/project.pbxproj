@@ -28,6 +28,7 @@
 		ED9E9A0A24821F46005E673E /* PMAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9A0924821F46005E673E /* PMAlertAction.swift */; };
 		ED9E9A0C24821F49005E673E /* PMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9A0B24821F49005E673E /* PMAlertController.swift */; };
 		ED9E9A0E24821F4D005E673E /* PMAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED9E9A0D24821F4D005E673E /* PMAlertController.xib */; };
+		ED9E9A15248229CE005E673E /* Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E9A14248229CE005E673E /* Confetti.swift */; };
 		EDBBD036247A345300DCBE44 /* BugTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBD035247A345300DCBE44 /* BugTableViewCell.swift */; };
 		EDBBD038247A34AF00DCBE44 /* BugsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBD037247A34AF00DCBE44 /* BugsTableViewController.swift */; };
 		EDBBD03A247A368900DCBE44 /* BugDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBD039247A368900DCBE44 /* BugDetailViewController.swift */; };
@@ -57,6 +58,7 @@
 		ED9E9A0924821F46005E673E /* PMAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertAction.swift; sourceTree = "<group>"; };
 		ED9E9A0B24821F49005E673E /* PMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAlertController.swift; sourceTree = "<group>"; };
 		ED9E9A0D24821F4D005E673E /* PMAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMAlertController.xib; sourceTree = "<group>"; };
+		ED9E9A14248229CE005E673E /* Confetti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confetti.swift; sourceTree = "<group>"; };
 		EDBBD035247A345300DCBE44 /* BugTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugTableViewCell.swift; sourceTree = "<group>"; };
 		EDBBD037247A34AF00DCBE44 /* BugsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsTableViewController.swift; sourceTree = "<group>"; };
 		EDBBD039247A368900DCBE44 /* BugDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugDetailViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		ED9E9A0724821F25005E673E /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				ED9E9A13248229C1005E673E /* Confetti */,
 				ED9E9A0824821F31005E673E /* PM Alert Controller */,
 			);
 			path = Library;
@@ -173,6 +176,14 @@
 				ED9E9A0D24821F4D005E673E /* PMAlertController.xib */,
 			);
 			path = "PM Alert Controller";
+			sourceTree = "<group>";
+		};
+		ED9E9A13248229C1005E673E /* Confetti */ = {
+			isa = PBXGroup;
+			children = (
+				ED9E9A14248229CE005E673E /* Confetti.swift */,
+			);
+			path = Confetti;
 			sourceTree = "<group>";
 		};
 		EDBBD034247A082E00DCBE44 /* Models */ = {
@@ -267,6 +278,7 @@
 				ED320C2E244E500800FD7886 /* FossilsTableViewController.swift in Sources */,
 				ED667ABE244F378B00D73B58 /* FishTableViewController.swift in Sources */,
 				ED1F30652465D51D008269F7 /* FossilsNavigationController.swift in Sources */,
+				ED9E9A15248229CE005E673E /* Confetti.swift in Sources */,
 				ED320C33244E558400FD7886 /* Fossil.swift in Sources */,
 				ED667AC82450714A00D73B58 /* Bug.swift in Sources */,
 				ED320C16244E4D1C00FD7886 /* AppDelegate.swift in Sources */,

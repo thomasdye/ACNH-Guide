@@ -27,6 +27,8 @@ class FossilDetailViewController: UIViewController {
                                        brightness: 0.89,
                                        alpha: 1.0)
     
+    var emitter = CAEmitterLayer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         adjustLabels()
@@ -35,6 +37,7 @@ class FossilDetailViewController: UIViewController {
         loadDefaults()
         checkIfFound()
         setUpSwitch()
+        createConfetti()
     }
 
     func saveDefaults() {
@@ -111,13 +114,26 @@ class FossilDetailViewController: UIViewController {
         }
     }
     
+    func createConfetti() {
+        emitter.emitterPosition = CGPoint(x: self.view.frame.size.width / 2, y: -10)
+        emitter.emitterShape = CAEmitterLayerEmitterShape.line
+        emitter.emitterSize = CGSize(width: self.view.frame.size.width, height: 2.0)
+        emitter.emitterCells = generateEmitterCells()
+    }
+    
     @IBAction func foundSwitchChanged(_ sender: UISwitch) {
         
         if foundSwitch.isOn == true {
             selectedFossil.hasBeenFound = true
             saveDefaults()
             UIView.animate(withDuration: 0.5) {
+
                 self.view.backgroundColor = self.greenBackgroundColor
+                self.view.layer.addSublayer(self.emitter)
+                let seconds = 1.0
+                DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                    self.emitter.emitterPosition = CGPoint(x: -1000, y: -1000)
+                }
             }
             foundSwitch.thumbTintColor = .systemBlue
             foundSwitch.onTintColor = .white
@@ -126,8 +142,11 @@ class FossilDetailViewController: UIViewController {
             saveDefaults()
             UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = UIColor.systemBackground
+                self.emitter.removeFromSuperlayer()
+                self.emitter.emitterPosition = CGPoint(x: self.view.frame.size.width / 2, y: -10)
             }
             foundSwitch.thumbTintColor = .gray
+            
         }
     }
     
@@ -140,5 +159,7 @@ class FossilDetailViewController: UIViewController {
                     print("Capture action OK")
                 }))
 
-        self.present(alertVC, animated: true, completion: nil)    }
+        self.present(alertVC, animated: true, completion: nil)
+        
+    }
 }
