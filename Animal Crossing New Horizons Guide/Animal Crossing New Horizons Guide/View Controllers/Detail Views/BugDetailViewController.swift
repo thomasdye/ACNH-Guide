@@ -24,6 +24,7 @@ class BugDetailViewController: UIViewController {
     var bugTime: String = ""
     var bugMonths: String = ""
     var defaults = UserDefaults.standard
+    var emitter = CAEmitterLayer()
     var arrayOfBugs: [Critter] = []
     let greenBackgroundColor = UIColor(hue: 0.4639,
                                        saturation: 1,
@@ -37,6 +38,7 @@ class BugDetailViewController: UIViewController {
         checkIfCaught()
         setUpLabels()
         setUpSwitch()
+        createConfetti()
     }
     
     func saveDefaults() {
@@ -108,6 +110,13 @@ class BugDetailViewController: UIViewController {
             caughtSwitch.thumbTintColor = .gray
         }
     }
+    
+    func createConfetti() {
+        emitter.emitterPosition = CGPoint(x: self.view.frame.size.width / 2, y: -10)
+        emitter.emitterShape = CAEmitterLayerEmitterShape.line
+        emitter.emitterSize = CGSize(width: self.view.frame.size.width, height: 2.0)
+        emitter.emitterCells = generateEmitterCells()
+    }
 
     @IBAction func caughtSwitchChanged(_ sender: UISwitch) {
         
@@ -120,6 +129,12 @@ class BugDetailViewController: UIViewController {
                 self.view.backgroundColor = self.greenBackgroundColor
                 self.captureQuoteLabel.alpha = 1
                 self.captureQuoteLabel.text = "\"\(captureQuote)\""
+                self.view.layer.addSublayer(self.emitter)
+                let seconds = 1.0
+                DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                    self.emitter.emitterPosition = CGPoint(x: -1000, y: -1000)
+                }
+
             }
             caughtSwitch.thumbTintColor = .systemBlue
             caughtSwitch.onTintColor = .white
@@ -129,6 +144,8 @@ class BugDetailViewController: UIViewController {
             UIView.animate(withDuration: 0.5) {
                 self.view.backgroundColor = UIColor.systemBackground
                 self.captureQuoteLabel.alpha = 0
+                self.emitter.removeFromSuperlayer()
+                self.emitter.emitterPosition = CGPoint(x: self.view.frame.size.width / 2, y: -10)
             }
             caughtSwitch.thumbTintColor = .gray
         }

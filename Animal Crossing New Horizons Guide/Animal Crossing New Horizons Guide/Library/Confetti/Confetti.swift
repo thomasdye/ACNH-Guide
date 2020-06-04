@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 enum Colors {
-    static let red = UIColor(red: 1.0, green: 0.0, blue: 77.0/255.0, alpha: 1.0)
+    static let red = UIColor.red
     static let blue = UIColor.blue
-    static let green = UIColor(red: 35.0/255.0 , green: 233/255, blue: 173/255.0, alpha: 1.0)
-    static let yellow = UIColor(red: 1, green: 209/255, blue: 77.0/255.0, alpha: 1.0)
+    static let green = UIColor.green
+    static let yellow = UIColor.yellow
 }
 
 enum Images {

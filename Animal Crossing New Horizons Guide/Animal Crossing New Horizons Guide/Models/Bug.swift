@@ -99,6 +99,7 @@ var centipede = Critter(name: "Centipede",
                         months: "January, February, March, April, May, June, September, October, November and December",
                         captureQuote: "I caught a centipede! 99 more and I'll have a dollarpede!",
                         hasBeenCaught: false)
+
 var cicadaShell = Critter(name: "Cicada Shell",
                           image: UIImage(named: "cicadaShell"),
                           price: 10,
@@ -141,6 +142,7 @@ var cricket = Critter(name: "Cricket",
                       location: "On The Ground",
                       time: "5PM - 8AM",
                       months: "September, October and November",
+                      captureQuote: "I caught a Cricket! What a chirp thrill!",
                       hasBeenCaught: false)
 
 var cyclommatusStag = Critter(name: "Cyclommatus Stag",
@@ -149,6 +151,7 @@ var cyclommatusStag = Critter(name: "Cyclommatus Stag",
                               location: "On Trees (Coconut)",
                               time: "5PM - 8AM",
                               months: "July and August",
+                              captureQuote: "I caught a Cyclommatus Stag! Those mandibles are a mouthful!",
                               hasBeenCaught: false)
 
 var damselfy = Critter(name: "Damselfy",
@@ -194,12 +197,13 @@ var dungBeetle = Critter(name: "Dung Beetle",
                          captureQuote: "I caught a Dung Beetle! This species likes feces!",
                          hasBeenCaught: false)
 
-var earthBoringDungBeetle = Critter(name: "Earth Boring Dung Beetle",
+var earthBoringDungBeetle = Critter(name: "Earth-Boring Dung Beetle",
                                     image: UIImage(named: "earthBoringDungBeetle"),
                                     price: 300,
                                     location: "On The Ground",
                                     time: "All Day",
                                     months: "July, August and September",
+                                    captureQuote: "I caught an Earth-Boring Dung Beetle! It's not boring at all!",
                                     hasBeenCaught: false)
 
 var emperorButterfly = Critter(name: "Emperor Butterfly",
@@ -208,14 +212,17 @@ var emperorButterfly = Critter(name: "Emperor Butterfly",
                                location: "Flying",
                                time: "5PM - 8AM",
                                months: "January, February, March, June, July, August, September and December",
+                               captureQuote: "I caught an Emperor Butterfly! It's not your average monarch!",
                                hasBeenCaught: false)
 
+// needs capture
 var eveningCicada = Critter(name: "Evening Cicada",
                             image: UIImage(named: "eveningCicada"),
                             price: 550,
                             location: "On Trees",
                             time: "4AM - 8AM & 4PM - 7PM",
                             months: "July and August",
+                            captureQuote: "",
                             hasBeenCaught: false)
 
 var firefly = Critter(name: "Firefly",
@@ -224,6 +231,7 @@ var firefly = Critter(name: "Firefly",
                       location: "Flying",
                       time: "7PM - 4AM",
                       months: "June",
+                      captureQuote: "I caught a Firefly! I'm on fire now!",
                       hasBeenCaught: false)
 
 var flea = Critter(name: "Flea",
@@ -232,6 +240,7 @@ var flea = Critter(name: "Flea",
                    location: "Villager's Head",
                    time: "All Day",
                    months: "April, May, June, July, August, September, October and November",
+                   captureQuote: "I caught a Flea! The curse is lifted.",
                    hasBeenCaught: false)
 
 var fly = Critter(name: "Fly",
@@ -240,22 +249,27 @@ var fly = Critter(name: "Fly",
                   location: "On Trash Items",
                   time: "All Day",
                   months: "January, February, March, April, May, June, July, August, Spetember, October, November and December",
+                  captureQuote: "I caught a Fly! I was just wingin' it...",
                   hasBeenCaught: false)
 
+// needs capture
 var giantCicada = Critter(name: "Giant Cicada",
                           image: UIImage(named: "giantCicada"),
                           price: 500,
                           location: "On Trees",
                           time: "8AM - 5PM",
                           months: "July and August",
+                          captureQuote: "",
                           hasBeenCaught: false)
 
+// needs capture
 var giantStag = Critter(name: "Giant Stag",
                         image: UIImage(named: "giantStag"),
                         price: 10000,
                         location: "On Trees",
                         time: "11PM - 8AM",
                         months: "July and August",
+                        captureQuote: "",
                         hasBeenCaught: false)
 
 var giantWaterBug = Critter(name: "Giant Water Bug",
@@ -264,6 +278,7 @@ var giantWaterBug = Critter(name: "Giant Water Bug",
                             location: "On Pongs and Rivers",
                             time: "7PM - 8AM",
                             months: "April, May, June, July, August and September",
+                            captureQuote: "I caught a Giant Water Bug! It should've stayed in the water!",
                             hasBeenCaught: false)
 
 var giraffeStag = Critter(name: "Giraffe Stag",
@@ -272,6 +287,7 @@ var giraffeStag = Critter(name: "Giraffe Stag",
                           location: "On Trees (Coconut)",
                           time: "5PM - 8AM",
                           months: "April, May, June, July, August and September",
+                          captureQuote: "I caught a Giraffe Stag! Does that make it a longhorn?",
                           hasBeenCaught: false)
 
 var goldenStag = Critter(name: "Golden Stag",
@@ -280,6 +296,7 @@ var goldenStag = Critter(name: "Golden Stag",
                          location: "On Trees (Coconut)",
                          time: "5PM - 8AM",
                          months: "July and August",
+                         captureQuote: "I caught a Golden Stag! Does this mean I can retire?",
                          hasBeenCaught: false)
 
 var goliathBeetle = Critter(name: "Goliath Beetle",
@@ -288,6 +305,7 @@ var goliathBeetle = Critter(name: "Goliath Beetle",
                             location: "On Trees (Coconut)",
                             time: "5PM - 8AM",
                             months: "June, July, August and September",
+                            captureQuote: "I caught a Goliath Beetle! Am I a legend or what?",
                             hasBeenCaught: false)
 
 var grasshopper = Critter(name: "Grasshopper",
@@ -296,6 +314,7 @@ var grasshopper = Critter(name: "Grasshopper",
                           location: "On The Ground",
                           time: "8AM - 5PM",
                           months: "July, August and September",
+                          captureQuote: "I caught a Grasshopper! They're a grass act!",
                           hasBeenCaught: false)
 
 var greatPurpleEmperor = Critter(name: "Great Purple Emperor",
@@ -304,6 +323,7 @@ var greatPurpleEmperor = Critter(name: "Great Purple Emperor",
                                  location: "Flying",
                                  time: "4AM - 7PM",
                                  months: "May, June, July, and August",
+                                 captureQuote: "I caught a Great Purple Emperor! Its purple reign is over now!",
                                  hasBeenCaught: false)
 
 var hermitCrab = Critter(name: "Hermit Crab",
@@ -312,6 +332,7 @@ var hermitCrab = Critter(name: "Hermit Crab",
                          location: "Beach Disguised as Shells",
                          time: "7PM - 8AM",
                          months: "January, February, March, April, May, June, July, August, September, October, November and December",
+                         captureQuote: "I caught a Hermit Crab! I think it wanted to be left alone!",
                          hasBeenCaught: false)
 
 var honeybee = Critter(name: "Honeybee",
@@ -320,6 +341,7 @@ var honeybee = Critter(name: "Honeybee",
                        location: "Flying",
                        time: "8AM - 5PM",
                        months: "March, April, May, June and July",
+                       captureQuote: "I caught a Honeybee! Ah, sweet success!",
                        hasBeenCaught: false)
 
 var hornedAtlas = Critter(name: "Horned Atlas",
@@ -328,6 +350,7 @@ var hornedAtlas = Critter(name: "Horned Atlas",
                           location: "On Trees (Coconut)",
                           time: "5PM - 8AM",
                           months: "July and August",
+                          captureQuote: "I caught a Horned Atlas! I didn't even need a map!",
                           hasBeenCaught: false)
 
 var hornedDynastid = Critter(name: "Horned Dynastid",
@@ -336,6 +359,7 @@ var hornedDynastid = Critter(name: "Horned Dynastid",
                              location: "On Trees",
                              time: "5PM - 8AM",
                              months: "July and August",
+                             captureQuote: "I caught a Horned Dynastid! I'd hate to hear it honk that schnoz!",
                              hasBeenCaught: false)
 
 var hornedElephant = Critter(name: "Horned Elephant",
@@ -344,6 +368,7 @@ var hornedElephant = Critter(name: "Horned Elephant",
                              location: "On Trees (Coconut)",
                              time: "5PM - 8AM",
                              months: "July and August",
+                             captureQuote: "I caught a Horned Elephant! I guess it's too small to ride...",
                              hasBeenCaught: false)
 
 var hornedHercules = Critter(name: "Horned Hercules",
@@ -352,6 +377,7 @@ var hornedHercules = Critter(name: "Horned Hercules",
                              location: "On Trees (Coconut)",
                              time: "5PM - 8AM",
                              months: "July and August",
+                             captureQuote: "I caught a Horned Hercules! Guess I was stronger!",
                              hasBeenCaught: false)
 
 var jewelBeetle = Critter(name: "Jewel Beetle",
@@ -360,6 +386,7 @@ var jewelBeetle = Critter(name: "Jewel Beetle",
                           location: "On Tree Stumps",
                           time: "All Day",
                           months: "April, May, June, July and August",
+                          captureQuote: "I caught a Jewel Beetle! It's a real gem!",
                           hasBeenCaught: false)
 
 var ladybug = Critter(name: "Ladybug",
@@ -368,6 +395,7 @@ var ladybug = Critter(name: "Ladybug",
                       location: "On Flowers",
                       time: "8AM - 5PM",
                       months: "March, April, May, June and October",
+                      captureQuote: "I caught a Ladybug! Sorry to distrub you, ma'am.",
                       hasBeenCaught: false)
 
 var longLocust = Critter(name: "Long Locust",
@@ -376,6 +404,7 @@ var longLocust = Critter(name: "Long Locust",
                          location: "On The Ground",
                          time: "8AM - 7PM",
                          months: "April, May, June, July, August, September, October and November",
+                         captureQuote: "I caught a Long Locust! Or, as I call it, a looooocust.",
                          hasBeenCaught: false)
 
 var madagascanSunsetMoth = Critter(name: "Madagascan Sunset Moth",
@@ -384,12 +413,15 @@ var madagascanSunsetMoth = Critter(name: "Madagascan Sunset Moth",
                                    location: "Flying",
                                    time: "8AM - 4PM",
                                    months: "April, May, June, July, August and September",
+                                   captureQuote: "I caught a Madagascan Sunset Moth! Wow, you're not from around here!",
                                    hasBeenCaught: false)
+
 var manFacedStinkBug = Critter(name: "Man Faced Stink Bug",
                                image: UIImage(named: "manFacedStinkBug"),
                                price: 1000, location: "On Flowers",
                                time: "7PM - 8AM",
                                months: "March, April, May, June, July, August, September and October",
+                               captureQuote: "I caught a Man-Faced Stink Bug! Reminds me of my uncle!",
                                hasBeenCaught: false)
 
 var mantis = Critter(name: "Mantis",
@@ -398,6 +430,7 @@ var mantis = Critter(name: "Mantis",
                      location: "On Flowers",
                      time: "8AM - 5PM",
                      months: "March, April, May, June, July, August, September, October and November",
+                     captureQuote: "I caught a Mantis! Man, 'tis so cool!",
                      hasBeenCaught: false)
 
 var migratoryLocust = Critter(name: "Migratory Locust",
@@ -406,6 +439,7 @@ var migratoryLocust = Critter(name: "Migratory Locust",
                               location: "On The Ground",
                               time: "8AM - 7PM",
                               months: "August, September, October and November",
+                              captureQuote: "I caught a Migratory Locust! Things just went south for this guy!",
                               hasBeenCaught: false)
 
 var miyamaStag = Critter(name: "miyamaStag",
@@ -414,6 +448,7 @@ var miyamaStag = Critter(name: "miyamaStag",
                          location: "On Trees",
                          time: "All Day",
                          months: "July and August",
+                         captureQuote: "I caught a Miyama Stag! Its mandibles are jaw-dropping!",
                          hasBeenCaught: false)
 
 var moleCricket = Critter(name: "Mole Cricket",
@@ -422,6 +457,7 @@ var moleCricket = Critter(name: "Mole Cricket",
                           location: "Underground (Dig Near Sound)",
                           time: "All Day",
                           months: "January, February, March, April, May, November and December",
+                          captureQuote: "I caught a Mole Cricket! I really dug it!",
                           hasBeenCaught: false)
 
 var monarchButterfly = Critter(name: "Monarch Butterfly",
@@ -430,6 +466,7 @@ var monarchButterfly = Critter(name: "Monarch Butterfly",
                                location: "Flyinh",
                                time: "4AM - 5PM",
                                months: "September, October and November",
+                               captureQuote: "I caught a Monarch Butterfly! Guess the butterflies are a democracy now!",
                                hasBeenCaught: false)
 
 var mosquito = Critter(name: "Mosquito",
@@ -438,6 +475,7 @@ var mosquito = Critter(name: "Mosquito",
                        location: "Flying",
                        time: "5PM - 4AM",
                        months: "June, July, August and September",
+                       captureQuote: "I caught a Mosquito! It's itching for a fight!",
                        hasBeenCaught: false)
 
 var moth = Critter(name: "Moth",
@@ -446,6 +484,7 @@ var moth = Critter(name: "Moth",
                    location: "Flying Near Light",
                    time: "7PM - 4AM",
                    months: "January, February, March, April, May, June, July, August, September, October, November and December",
+                   captureQuote: "I caught a Moth! And I had a ball doing it!",
                    hasBeenCaught: false)
 
 var orchidMantis = Critter(name: "Orchid Mantis",
@@ -454,6 +493,7 @@ var orchidMantis = Critter(name: "Orchid Mantis",
                            location: "On Flowers (White)",
                            time: "8AM - 5PM",
                            months: "March, April, May, June, July, August, September, October and November",
+                           captureQuote: "I caught an Orchid Mantis! Our friendship is blooming!",
                            hasBeenCaught: false)
 
 var paperKiteButterfly = Critter(name: "Paper Kite Butterfly",
@@ -462,6 +502,7 @@ var paperKiteButterfly = Critter(name: "Paper Kite Butterfly",
                                 location: "Flying",
                                 time: "8am - 7PM",
                                 months: "January, February, March, April, May, June, July, August, September, October, November and December",
+                                captureQuote: "I caught a Paper Kite Butterfly! Do I read it, fly it, or spread it on toast?",
                                 hasBeenCaught: false)
 
 var peacockButterfly = Critter(name: "Peacock Butterfly",
@@ -470,6 +511,7 @@ var peacockButterfly = Critter(name: "Peacock Butterfly",
                               location: "Flying Near Hybrid Flowers",
                               time: "4AM - 7PM",
                               months: "March, April, May and June",
+                              captureQuote: "I caught a Peacock Butterfly! Now it's my turn to strut my stuff!",
                               hasBeenCaught: false)
 
 var pillBug = Critter(name: "Pill Bug",
@@ -478,6 +520,7 @@ var pillBug = Critter(name: "Pill Bug",
                       location: "Hittin Rocks",
                       time: "11PM - 4PM",
                       months: "January, February, March, April, May, June, September, October, November and December",
+                      captureQuote: "I caught a Pill Bug! That's a tough act to swallow!" ,
                       hasBeenCaught: false)
 
 var pondskater = Critter(name: "Pondskater",
@@ -486,6 +529,7 @@ var pondskater = Critter(name: "Pondskater",
                          location: "On Ponds and Rivers",
                          time: "8AM - 7PM",
                          months: "May, June, July, August and September",
+                         captureQuote: "I caught a Pondskater! Wonder if it can do a pond ollie...",
                          hasBeenCaught: false)
 
 var queenAlexandrasBirdwing = Critter(name: "Queen Alexandra's Birdwing",
@@ -494,6 +538,7 @@ var queenAlexandrasBirdwing = Critter(name: "Queen Alexandra's Birdwing",
                                       location: "Flying",
                                       time: "8AM - 7PM",
                                       months: "May, June, July, August and September",
+                                      captureQuote: "I caught a Queen Alexandra’s Birdwing! That‘s a feather in my cap!",
                                       hasBeenCaught: false)
 
 var rainbowStag = Critter(name: "Rainbow Stag",
@@ -502,6 +547,7 @@ var rainbowStag = Critter(name: "Rainbow Stag",
                           location: "On Trees",
                           time: "7PM - 8AM",
                           months: "June, July, August and September",
+                          captureQuote: "I caught a Rainbow Stag! Its rainbow armor is so shiny!" ,
                           hasBeenCaught: false)
 
 var rajahBrookesBirdwing = Critter(name: "Rajah Brooke's Birdwing",
@@ -510,6 +556,7 @@ var rajahBrookesBirdwing = Critter(name: "Rajah Brooke's Birdwing",
                                    location: "Flying",
                                    time: "8AM - 5PM",
                                    months: "January, February, April, May, June, July, August, September and December",
+                                   captureQuote: "I caught a Rajah Brooke Birdwing! Nothing else I'd rajah be doing!",
                                    hasBeenCaught: false)
 
 var redDragonfly = Critter(name: "Red Dragonfly",
@@ -518,6 +565,7 @@ var redDragonfly = Critter(name: "Red Dragonfly",
                            location: "Flying",
                            time: "8AM - 7PM",
                            months: "September and October",
+                           captureQuote: "I caught a Red Dragonfly! Didn't even have to roll for initiative!",
                            hasBeenCaught: false)
 
 var riceGrasshopper = Critter(name: "Rice Grasshopper",
@@ -526,6 +574,7 @@ var riceGrasshopper = Critter(name: "Rice Grasshopper",
                               location: "On The Ground",
                               time: "8AM - 7PM",
                               months: "August, September, October and November",
+                              captureQuote: "I caught a Rice Grasshopper! I've been looking for a gluten-free alternative...",
                               hasBeenCaught: false)
 
 var robustCicada = Critter(name: "Robust Cicada",
@@ -534,13 +583,16 @@ var robustCicada = Critter(name: "Robust Cicada",
                            location: "On Trees",
                            time: "8AM - 5PM",
                            months: "July and August",
+                           captureQuote: "I caught a Robust Cicada! Not so energetic in the rain, huh?",
                            hasBeenCaught: false)
+
 var rosaliaBatesiBeetle = Critter(name: "Rosalia Batesi Beetle",
                                   image: UIImage(named: "rosaliaBatesiBeetle"),
                                   price: 3000,
                                   location: "On Tree Stumps",
                                   time: "All Day",
                                   months: "May, June, July, August and September",
+                                  captureQuote: "I caught a Rosalia Batesi Beetle! That’s easier to do than say!" ,
                                   hasBeenCaught: false)
 
 var sawStag = Critter(name: "Saw Stag",
@@ -549,6 +601,7 @@ var sawStag = Critter(name: "Saw Stag",
                       location: "On Trees",
                       time: "All Day",
                       months: "July and August",
+                      captureQuote: "I caught a Saw Stag! Now I can't unsee i!",
                       hasBeenCaught: false)
 
 var scarabBeetle = Critter(name: "Scarab Beetle",
@@ -557,6 +610,7 @@ var scarabBeetle = Critter(name: "Scarab Beetle",
                            location: "On Trees",
                            time: "11PM - 8AM",
                            months: "July and August",
+                           captureQuote: "I caught a Scarab Beetle! It's just a dung beetle with better hobbies.",
                            hasBeenCaught: false)
 
 var scorpion = Critter(name: "Scorpion",
@@ -565,6 +619,7 @@ var scorpion = Critter(name: "Scorpion",
                        location: "On The Ground",
                        time: "7PM - 4AM",
                        months: "May, June, July, August, September and October",
+                       captureQuote: "I caught a Scorpion! It was a sting operation!",
                        hasBeenCaught: false)
 
 var snail = Critter(name: "Snail",
@@ -573,6 +628,7 @@ var snail = Critter(name: "Snail",
                     location: "On Rocks and Bushes (Rain)",
                     time: "All Day",
                     months: "January, February, March, April, May, June, July, August, September, October, November and December",
+                    captureQuote: "I caught a Snail! It's...not much to brag about.",
                     hasBeenCaught: false)
 
 var spider = Critter(name: "Spider",
@@ -581,14 +637,16 @@ var spider = Critter(name: "Spider",
                      location: "Shaking Trees",
                      time: "7PM - 8AM",
                      months: "January, February, March, April, May, June, July, August, September, October, November and December",
+                     captureQuote: "I caught a Spider! I spied 'er first!",
                      hasBeenCaught: false)
 
-var stinkBug = Critter(name: "Stinkbug",
-                       image: UIImage(named: "stinkBug"),
+var stinkbug = Critter(name: "Stinkbug",
+                       image: UIImage(named: "stinkbug"),
                        price: 120,
                        location: "On Flowers",
                        time: "All Day",
                        months: "March, April, May, June, July, August, September and October",
+                       captureQuote: "I caught a Stinkbug! It lives up to its name!",
                        hasBeenCaught: false)
 
 var tarantula = Critter(name: "Tarantula",
@@ -597,6 +655,7 @@ var tarantula = Critter(name: "Tarantula",
                         location: "On The Ground",
                         time: "7PM - 4AM",
                         months: "January, February, March, April, November and December",
+                        captureQuote: "I caught a Tarantula! This situation just got hairy!",
                         hasBeenCaught: false)
 
 var tigerBeetle = Critter(name: "Tiger Beetle",
@@ -605,6 +664,7 @@ var tigerBeetle = Critter(name: "Tiger Beetle",
                           location: "On The Ground",
                           time: "All Day",
                           months: "February, March, April, May, June, July, August, September and October",
+                          captureQuote: "I caught a Tiger Beetle! I pounced first!",
                           hasBeenCaught: false)
 
 var tigerButterfly = Critter(name: "Tiger Butterfly",
@@ -613,6 +673,7 @@ var tigerButterfly = Critter(name: "Tiger Butterfly",
                              location: "Flying",
                              time: "4AM - 7PM",
                              months: "March, April, May, June, July, August and September",
+                             captureQuote: "I caught a Tiger Butterfly! I've earned my stripes!",
                              hasBeenCaught: false)
 
 var violinBeetle = Critter(name: "Violin Beetle",
@@ -621,6 +682,7 @@ var violinBeetle = Critter(name: "Violin Beetle",
                            location: "On Tree Stumps",
                            time: "All Day",
                            months: "May, June, September, October and November",
+                           captureQuote: "I caught a Violin Beetle! Apparently I'm as fit as a fiddle." ,
                            hasBeenCaught: false)
 
 var walkerCicada = Critter(name: "Walker Cicada",
@@ -629,6 +691,7 @@ var walkerCicada = Critter(name: "Walker Cicada",
                            location: "On Trees",
                            time: "8AM - 5PM",
                            months: "August and September",
+                           captureQuote: "I caught a Walker Cicada! It must hate getting its feet wet!",
                            hasBeenCaught: false)
 
 var walkingLeaf = Critter(name: "Walking Leaf",
@@ -637,6 +700,7 @@ var walkingLeaf = Critter(name: "Walking Leaf",
                           location: "Under Trees Disguised as Leafs",
                           time: "All Day",
                           months: "July, August and September",
+                          captureQuote: "I caught a Walking Leaf! It seems to be taking it in stride!",
                           hasBeenCaught: false)
 
 var walkingStick = Critter(name: "Waling Stick",
@@ -645,6 +709,7 @@ var walkingStick = Critter(name: "Waling Stick",
                            location: "On Trees",
                            time: "4AM - 8AM & 5PM - 7PM",
                            months: "July, August, September, October and November",
+                           captureQuote: "I caught a Walking Stick! Check out its walking schtick!",
                            hasBeenCaught: false)
 
 var wasp = Critter(name: "Wasp",
@@ -653,6 +718,7 @@ var wasp = Critter(name: "Wasp",
                    location: "Shaking Trees",
                    time: "All Day",
                    months: "January, February, March, April, May, June, July, August, September, October, November and December",
+                   captureQuote: "I caught a Wasp! That's gotta sting...",
                    hasBeenCaught: false)
 
 var wharfRoach = Critter(name: "Wharf Roach",
@@ -661,6 +727,7 @@ var wharfRoach = Critter(name: "Wharf Roach",
                          location: "On Beach Rocks",
                          time: "All Day",
                          months: "January, February, March, April, May, June, July, August, September, October, November and December",
+                         captureQuote: "I caught a Wharf Roach! This water-loving roach has no pier!",
                          hasBeenCaught: false)
 
 var yellowButterfly = Critter(name: "Yellow Butterfly",
@@ -669,9 +736,10 @@ var yellowButterfly = Critter(name: "Yellow Butterfly",
                               location: "Flying",
                               time: "4AM - 7PM",
                               months: "March, April, May, June, September and October",
+                              captureQuote: "I caught a Yellow Butterfly! Shouldn't all BUTTERflies be yellow?",
                               hasBeenCaught: false)
 
-let allBugs: [Critter] = [agriasButterfly, ant, atlasMoth, bagworm, bandedDragonfly, bellCricket, blueWeevilBeetle, brownCicada, centipede, cicadaShell, citrusLonghornedBeetle, commonBluebottle, commonButterfly, cricket, cyclommatusStag, damselfy, darnerDragonfly, divingBeetle, dungBeetle, earthBoringDungBeetle, emperorButterfly, eveningCicada, firefly, flea, fly, giantCicada, giantStag, giantWaterBug, giraffeStag, goldenStag, goliathBeetle, grasshopper, greatPurpleEmperor, hermitCrab, honeybee, hornedAtlas, hornedDynastid, hornedElephant, hornedHercules, jewelBeetle, ladybug, longLocust, madagascanSunsetMoth, manFacedStinkBug, mantis, migratoryLocust, miyamaStag, moleCricket, monarchButterfly, mosquito, moth, orchidMantis, paperKiteButterfly, peacockButterfly, pillBug, pondskater, queenAlexandrasBirdwing, rainbowStag, rajahBrookesBirdwing, redDragonfly, riceGrasshopper, robustCicada, rosaliaBatesiBeetle, sawStag, scarabBeetle, scorpion, snail, spider, stinkBug, tarantula, tigerBeetle, tigerButterfly, violinBeetle, walkerCicada, walkingLeaf, walkingStick, wasp, wharfRoach, yellowButterfly]
+let allBugs: [Critter] = [agriasButterfly, ant, atlasMoth, bagworm, bandedDragonfly, bellCricket, blueWeevilBeetle, brownCicada, centipede, cicadaShell, citrusLonghornedBeetle, commonBluebottle, commonButterfly, cricket, cyclommatusStag, damselfy, darnerDragonfly, divingBeetle, droneBeetle, dungBeetle, earthBoringDungBeetle, emperorButterfly, eveningCicada, firefly, flea, fly, giantCicada, giantStag, giantWaterBug, giraffeStag, goldenStag, goliathBeetle, grasshopper, greatPurpleEmperor, hermitCrab, honeybee, hornedAtlas, hornedDynastid, hornedElephant, hornedHercules, jewelBeetle, ladybug, longLocust, madagascanSunsetMoth, manFacedStinkBug, mantis, migratoryLocust, miyamaStag, moleCricket, monarchButterfly, mosquito, moth, orchidMantis, paperKiteButterfly, peacockButterfly, pillBug, pondskater, queenAlexandrasBirdwing, rainbowStag, rajahBrookesBirdwing, redDragonfly, riceGrasshopper, robustCicada, rosaliaBatesiBeetle, sawStag, scarabBeetle, scorpion, snail, spider, stinkbug, tarantula, tigerBeetle, tigerButterfly, violinBeetle, walkerCicada, walkingLeaf, walkingStick, wasp, wharfRoach, yellowButterfly]
 
 var catchableBugs: [Critter] = []
 

@@ -22,12 +22,11 @@ class FossilDetailViewController: UIViewController {
     var dinosaurSpecies: String = ""
     var allDinosaurFossils: String = ""
     var defaults = UserDefaults.standard
+    var emitter = CAEmitterLayer()
     let greenBackgroundColor = UIColor(hue: 0.4639,
                                        saturation: 1,
                                        brightness: 0.89,
                                        alpha: 1.0)
-    
-    var emitter = CAEmitterLayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,6 +102,12 @@ class FossilDetailViewController: UIViewController {
     func adjustLabels() {
         relatedFossils.numberOfLines = 0
         relatedFossils.adjustsFontSizeToFitWidth = true
+
+        if selectedFossil.dinosaurSpecies == nil {
+            tellMeMoreButton.setTitle("Tell Me More About \(selectedFossil.name!)", for: .normal)
+        } else {
+            tellMeMoreButton.setTitle("Tell Me More About \(selectedFossil.dinosaurSpecies!)", for: .normal)
+        }
     }
     
     func setUpSwitch() {
@@ -153,13 +158,17 @@ class FossilDetailViewController: UIViewController {
     @IBAction func tellMeMoreButtonTapped(_ sender: UIButton) {
         
         guard let blathersQuote = selectedFossil.blathersQuote else { return }
-        let alertVC = PMAlertController(title: blathersQuote, description: "", image: UIImage(named: "blathers"), style: .alert)
+        let alertVC = PMAlertController(title: blathersQuote,
+                                        description: "",
+                                        image: UIImage(named: "blathers"),
+                                        style: .alert)
 
-        alertVC.addAction(PMAlertAction(title: "Awesome!", style: .default, action: { () in
-                    print("Capture action OK")
+        alertVC.addAction(PMAlertAction(title: "Awesome!",
+                                        style: .default,
+                                        action: { () in
+                    print("Awesome Button Tapped.")
                 }))
 
         self.present(alertVC, animated: true, completion: nil)
-        
     }
 }

@@ -34,14 +34,14 @@ import UIKit
         self.addTarget(self, action: #selector(PMAlertAction.tapped(_:)), for: .touchUpInside)
         
         self.setTitle(title, for: UIControl.State())
-        self.titleLabel?.font = UIFont(name: "FinkHeavy", size: 25)
+        self.titleLabel?.font = UIFont(name: "FinkHeavy", size: 20)
         
         self.actionStyle = style
         style == .default ? (self.setTitleColor(UIColor(hue: 0.4639, saturation: 1, brightness: 0.89, alpha: 1.0), for: UIControl.State())) : (self.setTitleColor(UIColor.gray, for: UIControl.State()))
         
         self.addSeparator()
     }
-    
+        
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -54,6 +54,7 @@ import UIKit
     }
     
     @objc fileprivate func addSeparator(){
+        
         separator.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
         self.addSubview(separator)
         
@@ -64,5 +65,4 @@ import UIKit
         separator.trailingAnchor.constraint(equalTo: self.layoutMarginsGuide.trailingAnchor, constant: -8).isActive = true
         separator.heightAnchor.constraint(equalToConstant: 1).isActive = true
     }
-    
 }

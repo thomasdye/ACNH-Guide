@@ -295,7 +295,7 @@ var gar = Fish(name: "Gar",
                location: "Pond",
                shadowSize: 2,
                time: "All Day",
-               months: "July, August, and September",
+               months: "June, July, August, and September",
                captureQuote: "I caught a Gar! Yar! It's a gar! Har har!",
                hasBeenCaught: false)
 

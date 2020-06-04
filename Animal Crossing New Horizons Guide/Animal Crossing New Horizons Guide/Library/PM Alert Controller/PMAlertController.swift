@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 @objc public enum PMAlertControllerStyle : Int {
     case alert // The alert will adopt a width of 270 (like UIAlertController).
@@ -128,7 +129,7 @@ import UIKit
         let textField = textField ?? UITextField()
         textField.delegate = self
         textField.returnKeyType = .done
-        textField.font = UIFont(name: "Avenir-Heavy", size: 17)
+        textField.font = UIFont(name: "FinkHeavy", size: 17)
         textField.textAlignment = .center
         configuration (textField)
         _addTextField(textField)
@@ -177,17 +178,16 @@ import UIKit
     //MARK: - Animations
     
     @objc fileprivate func animateDismissWithGravity(_ style: PMAlertActionStyle){
-        if gravityDismissAnimation == true{
+        if gravityDismissAnimation == true {
             var radian = Double.pi
             if style == .default {
-                radian = 2 * Double.pi
+                radian = 0
             }else{
-                radian = -2 * Double.pi
+                radian = 0
             }
             animator = UIDynamicAnimator(referenceView: self.view)
             
             let gravityBehavior = UIGravityBehavior(items: [alertView])
-            gravityBehavior.gravityDirection = CGVector(dx: 0, dy: 10)
             
             animator?.addBehavior(gravityBehavior)
             
@@ -205,8 +205,8 @@ import UIKit
     @objc func keyboardWillShow(_ notification: Notification) {
         keyboardHasBeenShown = true
         
-        guard let userInfo = (notification as NSNotification).userInfo else {return}
-        guard let endKeyBoardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.minY else {return}
+        guard let userInfo = (notification as NSNotification).userInfo else { return }
+        guard let endKeyBoardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.minY else { return }
         
         if tempFrameOrigin == nil {
             tempFrameOrigin = alertView.frame.origin
